@@ -66,7 +66,7 @@ def get_leaf_nodes_xpath(nodes_xpath_list):
     return leaf_nodes_xpath_list
 
 
-
+li=[]
 
 
 def get_pruning_leaf_nodes_xpath(xpath_list):
