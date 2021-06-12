@@ -66,13 +66,7 @@ def get_leaf_nodes_xpath(nodes_xpath_list):
     return leaf_nodes_xpath_list
 
 
-li = [[55, '/html/body/div[2]/div[2]/ol/li[1]/a/span'],
-      [56, '/html/body/div[2]/div[2]/ol/li[2]/a'],
-      [57, '/html/body/div[2]/div[2]/ol/li[3]'],
-      [58, '/html/body/div[2]/div[2]/ol/div/span'],
-      [59, '/html/body/div[2]/div[2]/div/div[1]/h2/strong'],
 
-      ]
 
 
 def get_pruning_leaf_nodes_xpath(xpath_list):
