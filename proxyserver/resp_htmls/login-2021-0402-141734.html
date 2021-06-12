@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>上海燃气表测试平台</title>
+    <!--base target="_blank" ></base-->
+
+    <!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+
+    <link rel="shortcut" href="mygas/static/images/favicon.ico"/>
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet"/>
+
+    <script src="/static/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <link href="/static/css/base_style.css" rel="stylesheet"/>
+    <link href="/static/css/common_style.css" rel="stylesheet"/>
+    <link href="/static/css/login.css" rel="stylesheet"/>
+
+    <script src="/static/js/common_style.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+     if(browser()[0] != 'Chrome')
+         alert('推荐使用谷歌浏览器');
+     var List = '';
+     if(List!='')
+         alert(List);
+ });
+
+//jquery不允许修改input的type属性
+function showpw(thebox){
+    var ps = document.getElementById('id_password');
+    if(ps.type=='password'){
+        ps.type = "text";
+    }else{
+        ps.type = 'password';
+    }
+  }
+
+ function browser (){
+
+     var ua=window.navigator.userAgent,
+         ret="";
+
+     if(/Firefox/g.test(ua)){
+
+     ua=ua.split(" ");
+     ret="Firefox|"+ua[ua.length-1].split("/")[1];
+
+     }else if(/MSIE/g.test(ua)){
+
+     ua=ua.split(";");
+     ret="IE|"+ua[1].split(" ")[2];
+
+     }else if(/Opera/g.test(ua)){
+
+     ua=ua.split(" ");
+     ret="Opera|"+ua[ua.length-1].split("/")[1];
+
+     }else if(/Chrome/g.test(ua)){
+
+     ua=ua.split(" ");
+     ret="Chrome|"+ua[ua.length-2].split("/")[1];
+
+     }else if(/^apple\s+/i.test(navigator.vendor)){
+
+     ua=ua.split(" ");
+     ret="Safair|"+ua[ua.length-2].split("/")[1];
+
+     }else{
+         ret="未知浏览器";
+         }
+
+  return ret.split("|");
+}
+    </script>
+</head>
+
+<body class="g-wide">
+
+    <div class="p-logo">
+        <h1>
+            <a href="#"><img src="/static/images/logo_a3.gif" class="img-circle" /></a>
+            <span style="font-family:'Microsoft YaHei UI'; font-size:29px">上海燃气有限公司</span>
+        </h1>
+     </div>
+
+    <div class="p-login">
+        <div class="p-login-content g-clear">
+
+        <div class="p-login-left">
+            <h3><img src="/static/images/top_bg.png " /></h3>
+        </div>
+
+        
+
+        <div class="p-login-right">
+
+            <div class="b-signin">
+            <div class="b-signin-nav">用户登录</div>
+            <div class="b-signin-contentwrap">
+                 <p></p>
+                 <div class="b-signin-content">
+                 <form class="form-horizontal" name="LoginForm" method="POST" action="/login/">
+                 <input type='hidden' name='csrfmiddlewaretoken' value='NQviD7MCEXFyCU2uDbvHD3cYsHyY440G' />
+                    <div class="col-md-12">
+                      <div class="form-group ">
+                          <label class="control-label col-md-3">用户名：</label>
+                          <div class="col-md-7"><input class="form-control" id="id_username" maxlength="32" name="username" type="text" />
+
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group ">
+                          <label class="control-label col-md-3">密码：</label>
+                          <div class="col-md-6"><input class="form-control" id="id_password" name="password" type="password" />
+
+                          </div>
+                          <div id="eye_look" class="col-md-1 glyphicon glyphicon-eye-open" onclick="showpw(this)" style="margin-left: 5px;margin-top: 10px;"></div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="col-md-11 text-right">
+
+                        <input type="submit" class="btn btn-info" value=登录>
+                    </div>
+                    <br>
+                 </form>
+                 </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="p-foot">
+    <p>Copyright &copy; 2084
+
+        | <span id="timePlace"></span>
+    </p>
+    </div>
+
+</body>
+</html>
+
+
+
+

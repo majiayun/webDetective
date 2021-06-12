@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhiwang</title>
+</head>
+
+<body class="rootw">
+    <input id="isoversea" name="isoversea" type="hidden" value="0">
+    <input id="hidVirtualPath" name="hidVirtualPath" type="hidden" value="/KNS8">
+    <input id="KPCAPIPATH" name="KPCAPIPATH" type="hidden" value="https://ishufang.cnki.net/KPCAPI">
+    <input id="OverSeaURL" name="OverSeaURL" type="hidden" value="//oversea.cnki.net/kns">
+    <input id="RecommendApi" name="RecommendApi" type="hidden" value="/RecommendApi">
+    <input id="KPCPATH" name="KPCPATH" type="hidden" value="https://ishufang.cnki.net/KPC">
+    <input id="RecommAPI" name="RecommAPI" type="hidden" value="//recom.cnki.net/api/">
+    <input id="RecSysAPI" name="RecSysAPI" type="hidden" value="//recsys.cnki.net/RCDService/">
+    <input id="IsRecSys" name="IsRecSys" type="hidden" value="0">
+    <div id="headerBox"><div class="ecp_top-nav"><div class="ecp_tn-header"><div class="ecp_tn-nav">	<div class="ecp_tn-title">						<a id="oldversion" class="ecp_tn-tab" target="_blank" href="https://kns.cnki.net/kns/brief/Default_Result.aspx?code=SCDB"><i>旧版</i></a><a id="Ecp_header_Help" class="ecp_tn-tab" target="_blank" href="//piccache.cnki.net/index/helper/manual.html">使用手册</a><div class="ecp_tn-title" id="searchset" style="">   <a class="ecp_tn-tab" onclick="searchSet()" href="javascript:void(0)"><i>检索设置</i></a>  </div><a id="member-link" name="member-link" class="ecp_tn-tab" target="_blank" href="https://mall.cnki.net/user/user.html"><i>会员</i></a><a id="icnki" class="ecp_tn-tab" target="_blank" href="https://i.cnki.net"><i>我的CNKI</i></a>	</div></div><div class="tn-person-r">	<div id="Ecp_top_login_div20" class="ecp_tn-title ecp_tn-title-login" style="padding: 10px 1px;">		<span id="Ecp_welcome" class="tn-greeting">欢迎来自</span>		<div id="ecp_top_login_from" style="display:none"><p>undefined</p></div>	</div>		<div id="Ecp_top_login_div21" class="ecp_tn-title ecp_tn-title-login">		<!--登录1-->		<div id="Ecp_top_login1" class="div_inline" style="display:none;">			<a class="ecp_tn-tab" href="javascript:void(0);">				<i>机构登录<span class="ecp_tn-arrow"></span></i>			</a>		</div>		<!--退出1-->		<div id="Ecp_top_logout1" class="ecp_tn-title" style="">			<a id="Ecp_top_logout_showLayer1" class="ecp_tn-tab ecp_tn-tab-user" href="javascript:void(0);">				<i style="padding: 6px 2px 12px 2px;" id="Ecp_loginShowNameI1" title="上海大学"><em title="上海大学" id="Ecp_loginShowName1" style="cursor: pointer;">上海大学</em><span id="Ecp_loginShowName1Arrow" style="right:0;padding-right: 4px;" class="ecp_tn-arrow"></span></i>			</a>			<div id="Ecp_top_logout_layer1" class="tn-topmenulist tn-topmenulist-a tn-topmenulist-a-user" style="display:none;">				<ul class="tn-text-list">					<li><a id="Ecp_MycnkiLinkJg" href="//my.cnki.net/MyCNKI/" title="我的账户" target="_blank">我的账户</a></li>					<li id="Ecp_top_logoutJgli1" style="display: none;"><a id="Ecp_top_logoutJgClick1" href="javascript:void(0);" title="退出">机构退出</a></li>					<li id="Ecp_top_logoutJgli2"><a id="Ecp_top_logoutClick1" href="javascript:void(0);" title="退出">退出</a></li>				</ul>			</div>		</div>	</div><div id="ecp_top_login_de" class="ecp_tn-title ecp_tn-title-login" style="padding: 12px 1px;"><p id="ecp_top_login_de_p">的您，个人账户</p></div>		<div id="Ecp_top_login_div2" class="ecp_tn-title ecp_tn-title-login">		<div id="Ecp_top_login" class="div_inline" style="display: inline-block;">			<a class="ecp_tn-tab" href="javascript:void(0);">				<i style="padding: 12px 1px 12px 5px;min-width: 30px;text-align: center;" id="Ecp_top_login_show"> 登录 </i>				<i style="padding: 12px 0px 12px;"> <span style="margin: 0;" class="ecp_tn-arrow"></span></i></a>		</div>		<div id="Ecp_top_logout" class="ecp_tn-title" style="display: none;">			<a id="Ecp_top_logout_showLayer" class="ecp_tn-tab ecp_tn-tab-user" href="javascript:void(0);">				<i style="padding: 6px 11px 12px 2px;" id="Ecp_loginShowNameI"><em title="" id="Ecp_loginShowName"></em><span style="right: 1px;" class="ecp_tn-arrow"></span></i>			</a>			<div id="Ecp_top_logout_layer" class="tn-topmenulist tn-topmenulist-a tn-topmenulist-a-user" style="display:none;">				<ul class="tn-text-list">					<li><a id="Ecp_MycnkiLink" href="//my.cnki.net/MyCNKI/" title="我的账户" target="_blank" style="display: none;">我的账户</a></li>					<li id="Ecp_top_BindJg" style="display:none;"><a id="Ecp_top_BindJgClick" target="_blank" href="//my.cnki.net/mycnki/userManagement.html#/parentAccount" title="绑定机构">已绑定单位</a></li>					<li id="Ecp_top_logoutGrli1" style="display: none;"><a id="Ecp_top_logoutGrClick" href="javascript:void(0);" title="退出">个人退出</a></li>					<li id="Ecp_top_logoutGrli2"><a id="Ecp_top_logoutClick" href="javascript:void(0);" title="退出">退出</a></li>				</ul>			</div>		</div>	</div><div id="Ecp_top_login_laybox" class="ecp_tn-title ecp_tn-title-login">		<!--弹框-->		<div id="Ecp_top_login_layer" style="position: absolute;display: none;left:5px;top: 42px;">			<div class="outlogin_layerbox_bylx outlogin_layerbox_bylx_anrrow top_login_layer2-my" node-type="box">				<div>					<a id="Ecp_top_login_closeLayer" class="layerbox_close" href="javascript:void(0);">×</a>				</div>	<!--newregist -->				<div id="login_box_main_container" class="login_box_main_container outlogin_layerbox_bylx" style="display: block; min-height:208px;">					<div class="login-alert">						<div id="ecp_login_switch" class="login-alert-top clearfix" style="padding: 0 0 10px 0;">							<span id="login_box_main_container_header_span1" class="login-alert-tab-button select">会员登录</span>							<a class="login-alert-tab-button2" target="_blank" href="//my.cnki.net/Register/CommonRegister.aspx?returnUrl=https://www.cnki.net"><i>立即注册</i>							<img src="https://login.cnki.net/TopLoginNew//images/go.gif"></a>						</div>						<div id="ecp_login_left_regist" class="login_box_main_container_left_all" style="overflow:hidden">							<div id="login_box_main_container_left1" class="login_box_main_container_left login_box_main_container_left1" style="margin: 0 0 10px;">								<p id="Ecp_errorMsgReg" class="login-alert-error" style="display:none;height: auto;padding: 0 0 10px 0;"></p>								<div id="ecp_login_input_username_input" class="login-alert-input-block clearfix" style="margin-bottom: 7px;">									<div class="login-alert-input-label login-alert-input-label-user"></div>									<input type="password" hidden="" style="display: none;">									<input type="text" id="ecp_login_input_username" class="login-alert-input" autocomplete="new-password" placeholder="请输入用户名" onblur="startRequest();">									<h4 id="span_username" class="login_box_main_container_left_warning"></h4>								</div>									<p style="margin: 7px 8px 14px 8px;color:grey">6-64位数字、字母及＂_＂组合</p>								<div id="userPsd_input" class="login-alert-input-block clearfix" style="margin-bottom: 7px;">									<div class="login-alert-input-label login-alert-input-label-pwd"></div>									<input type="password" hidden="" style="display: none;">									<input type="password" id="userPsd" class="login-alert-input" autocomplete="new-password" placeholder="请输入密码" onblur="CheckPsd(&quot;userPsd&quot;,false)">									<h4 id="spanphone_psd" class="login_box_main_container_left_warning"></h4>								</div>									<p style="margin: 7px 8px 24px 8px;color:grey">8-20位数字、字母或常用符号</p>								<div id="login_box_main_container_left_button" class="login-alert-btn">下一步</div>							</div>							<div id="login_box_main_container_left2" class="login_box_main_container_left login_box_main_container_left2" style="margin: 0px 0px 10px;">								<p id="Ecp_errorMsgReg2" class="login-alert-error" style="display:none;padding: 0 0 10px 0;"></p>								<div id="login_box_main_container_left_main2" class="login-alert-input-line clearfix" style="margin-bottom: 20px;">									<input type="password" hidden="" style="display: none;">									<div id="txtMobile_input" class="login-alert-input-block login-alert-phone-block clearfix" style="margin-bottom: 0px;">										<input id="txtMobile" type="text" autocomplete="new-password" placeholder="请输入手机号码" onblur="checkmobile(); " maxlength="11" class="login-alert-input" style="width: 200px !important;">									</div>									<a id="changemobemail" class="login-mail-btn" onclick="changemobileemail()">或使用邮箱</a>									<div>										<h4 id="mobilelinkshowinfo" style="display:none;margin: 48px 0 0 5px; color: gray;font-weight: normal;">完成注册后，您可用该手机号码登录或找回密码</h4> 										<h4 id="span_mobile" class="login_box_main_container_left_warning" style="display:none"></h4>									</div>								</div>								<div id="phoneTxtCheckCode_main" class="login-alert-input-line  clearfix">									<div id="phoneTxtCheckCode_input" class="login-alert-input-line  clearfix login-check-input">										<input type="text" id="phoneTxtCheckCode" maxlength="4" class="login-alert-input" onblur="oncheckcode_old(&quot;phoneTxtCheckCode&quot;, &quot;spanphone_code&quot;, &quot;trphone_code&quot;, &quot;phoneyzm_parent&quot;);" placeholder="请输入验证码">									</div>										<img src="" class="login-yzm" id="checkcode" onclick="getcode()">										<span class="login-change-btn" onclick="getcode()">换一张</span>										<h4 id="spanphone_code" class="login_box_main_container_left_warning"></h4>								</div>								<div id="login_box_main_container_left_mobilecode" class="clearfix" style="margin-bottom: 20px;">									<div id="phoneValidateCode_input" class="login-alert-input-block clearfix login-check-input" style="margin-bottom: 5px;">										<input id="phoneValidateCode" type="text" maxlength="6" placeholder="请输入短信验证码" class="login-alert-input login-input-msg">									</div>									<div id="smsbtn" class="login-message-btn get-msg">获取短信验证码</div>									<div>										<h4 id="mobilesendnuminfo" style="display:none;margin: 48px 0 0 5px; color: gray;font-weight: normal;"></h4> 										<h4 id="mobileMsg" class="login_box_main_container_left_warning" style="display:none"></h4>									</div>								</div>								<div id="login_box_main_container_left_button1" class="login-alert-btn5">返回</div>								<div id="login_box_main_container_left_button2" onclick="submitRegister();" class="login-alert-btn6">确定</div>								<input name="errorCode" type="hidden" style="display: none;" id="errorCode" value="0"><div class="protocol">   <input type="checkbox" checked="checked" id="protocolFlag" onclick="checkboxChange()" style="margin-top: 12px;">   <label>我已看过并同意<a href="https://my.cnki.net/Register/NRegisterStruction.htm" id="ainstraction" target="_blank" style="color:#29B1E5 ;"> 中国知网使用协议、隐私政策</a></label></div>							</div>							<div id="login_box_main_container_left3" class="login_box_main_container_left login_box_main_container_left3">								<div id="" class="login_box_main_container_left3_box">									<img src="https://login.cnki.net/TopLoginNew/Images/r_s.png" alt="注册成功">									<h3>注册成功</h3>								</div>							</div>							<div id="login_box_main_container_left4" class="login_box_main_container_left login_box_main_container_left4">								<div class="login_box_main_container_left4_box">									<img src="https://login.cnki.net/TopLoginNew/Images/r_f.png" alt="注册失败">									<h3>注册失败</h3>									<p id="Ecp_login_register_result" style="margin-top: 11px;"></p>								</div>								<div id="login_box_main_container_left4_button2" class="login-alert-btn" style="margin: 25px 0 0 0;">重试</div>							</div>						</div>			<!--login-->						<div id="login_box_main_container_right" class="login_box_main_container_right">							<div class="ecp_titletips" style="height: 30px;"></div>							<p id="Ecp_errorMsg" class="login-alert-error" style="display:none;height: auto;padding: 0 0 10px 0;"></p>							<div id="Ecp_RegistNew_input" class="login-alert-input-block clearfix">								<div class="login-alert-input-label login-alert-input-label-user"></div>								<input id="Ecp_TextBoxUserName" class="login-alert-input" type="text" name="Ecp_TextBoxUserName" placeholder="请输入用户名/邮箱/手机号" tabindex="1" maxlength="64">								<input type="password" style="width:0px;display:none;">								<a id="Ecp_RegistNew" style="color: #666;" href="//my.cnki.net/Register/CommonRegister.aspx?returnUrl=https://www.cnki.net" target="_blank">注册新用户</a>                                <h4 style="height:16px;"></h4>							</div>							<div id="Ecp_FindPassworda_input" class="login-alert-input-block clearfix">								<div class="login-alert-input-label login-alert-input-label-pwd"></div>								<input id="Ecp_TextBoxPwd" class="login-alert-input" type="password" name="Ecp_TextBoxPwd" placeholder="请输入密码" tabindex="2" maxlength="20" autocomplete="off" autocapitalize="off" onkeydown="return Ecp_EnterSubmit(event,this,Ecp_Button1);">								<a id="Ecp_FindPassworda" style="color: #666;" href="//my.cnki.net/mycnki/RealName/FindPsd.aspx" target="_blank">找回密码</a>                                <h4 style="height:16px;"></h4>							</div>							<!--验证码-->							<div class="login-alert-input-line  clearfix" id="Ecp_CheckCodeLayer" style="display:none;height: 43px;">								<div class="login-alert-input-line  clearfix login-check-input">									<div class="login-alert-input-label login-alert-input-label-yzm"></div>									<input id="Ecp_CheckCode" class="login-alert-input" style="width: 85px !important;" placeholder="请输入验证码" tabindex="3" maxlength="6" autocomplete="off" autocapitalize="off" type="text" onkeydown="return Ecp_EnterSubmit(event, this, Ecp_Button1);">								</div>								<img id="Ecp_CheckCodeImg" src="" class="login-yzm" style="vertical-align: bottom;" alt="换一张"><a id="Ecp_CheckLink" href="javascript:;" class="login-change-btn" title="换一张">换一张</a>							</div>							<div class="login-texts clearfix" style="margin-top: 17px;">								<label id="Ecp_AutoLoginCheck" class="login-text-left" title="用户下次访问直接登录系统，为了账户安全，建议您在个人电脑使用此功能">									<input class="showhand" id="rememberMe" type="checkbox" name="rememberMe" autocomplete="off" checked="checked">									<span>自动登录</span>								</label>								<a id="Ecp_FindPassworda2" class="login-text-right" href="//my.cnki.net/mycnki/RealName/FindPsd.aspx" target="_blank">找回密码</a>							</div>							<div class="login-alert-btns clearfix">								<a id="Ecp_Button1" class="login-alert-btn2" href="javascript:void(0);" tabindex="4">登录</a>								<a id="Ecp_Button2" class="login-alert-btn3" href="javascript:void(0);" tabindex="5">IP登录</a>								<a href="//fsso.cnki.net/" class="login-alert-btn4" target="_blank">校外访问&gt;&gt;</a>							</div>						</div>						<div class="login-alert-third">							<div class="login-alert-third-lines clearfix">								<div class="login-alert-third-line"></div>								<div class="login-alert-third-text">使用合作网站账号快速登录</div>								<div class="login-alert-third-line"></div>							</div>							<div id="Ecp_ThirdLogin" class="login-alert-third-items clearfix">								<span style="display:none;">其他登录:</span>								<a href="//my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=qq&amp;RedirectUrl=https://www.cnki.net" class="login-alert-third-item login-alert-third-item1">								</a>								<a href="//my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=weixin&amp;RedirectUrl=https://www.cnki.net" class="login-alert-third-item login-alert-third-item2">								</a>								<a href="//my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=sina&amp;RedirectUrl=https://www.cnki.net" class="login-alert-third-item login-alert-third-item4">								</a>								<a href="//my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=163&amp;RedirectUrl=https://www.cnki.net" class="login-alert-third-item login-alert-third-item3">								</a>							</div>							<div id="Ecp_ThirdLoginPlace" style="display:none; text-align:center;" class="sub_wrap_r">								<p style="margin-top:40px;background-color:#eff6ff;font-size:14px;">登录机构用户</p>							</div>						</div>			<!--login-->					</div>				</div>	<!--newregist-->			</div>		</div>	</div>	<!--其他 --><div class="ecp_tn-title" id="Ecp_header_Register" style="display:none;">		<a class="ecp_tn-tab" target="_blank" href="//my.cnki.net/Register/CommonRegister.aspx?returnUrl=https://www.cnki.net"><i>注册新用户</i></a>	</div></div></div><input type="hidden" id="Ecp_LoginUserName"><input type="hidden" id="Ecp_LoginUid"><p style="display:none" id="Ecp_ReturnMsg"></p></div><!--海外--><div id="Ecp_top_login_oversea" class="login-modal" style="display:none;">	<div class="login-l pull-left" style="width:483px;">		<div class="ecpover-mask"></div>		<div class="ecpover-modal">			<div class="ecpover-modal-hd">提示<a onclick="Ecp_LoginResult();" class="close"></a></div>			<div id="ecpover_select" class="ecpover-modal-bd">				<p>您的IP已超出中国大陆的许可使用范围！<br>您今年还可启用<i id="ecp_over_i">j</i>次应急服务，每次<i>7</i>天。<br><i>您确定要启用吗？</i></p>				<div class="btns"><a onclick="Ecp_LoginResult();" class="btn btn-cancel">取消</a><a id="ecpover_open" class="btn">&gt;启用</a></div>				<div class="ecpover-tip">中国大陆地区以外的用户，请访问<a href="http://oversea.cnki.net" target="_blank"><i> oversea.cnki.net</i> &gt;</a></div>			</div>			<div id="ecpover_close" class="ecpover-modal-bd" style="display:none;">				<p id="ecpover_p_close">您的IP已超出中国大陆的许可使用范围！<br>您今年的应急服务次数已耗尽，<i>暂无法登录。</i></p>				<div class="btns"><a onclick="Ecp_LoginResult();" class="btn">关闭</a></div>				<div class="ecpover-tip">中国大陆地区以外的用户，请访问<a href="http://oversea.cnki.net" target="_blank"><i> oversea.cnki.net</i> &gt;</a></div>			</div>		</div>	</div></div><div id="success_modal" style="z-index: 10000;">	<div id="login_success_alert" class="success-alert">		<a href="#" onclick="$(&quot;#success_modal&quot;).hide();" class="success-close"></a>		<div class="success-title">			<span class="success-title-username" id="success_show_username"></span>			<span class="success-title-text">注册成功</span>		</div>		<a href="https://zhifu.cnki.net/Wechat.aspx" class="success-main">			<img src="https://login.cnki.net/TopLoginNew/images/success2.png" alt="">		</a>		<div class="success-footer clearfix">			<a href="https://www.cnki.net/" class="success-item success-item1">				<div class="success-item-text">提供中外文献一站式</div>				<div class="success-item-link">检索服务&gt;&gt;</div>			</a>			<a href="https://mall.cnki.net/index.aspx" class="success-item success-item2">				<div class="success-item-text">提供百万册数字书刊</div>				<div class="success-item-link">订阅服务&gt;&gt;</div>			</a>			<a href="https://zhifu.cnki.net/" class="success-item success-item3">				<div class="success-item-text">支持支付宝、微信、银联等</div>				<div class="success-item-link">充值方式&gt;&gt;</div>			</a>		</div>	</div></div><!--realname--><div id="Ecp_top_login_realName" class="login-modal" style="display:none;">	<div class="ecpover-mask2"></div>	<div style=" position:absolute; top:50%; left:50%; margin-left:-300px; margin-top:-220px; z-index:12000">		<iframe id="Ecp_top_login_realNameFrame" style="width:600px; height:480px;border:none;" src=""></iframe>	</div></div></div>
+<script type="text/javascript" src="//piccache.cnki.net/kdn/kns/script/jQuery-1.11.3.min.js"></script>
+
+<script type="text/javascript" id="toploginstruct" src="//login.cnki.net/toploginnew/scripts/top.js" data="style=1&amp;placeid=headerBox&amp;laylocate=right&amp;reutrnurl=http%3a%2f%2fkns.cnki.net%2fkns8&amp;nojquery=1"></script>
+<script type="text/javascript" src="//piccache.cnki.net/kdn/KNS8/Scripts/Language/gb/min/Message.min.js"></script>
+<script type="text/javascript" src="//piccache.cnki.net/kdn/KNS8/Scripts/min/login.min.js"></script>
+
+
+
+
+
+
+
+
+<div class="search-box">
+    <div class="content">
+        <div class="search-left">
+            <div class="logo">
+                <a href="http://kns.cnki.net">
+                    <img src="/KNS8/Content/images/gb/logo.png" alt="">
+                </a>
+            </div>
+            <!--data-classify-->
+        </div>
+        <!--search-left-->
+        <div class="search-main">
+            <div class="input-box">
+                <div class="sort reopt">
+                    <div class="sort-default">
+                        <span value="SU$%=|">主题</span>
+                        <i class="icon-sort"></i>
+                        <input type="hidden" id="postfield" value="">
+                        <input type="hidden" id="selectfield" value="SU$%=|" korder="SU">
+                    </div>
+
+
+    <div class="sort-list">
+                <ul>
+                                                <li class="cur" name="defult" data-val="SU"><a value="SU$%=|">主题</a></li>
+                            <li data-val="TKA"><a value="TKA$%=|">篇关摘</a></li>
+                            <li data-val="KY"><a value="KY$=|">关键词</a></li>
+                            <li data-val="TI"><a value="TI$%=|">篇名</a></li>
+                            <li data-val="FT"><a value="FT$%=|">全文</a></li>
+                            <li data-val="AU"><a value="AU$=|">作者</a></li>
+                            <li data-val="FI"><a value="FI$=|">第一作者</a></li>
+                            <li data-val="RP"><a value="RP$=|">通讯作者</a></li>
+                            <li data-val="AF"><a value="AF$%">作者单位</a></li>
+                            <li data-val="FU"><a value="FU$%|">基金</a></li>
+                            <li data-val="AB"><a value="AB$%=|">摘要</a></li>
+                            <li data-val="CO"><a value="CO$%=|">小标题</a></li>
+                            <li data-val="RF"><a value="RF$%=|">参考文献</a></li>
+                            <li data-val="CLC"><a value="CLC$=|??">分类号</a></li>
+                            <li data-val="LY"><a value="LY$%=|">文献来源</a></li>
+                            <li data-val="DOI"><a value="DOI$=|?">DOI</a></li>
+                </ul>
+
+    </div>
+
+</div>
+                <!--sort-->
+                <input id="txt_search" class="search-input" type="text" autocomplete="off" placeholder="中文文献、外文文献" value="网页篡改检测" maxlength="100" data-checkedcode="" data-authorcode="" data-authorunit="" data-field="" searchword="">
+                <a class="btn-cleartext" href="javascript:void(0)"></a>
+
+                <input class="search-btn" type="button" value="">
+                <div class="droplist recommend-info is-hide" style="display: none;">
+                    <ul></ul>
+                    <div class="search-page">
+                        <a class="but-l">&lt;</a>
+                        <b>1</b> / <em>10</em>
+                        <a class="but-r">&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn-result-search" href="javascript:void(0)">结果中检索</a>
+            <a class="btn-grade-search" href="/KNS8/AdvSearch?dbcode=SCDB" target="_blank">高级检索</a>
+            <div class="readvce">
+                <a href="//www.cnki.net/?lival=ele" target="_blank">知识元检索&nbsp;&nbsp;＞</a>
+                <a href="http://ref.cnki.net/ref" target="_blank">引文检索&nbsp;&nbsp;＞</a>
+            </div>
+        </div>
+        <!--search-main-->
+    </div>
+</div>
+
+<script src="https://ishufang.cnki.net/KRS/scripts/recommend.js"></script>
+
+<script type="text/javascript" src="//piccache.cnki.net/kdn/KNS8/Scripts/min/merge.searchbar.min.js"></script>
+<input id="krs" name="krs" type="hidden" value="https://ishufang.cnki.net/KRS">
+<div class="wrapper">
+
+
+<div class="top-doctype">
+    <div class="content">
+        <input type="hidden" id="isscdb" value="1">
+        <input type="hidden" id="dbcode" value="SCDB">
+        <input type="hidden" id="curCode">
+        <input type="hidden" id="CheckedDB" value="CJFQ,CDMD,CIPD,CCND,CISD,SNAD,BDZK,CCVD,CJFN,CCJD" data-htime="1623218543484">
+        <input type="hidden" id="ilr" value="0">
+
+
+
+<div class="all-box cur">
+    <a data-id="all" dbcode="SCDB" class="all" name="dbcode" href="javascript:void(0)"><span>总库</span><em>36</em></a>
+    <div class="switch-ChEn">
+        <a class="ch">中文</a>
+        <a class="en">外文</a>
+    </div>
+</div>
+<ul class="doctype-menus keji">
+    <li data-id="xsqk"><a href="javascript:void(0)" name="dbcode" dbcode="CJFQ" data-lang="1"><span>学术期刊</span><em>15</em></a></li>
+    <li data-id="xwlw" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="CDMD"><span>学位论文</span><em>18</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="CDMD"><span>学位论文</span><em>18</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CDFD" prcode="CDMD"><span>博士</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CMFD" prcode="CDMD"><span>硕士</span><em>18</em></a></li>
+        </ul>
+    </li>
+    <li data-id="hy" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="CIPD" data-lang="1"><span>会议</span><em>2</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="CIPD" data-lang="1"><span>会议</span><em>2</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CPFD" prcode="CIPD"><span>国内会议</span><em>2</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="IPFD" prcode="CIPD"><span>国际会议</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CPVD" prcode="CIPD"><span>会议视频</span><em>0</em></a></li>
+        </ul>
+    </li>
+    <li data-id="baozhi"><a href="javascript:void(0)" name="dbcode" dbcode="CCND"><span>报纸</span><em>0</em></a></li>
+    <li data-id="nj"><a href="javascript:void(0)" name="dbcode" dbcode="CYFD"><span>年鉴</span><em></em></a></li>
+
+    <li data-id="ts" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="BDZK"><span>图书</span><em>0</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="BDZK"><span>图书</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="WBFD" prcode="BDZK"><span>中文图书</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="WWBD" prcode="BDZK"><span>外文图书</span><em>0</em></a></li>
+        </ul>
+    </li>
+    <li data-id="zl" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="SCOD"><span>专利</span><em></em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="SCOD"><span>专利</span><em></em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SCPD" prcode="SCOD"><span>中国专利</span><em></em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SOPD" prcode="SCOD"><span>海外专利</span><em></em></a></li>
+        </ul>
+    </li>
+    <li data-id="biaozhun" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="CISD"><span>标准</span><em>0</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="CISD"><span>标准</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SCSF" prcode="CISD"><span>国家标准</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SCHF" prcode="CISD"><span>行业标准</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SMSD" prcode="CISD"><span>标准题录</span><em>0</em></a></li>
+            <li><a target="_blank" href="http://r.cnki.net//KNS/brief/result.aspx?dbprefix=scef"><span>企业标准</span><em></em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CVSD" prcode="CISD"><span>职业标准</span><em>0</em></a></li>
+        </ul>
+    </li>
+    <li data-id="cg" class="is-last"><a href="javascript:void(0)" name="dbcode" dbcode="SNAD"><span>成果</span><em>1</em></a></li>
+    <li data-id="cg" class="is-bottom is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="SNAD"><span>成果</span><em>1</em></a></li>
+
+    <li data-id="xsjk" class="is-bottom"><a href="javascript:void(0)" dbcode="CCJD" name="dbcode"><span>学术辑刊</span><em>0</em></a></li>
+    <li data-id="gj" class="is-bottom"><a href="javascript:void(0)" dbcode="GXDB_SECTION" name="dbcode"><span>古籍</span><em></em></a></li>
+    <li data-id="flfg" class="is-bottom"><a target="_blank" href="http://kns.cnki.net/kns/brief/result.aspx?dbprefix=CLKD" dbcode="CLKLP"><span>法律法规</span></a></li>
+    <li data-id="zfwj" class="is-bottom"><a target="_blank" href="http://r.cnki.net/kns/brief/result.aspx?dbprefix=gwkt" dbcode="ZFWJ"><span>政府文件</span></a></li>
+    <li data-id="kjbg" class="is-bottom"><a target="_blank" href="http://r.cnki.net/KNS/brief/result.aspx?dbPrefix=kjbg" dbcode="ZFBG"><span>科技报告</span></a></li>
+    <li data-id="zfcg" class="is-bottom"><a target="_blank" href="http://r.cnki.net/KNS/brief/result.aspx?dbPrefix=cgxx" dbcode="ZFCG"><span>政府采购</span></a></li>
+    <li data-id="gjs" class="is-bottom"><a target="_blank" href="http://gongjushu.cnki.net/rbook/" dbcode="CRFD"><span>工具书</span></a></li>
+    <li data-id="tsqk" class="is-bottom"><a href="javascript:void(0)" dbcode="CJFN" name="dbcode"><span>特色期刊</span><em>0</em></a></li>
+    <li data-id="sp" class="is-bottom"><a href="javascript:void(0)" dbcode="CCVD" name="dbcode"><span>视频</span><em>0</em></a></li>
+</ul>
+
+<ul class="doctype-menus sheke is-hide">
+    <li data-id="xsqk"><a href="javascript:void(0)" name="dbcode" dbcode="CJFQ" data-lang="1"><span>学术期刊</span><em>15</em></a></li>
+    <li data-id="xwlw" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="CDMD"><span>学位论文</span><em>18</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="CDMD"><span>学位论文</span><em>18</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CDFD" prcode="CDMD"><span>博士</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CMFD" prcode="CDMD"><span>硕士</span><em>18</em></a></li>
+        </ul>
+    </li>
+    <li data-id="hy" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="CIPD" data-lang="1"><span>会议</span><em>2</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="CIPD" data-lang="1"><span>会议</span><em>2</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CPFD" prcode="CIPD"><span>国内会议</span><em>2</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="IPFD" prcode="CIPD"><span>国际会议</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CPVD" prcode="CIPD"><span>会议视频</span><em>0</em></a></li>
+        </ul>
+    </li>
+    <li data-id="baozhi"><a href="javascript:void(0)" name="dbcode" dbcode="CCND"><span>报纸</span><em>0</em></a></li>
+    <li data-id="nj"><a href="javascript:void(0)" name="dbcode" dbcode="CYFD"><span>年鉴</span><em></em></a></li>
+    <li data-id="ts" class="haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="BDZK"><span>图书</span><em>0</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="BDZK"><span>图书</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="WBFD" prcode="BDZK"><span>中文图书</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="WWBD" prcode="BDZK"><span>外文图书</span><em>0</em></a></li>
+        </ul>
+    </li>
+    <li data-id="flfg"><a target="_blank" href="http://kns.cnki.net/kns/brief/result.aspx?dbprefix=CLKD" dbcode="CLKLP"><span>法律法规</span></a></li>
+    <li data-id="gj"><a href="javascript:void(0)" dbcode="GXDB_SECTION" name="dbcode"><span>古籍</span><em></em></a></li>
+
+    <li data-id="zfwj" class="is-last"><a target="_blank" href="http://r.cnki.net/kns/brief/result.aspx?dbprefix=gwkt" dbcode="ZFWJ"><span>政府文件</span></a></li>
+    <li data-id="zfwj" class="is-bottom is-hide"><a target="_blank" href="http://r.cnki.net/kns/brief/result.aspx?dbprefix=gwkt" dbcode="ZFWJ"><span>政府文件</span></a></li>
+
+    <li data-id="zl" class="is-bottom haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="SCOD"><span>专利</span><em></em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="SCOD"><span>专利</span><em></em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SCPD" prcode="SCOD"><span>中国专利</span><em></em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SOPD" prcode="SCOD"><span>海外专利</span><em></em></a></li>
+        </ul>
+    </li>
+    <li data-id="biaozhun" class="is-bottom haschild">
+        <a href="javascript:void(0)" name="dbcode" dbcode="CISD"><span>标准</span><em>0</em></a>
+        <ul>
+            <li class="is-hide"><a href="javascript:void(0)" name="dbcode" dbcode="CISD"><span>标准</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SCSF" prcode="CISD"><span>国家标准</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SCHF" prcode="CISD"><span>行业标准</span><em>0</em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="SMSD" prcode="CISD"><span>标准题录</span><em>0</em></a></li>
+            <li><a target="_blank" href="http://r.cnki.net//KNS/brief/result.aspx?dbprefix=scef"><span>企业标准</span><em></em></a></li>
+            <li><a href="javascript:void(0)" name="dbcode" dbcode="CVSD" prcode="CISD"><span>职业标准</span><em>0</em></a></li>
+        </ul>
+    </li>
+    <li data-id="cg" class="is-bottom"><a href="javascript:void(0)" name="dbcode" dbcode="SNAD"><span>成果</span><em>1</em></a></li>
+
+    <li data-id="xsjk" class="is-bottom"><a href="javascript:void(0)" dbcode="CCJD" name="dbcode"><span>学术辑刊</span><em>0</em></a></li>
+
+    <li data-id="kjbg" class="is-bottom"><a target="_blank" href="http://r.cnki.net/KNS/brief/result.aspx?dbPrefix=kjbg" dbcode="ZFBG"><span>科技报告</span></a></li>
+    <li data-id="zfcg" class="is-bottom"><a target="_blank" href="http://r.cnki.net/KNS/brief/result.aspx?dbPrefix=cgxx" dbcode="ZFCG"><span>政府采购</span></a></li>
+    <li data-id="gjs" class="is-bottom"><a target="_blank" href="http://gongjushu.cnki.net/rbook/" dbcode="CRFD"><span>工具书</span></a></li>
+    <li data-id="tsqk" class="is-bottom"><a href="javascript:void(0)" dbcode="CJFN" name="dbcode"><span>特色期刊</span><em>0</em></a></li>
+    <li data-id="sp" class="is-bottom"><a href="javascript:void(0)" dbcode="CCVD" name="dbcode"><span>视频</span><em>0</em></a></li>
+</ul>
+<a id="more" class="btn-crossDb-search" href="javascript:void(0);" title="更多资源">
+    <i></i>
+</a>
+    </div>
+
+</div>
+
+
+
+
+    <div class="content is-filter-on">
+        <div class="sidebar-filter">
+            <a class="icon-arrow-filter" style=""><i></i></a>
+            <div id="divGroup" class="sidebar-filter-sort js-condition js-single">
+
+
+            <dl class=" exp" groupid="1">
+
+                    <dt class="subtit row-a2 sidedh-bar">
+                                <a class="cur" href="javascript:void(0)" title="只对前4万条记录分组">科技</a>
+                                <a class="" href="javascript:void(0)" title="只对前4万条记录分组">社科</a>
+                    </dt>
+
+
+                        <dd tit="科技" field="人工标识码" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+                                <ul><li><input type="checkbox" text="应用基础研究" value="12"><a href="javascript:void(0)" title="应用基础研究">应用基础研究</a><span>(1)</span></li><li><input type="checkbox" text="技术研究" value="13"><a href="javascript:void(0)" title="技术研究">技术研究</a><span>(11)</span></li><li><input type="checkbox" text="技术开发" value="16"><a href="javascript:void(0)" title="技术开发">技术开发</a><span>(4)</span></li></ul>
+
+                                                            </div>
+                        </dd>
+                        <dd tit="社科" field="人工标识码" style="display:none;">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+                                <span>暂无分组结果</span>
+
+                                                            </div>
+                        </dd>
+            </dl>
+            <dl class=" " groupid="2">
+
+                    <dt class="tit" groupid="2" groupitem="主要主题"><b title="只对前4万条记录分组">主题</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+                        <dt class="subtit row-a2">
+                                <a class="cur" href="javascript:void(0)" title="只对前4万条记录分组">主要主题</a>
+                                <a class="" href="javascript:void(0)" title="只对前4万条记录分组">次要主题</a>
+                        </dt>
+
+
+                        <dd tit="主要主题" field="主要主题" style="height: 67px;" class="is-show">
+                            <div class="resultlist show" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))" style="width: 1120px;">
+
+                                <ul><li><input type="checkbox" text="网页篡改" value="网页篡改"><a href="javascript:void(0)" title="网页篡改">网页篡改</a><span>(20)</span></li><li><input type="checkbox" text="篡改检测" value="篡改检测"><a href="javascript:void(0)" title="篡改检测">篡改检测</a><span>(12)</span></li><li><input type="checkbox" text="网页防篡改" value="网页防篡改"><a href="javascript:void(0)" title="网页防篡改">网页防篡改</a><span>(7)</span></li><li><input type="checkbox" text="检测系统" value="检测系统"><a href="javascript:void(0)" title="检测系统">检测系统</a><span>(4)</span></li><li><input type="checkbox" text="防篡改" value="防篡改"><a href="javascript:void(0)" title="防篡改">防篡改</a><span>(4)</span></li><li><input type="checkbox" text="系统设计与实现" value="系统设计与实现"><a href="javascript:void(0)" title="系统设计与实现">系统设计与实现</a><span>(3)</span></li><li><input type="checkbox" text="监控系统" value="监控系统"><a href="javascript:void(0)" title="监控系统">监控系统</a><span>(3)</span></li><li><input type="checkbox" text="检测研究" value="检测研究"><a href="javascript:void(0)" title="检测研究">检测研究</a><span>(3)</span></li></ul><ul><li><input type="checkbox" text="局部变化性" value="局部变化性"><a href="javascript:void(0)" title="局部变化性">局部变化性</a><span>(2)</span></li><li><input type="checkbox" text="Web" value="Web"><a href="javascript:void(0)" title="Web">Web</a><span>(2)</span></li><li><input type="checkbox" text="研究与实现" value="研究与实现"><a href="javascript:void(0)" title="研究与实现">研究与实现</a><span>(2)</span></li><li><input type="checkbox" text="数字水印" value="数字水印"><a href="javascript:void(0)" title="数字水印">数字水印</a><span>(2)</span></li><li><input type="checkbox" text="应用网关" value="应用网关"><a href="javascript:void(0)" title="应用网关">应用网关</a><span>(1)</span></li><li><input type="checkbox" text="特征识别" value="特征识别"><a href="javascript:void(0)" title="特征识别">特征识别</a><span>(1)</span></li><li><input type="checkbox" text="网站防篡改" value="网站防篡改"><a href="javascript:void(0)" title="网站防篡改">网站防篡改</a><span>(1)</span></li><li><input type="checkbox" text="图像处理" value="图像处理"><a href="javascript:void(0)" title="图像处理">图像处理</a><span>(1)</span></li></ul><ul><li><input type="checkbox" text="脆弱水印" value="脆弱水印"><a href="javascript:void(0)" title="脆弱水印">脆弱水印</a><span>(1)</span></li><li><input type="checkbox" text="中小型" value="中小型"><a href="javascript:void(0)" title="中小型">中小型</a><span>(1)</span></li><li><input type="checkbox" text="定位方法" value="定位方法"><a href="javascript:void(0)" title="定位方法">定位方法</a><span>(1)</span></li><li><input type="checkbox" text="编辑距离算法" value="编辑距离算法"><a href="javascript:void(0)" title="编辑距离算法">编辑距离算法</a><span>(1)</span></li><li><input type="checkbox" text="专利分析" value="专利分析"><a href="javascript:void(0)" title="专利分析">专利分析</a><span>(1)</span></li><li><input type="checkbox" text="Web网页" value="Web网页"><a href="javascript:void(0)" title="Web网页">Web网页</a><span>(1)</span></li><li><input type="checkbox" text="Web应用" value="Web应用"><a href="javascript:void(0)" title="Web应用">Web应用</a><span>(1)</span></li><li><input type="checkbox" text="组合策略" value="组合策略"><a href="javascript:void(0)" title="组合策略">组合策略</a><span>(1)</span></li></ul><ul><li><input type="checkbox" text="网络爬虫" value="网络爬虫"><a href="javascript:void(0)" title="网络爬虫">网络爬虫</a><span>(1)</span></li><li><input type="checkbox" text="主成分分析" value="主成分分析"><a href="javascript:void(0)" title="主成分分析">主成分分析</a><span>(1)</span></li><li><input type="checkbox" text="检测定位" value="检测定位"><a href="javascript:void(0)" title="检测定位">检测定位</a><span>(1)</span></li><li><input type="checkbox" text="网站篡改" value="网站篡改"><a href="javascript:void(0)" title="网站篡改">网站篡改</a><span>(1)</span></li><li><input type="checkbox" text="网页篡改监测" value="网页篡改监测"><a href="javascript:void(0)" title="网页篡改监测">网页篡改监测</a><span>(1)</span></li><li><input type="checkbox" text="分布式文件" value="分布式文件"><a href="javascript:void(0)" title="分布式文件">分布式文件</a><span>(1)</span></li><li><input type="checkbox" text="安全防护" value="安全防护"><a href="javascript:void(0)" title="安全防护">安全防护</a><span>(1)</span></li><li><input type="checkbox" text="检测与定位" value="检测与定位"><a href="javascript:void(0)" title="检测与定位">检测与定位</a><span>(1)</span></li></ul><ul><li><input type="checkbox" text="PCA" value="PCA"><a href="javascript:void(0)" title="PCA">PCA</a><span>(1)</span></li><li><input type="checkbox" text="监测软件" value="监测软件"><a href="javascript:void(0)" title="监测软件">监测软件</a><span>(1)</span></li><li><input type="checkbox" text="检测平台" value="检测平台"><a href="javascript:void(0)" title="检测平台">检测平台</a><span>(1)</span></li><li><input type="checkbox" text="编辑距离" value="编辑距离"><a href="javascript:void(0)" title="编辑距离">编辑距离</a><span>(1)</span></li><li><input type="checkbox" text="深度学习" value="深度学习"><a href="javascript:void(0)" title="深度学习">深度学习</a><span>(1)</span></li><li><input type="checkbox" text="云平台" value="云平台"><a href="javascript:void(0)" title="云平台">云平台</a><span>(1)</span></li><li><input type="checkbox" text="企业网站" value="企业网站"><a href="javascript:void(0)" title="企业网站">企业网站</a><span>(1)</span></li><li><input type="checkbox" text="研究与应用" value="研究与应用"><a href="javascript:void(0)" title="研究与应用">研究与应用</a><span>(1)</span></li></ul>
+
+                                                                    <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div>
+                        </dd>
+                        <dd tit="次要主题" field="次要主题" style="display:none;">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+                                <ul><li><input type="checkbox" text="网站安全" value="网站安全"><a href="javascript:void(0)" title="网站安全">网站安全</a><span>(6)</span></li><li><input type="checkbox" text="篡改检测" value="篡改检测"><a href="javascript:void(0)" title="篡改检测">篡改检测</a><span>(6)</span></li><li><input type="checkbox" text="Web" value="Web"><a href="javascript:void(0)" title="Web">Web</a><span>(5)</span></li><li><input type="checkbox" text="网页篡改" value="网页篡改"><a href="javascript:void(0)" title="网页篡改">网页篡改</a><span>(4)</span></li><li><input type="checkbox" text="防火墙" value="防火墙"><a href="javascript:void(0)" title="防火墙">防火墙</a><span>(3)</span></li><li><input type="checkbox" text="网络爬虫" value="网络爬虫"><a href="javascript:void(0)" title="网络爬虫">网络爬虫</a><span>(3)</span></li><li><input type="checkbox" text="网络安全" value="网络安全"><a href="javascript:void(0)" title="网络安全">网络安全</a><span>(3)</span></li><li><input type="checkbox" text="核心内嵌" value="核心内嵌"><a href="javascript:void(0)" title="核心内嵌">核心内嵌</a><span>(3)</span></li></ul><ul><li><input type="checkbox" text="文件保护" value="文件保护"><a href="javascript:void(0)" title="文件保护">文件保护</a><span>(2)</span></li><li><input type="checkbox" text="水印算法" value="水印算法"><a href="javascript:void(0)" title="水印算法">水印算法</a><span>(2)</span></li><li><input type="checkbox" text="网页水印" value="网页水印"><a href="javascript:void(0)" title="网页水印">网页水印</a><span>(2)</span></li><li><input type="checkbox" text="数字水印" value="数字水印"><a href="javascript:void(0)" title="数字水印">数字水印</a><span>(2)</span></li><li><input type="checkbox" text="静态网页" value="静态网页"><a href="javascript:void(0)" title="静态网页">静态网页</a><span>(2)</span></li><li><input type="checkbox" text="客户端" value="客户端"><a href="javascript:void(0)" title="客户端">客户端</a><span>(2)</span></li><li><input type="checkbox" text="网页防篡改" value="网页防篡改"><a href="javascript:void(0)" title="网页防篡改">网页防篡改</a><span>(2)</span></li><li><input type="checkbox" text="页面变化特征" value="页面变化特征"><a href="javascript:void(0)" title="页面变化特征">页面变化特征</a><span>(2)</span></li></ul><ul><li><input type="checkbox" text="动态网页" value="动态网页"><a href="javascript:void(0)" title="动态网页">动态网页</a><span>(2)</span></li><li><input type="checkbox" text="源代码" value="源代码"><a href="javascript:void(0)" title="源代码">源代码</a><span>(2)</span></li><li><input type="checkbox" text="服务器" value="服务器"><a href="javascript:void(0)" title="服务器">服务器</a><span>(2)</span></li><li><input type="checkbox" text="防护系统" value="防护系统"><a href="javascript:void(0)" title="防护系统">防护系统</a><span>(2)</span></li><li><input type="checkbox" text="相似度" value="相似度"><a href="javascript:void(0)" title="相似度">相似度</a><span>(2)</span></li><li><input type="checkbox" text="浏览器" value="浏览器"><a href="javascript:void(0)" title="浏览器">浏览器</a><span>(2)</span></li><li><input type="checkbox" text="高斯算子" value="高斯算子"><a href="javascript:void(0)" title="高斯算子">高斯算子</a><span>(1)</span></li><li><input type="checkbox" text="布隆过滤器" value="布隆过滤器"><a href="javascript:void(0)" title="布隆过滤器">布隆过滤器</a><span>(1)</span></li></ul><ul><li><input type="checkbox" text="DOM" value="DOM"><a href="javascript:void(0)" title="DOM">DOM</a><span>(1)</span></li><li><input type="checkbox" text="元素定位" value="元素定位"><a href="javascript:void(0)" title="元素定位">元素定位</a><span>(1)</span></li><li><input type="checkbox" text="钓鱼攻击" value="钓鱼攻击"><a href="javascript:void(0)" title="钓鱼攻击">钓鱼攻击</a><span>(1)</span></li><li><input type="checkbox" text="netlink套接字" value="netlink套接字"><a href="javascript:void(0)" title="netlink套接字">netlink套接字</a><span>(1)</span></li><li><input type="checkbox" text="超文本标记语言" value="超文本标记语言"><a href="javascript:void(0)" title="超文本标记语言">超文本标记语言</a><span>(1)</span></li><li><input type="checkbox" text="神经网络" value="神经网络"><a href="javascript:void(0)" title="神经网络">神经网络</a><span>(1)</span></li><li><input type="checkbox" text="哈希算法" value="哈希算法"><a href="javascript:void(0)" title="哈希算法">哈希算法</a><span>(1)</span></li><li><input type="checkbox" text="基于图像" value="基于图像"><a href="javascript:void(0)" title="基于图像">基于图像</a><span>(1)</span></li></ul><ul><li><input type="checkbox" text="隐蔽性" value="隐蔽性"><a href="javascript:void(0)" title="隐蔽性">隐蔽性</a><span>(1)</span></li><li><input type="checkbox" text="数字水印技术" value="数字水印技术"><a href="javascript:void(0)" title="数字水印技术">数字水印技术</a><span>(1)</span></li><li><input type="checkbox" text="混沌序列" value="混沌序列"><a href="javascript:void(0)" title="混沌序列">混沌序列</a><span>(1)</span></li><li><input type="checkbox" text="检测引擎" value="检测引擎"><a href="javascript:void(0)" title="检测引擎">检测引擎</a><span>(1)</span></li><li><input type="checkbox" text="欧氏距离" value="欧氏距离"><a href="javascript:void(0)" title="欧氏距离">欧氏距离</a><span>(1)</span></li><li><input type="checkbox" text="非结构" value="非结构"><a href="javascript:void(0)" title="非结构">非结构</a><span>(1)</span></li><li><input type="checkbox" text="异常检测" value="异常检测"><a href="javascript:void(0)" title="异常检测">异常检测</a><span>(1)</span></li><li><input type="checkbox" text="篡改攻击" value="篡改攻击"><a href="javascript:void(0)" title="篡改攻击">篡改攻击</a><span>(1)</span></li></ul>
+
+                                                                    <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div>
+                        </dd>
+            </dl>
+            <dl class="is-up-fold off" groupid="3">
+
+                    <dt class="tit" groupid="3" groupitem="发表年度"><b title="只对前4万条记录分组">发表年度</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+
+
+                        <dd tit="发表年度" field="年" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+
+
+                                                            </div>
+                        </dd>
+            </dl>
+            <dl class="is-up-fold off" groupid="4">
+
+                    <dt class="tit" groupid="4" groupitem="文献来源"><b title="只对前4万条记录分组">文献来源</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+
+
+                        <dd tit="文献来源" field="出版物代码" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+
+
+                                                            </div>
+                        </dd>
+            </dl>
+            <dl class="is-up-fold off" groupid="5">
+
+                    <dt class="tit" groupid="5" groupitem="学科"><b title="只对前4万条记录分组">学科</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+
+
+                        <dd tit="学科" field="专题子栏目代码" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+
+
+                                                            </div>
+                        </dd>
+            </dl>
+            <dl class="is-up-fold off" groupid="6">
+
+                    <dt class="tit" groupid="6" groupitem="中国"><b title="只对前4万条记录分组">作者</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+
+
+                        <dd tit="中国" field="作者代码" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+
+
+                                                            </div>
+                        </dd>
+            </dl>
+            <dl class="is-up-fold off" groupid="7">
+
+                    <dt class="tit" groupid="7" groupitem="机构"><b title="只对前4万条记录分组">机构</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+
+
+                        <dd tit="机构" field="机构代码" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+
+
+                                                            </div>
+                        </dd>
+            </dl>
+            <dl class="is-up-fold off" groupid="8">
+
+                    <dt class="tit" groupid="8" groupitem="基金"><b title="只对前4万条记录分组">基金</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+
+
+                        <dd tit="基金" field="基金代码" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+
+
+                                                            </div>
+                        </dd>
+            </dl>
+            <dl class="is-up-fold off" groupid="9">
+
+                    <dt class="tit" groupid="9" groupitem="文献类型"><b title="只对前4万条记录分组">文献类型</b><i class="icon icon-arrow"></i>
+                <i class="icon icon-visual" title="可视化" onclick="Visualization.pop.showGroup(event, this, 1); window.behaviorlog.Screen(this); return false;"></i>
+                </dt>
+
+
+                        <dd tit="文献类型" field="人工标识码" style="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+
+
+
+                                                            </div>
+                        </dd>
+            </dl>
+        <div id="recommend" style="width:230px;height:150px"><div class="close" style="width: 230px;"><a title="关闭">X</a><div></div></div><div class="font">广告<div></div></div> <div class="sidebar-adv" style="display: block; width: 230px;" datashowtype="1"><div class="slider2d" id="slider2d-imgs"><ul style="width: 1380px;"><li style="width: 230px; height: 150px;"><a href="https://cloud.newsletter.degruyter.com/top10_NANOPH" target="_blank" onclick="window.adsContainer.WirteLog(this)" dataid="1370" datatitle="德古意特-纳米光子学免费读"><img src="//piccache.cnki.net/a/FileUpload/-1/small/德古意特-纳米光子学.jpg" alt="德古意特-纳米光子学免费读" title="德古意特-纳米光子学免费读" isshowfont="1"></a></li><li style="width: 230px; height: 150px;"><a href="https://www.wenjuan.com/activity/student_sample/?utm_source=zw-xxl&amp;utm_extern=zw-xxl&amp;plan=chinazwxxl" target="_blank" onclick="window.adsContainer.WirteLog(this)" dataid="1099" datatitle="问卷网-答卷"><img src="//piccache.cnki.net/a/FileUpload/-1/small/问卷网新.png" alt="问卷网-答卷" title="问卷网-答卷" isshowfont="1"></a></li><li style="width: 230px; height: 150px;"><a href="https://nanoporetech.net/content/london-calling-2021" target="_blank" onclick="window.adsContainer.WirteLog(this)" dataid="1306" datatitle="纳米专场会议"><img src="//piccache.cnki.net/a/FileUpload/-1/small/纳米.jpg" alt="纳米专场会议" title="纳米专场会议" isshowfont="1"></a></li><li style="width: 230px; height: 150px;"><a href="http://cce.whu.edu.cn/info/1082/1564.htm" target="_blank" onclick="window.adsContainer.WirteLog(this)" dataid="1358" datatitle="招生简章"><img src="//piccache.cnki.net/a/FileUpload/-1/small/招生.jpg" alt="招生简章" title="招生简章" isshowfont="1"></a></li><li style="width: 230px; height: 150px;"><a href="http://iccsip2021.tsingzhan.com/#/" target="_blank" onclick="window.adsContainer.WirteLog(this)" dataid="1360" datatitle="会议介绍"><img src="//piccache.cnki.net/a/FileUpload/-1/small/会议介绍.png" alt="会议介绍" title="会议介绍" isshowfont="1"></a></li><li style="width: 230px; height: 150px;"><a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.69b01debbm6pVc&amp;ft=t&amp;id=620996364686" target="_blank" onclick="window.adsContainer.WirteLog(this)" dataid="1086" datatitle="艾睿"><img src="//piccache.cnki.net/a/FileUpload/-1/small/0301-2.png" alt="艾睿" title="艾睿" isshowfont="1"></a></li></ul><a class="btn-prev" href="javascript:void(0)"></a><a class="btn-next" href="javascript:void(0)"></a><div id="slide-controls" class="slide-controls" style="display: block; width: 230px;">
+<ul class="dot-wrap"><li id="dot1" class="current"><em>1</em></li><li id="dot2"><em>2</em></li><li id="dot3"><em>3</em></li><li id="dot4"><em>4</em></li><li id="dot5"><em>5</em></li><li id="dot6"><em>6</em></li>
+</ul>
+</div></div></div> </div>
+        <div id="recommend2" style="width: 230px; height: 150px; display: none;"></div>
+        <a href="javascript:void(0)" class="btn-visual" groupid="3" tit="年份" field="年" value="" title="发表年度趋势图" onclick="Visualization.pop.showGroup(event,null, 1,3,'发表年度','发表年度'); window.behaviorlog.YearScreen(this); return false;" style=""><i></i>发表年度趋势图</a>
+
+        <div class="sidebar-filter-btns fixed disableclick">
+            <a class="btn-submit" href="javascript:void(0)" onclick="mutiSelectedGroup()">确定</a>
+            <a class="btn-clearall" href="javascript:void(0)">清除</a>
+        </div>
+
+
+    <script type="text/javascript">
+        //广告-当前检索词
+        if ($(".search-input").val() != undefined || $("#txt_search").val() != undefined || $("input[data-tipid='gradetxt-1']").val() != undefined) {
+            var searchvalue = $("#txt_search").val() || $(".search-input").val() || $("input[data-tipid='gradetxt-1']").val();
+            if ($.trim(searchvalue) != "") {
+                try {
+                    parent.window.adsContainer.loadAds(searchvalue);
+                    parent.window.adsContainer2.loadAds(searchvalue);
+
+                    //关闭广告时，按钮上移
+                    $("#recommend,#recommend2").on("mousedown", ".close a", function () {
+                        filterFn.prototype.filterBtnsMoveTop($("#divGroup"));
+                    });
+                }
+                catch (e) {
+                    $("#recommend").remove();
+                    $("#recommend2").remove();
+                }
+            }
+            else {
+                $("#recommend").remove();
+                $("#recommend2").remove();
+            }
+        } else {
+            $("#recommend").remove();
+            $("#recommend2").remove();
+        }
+
+        if (!window.behaviorlog) {
+            window.behaviorlog = function () { };
+        }
+        else {
+            if (!window.behaviorlog.YearScreen)
+                window.behaviorlogYearScreen = function () { };
+            if (!window.behaviorlog.Screen)
+                window.behaviorlog.Screen = function () { }
+        }
+
+    </script>
+</div>
+        </div>
+        <div class="main fr">
+
+            <div class="result-con-l" style="">
+                <div class="search-his-tip">
+                    <span class="tip-range">检索范围：<b class="range">总库</b></span>
+                    <span class="conditions"><a><i>&gt;</i>主题：网页篡改检测</a></span>
+                    <a class="tiphide" onclick="" style="display: none;">×</a>
+                    <input type="hidden" id="scdbfield" value="SU$%=|">
+                    <input type="hidden" id="blankse" value="6">
+                </div>
+                <a class="btn-subscribe js-haslogin" href="javascript:void(0)">主题定制</a>
+                <a class="btn-search-his" href="/KNS8/manage/history.html?subject=KNS" target="_blank">检索历史</a>
+            </div>
+
+
+
+<div id="briefBox" style=""><form method="post" name="gridTableForm">
+    <div id="gridTable" class="search-result">
+<div class="toolbar"><div id="countPageDiv" class="result-con-r"><span class="pagerTitleCell">共找到<em>36</em>条结果</span><span class="countPageMark">1/2</span><span class="topTurnSpan"><a id="Page_next_top" title="键盘的“← →”可以实现快速翻页" data-curpage="2">&gt;&gt;</a></span></div><div class="toolbar-col">
+        <div class="checkcount">
+            <label class="checkAll"><input type="checkbox" name="selectCheckbox" id="selectCheckAll1" onclick="$(this).filenameClick()">全选</label>
+            <span>已选：</span>
+            <em title="点击查看所选文献" id="selectCount" name="selectCount" onclick="window.open(APPPATH + &quot;/manage.html&quot;+(GetQueryStringByName(&quot;subject&quot;)?&quot;?subject=&quot;+GetQueryStringByName(&quot;subject&quot;):&quot;&quot;))">0</em>
+            <a href="javascript:$.filenameClear();">清除</a>
+          </div>
+          <ul class="dropdown-analysis-btns" id="batchOpsBox">
+			<li class="bulkdownload export"><a href="javascript:void(0)">批量下载</a></li>
+              <li>
+                <a href="javascript:void(0)">导出与分析</a><i class="icon-d"></i>
+                <ul>
+                  <li class="export">
+                    <a href="javascript:void(0)">导出文献</a>
+                    <i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li><a href="javascript:void(0)" exporttype="GBTREFER">GB/T 7714-2015 格式引文</a></li>
+                      <li><a href="javascript:void(0)" exporttype="elearning">知网研学（原E-Study）</a></li>
+                      <li><a href="javascript:void(0)" exporttype="REFER">CAJ-CD 格式引文</a></li>
+                       <li><a href="javascript:void(0)" exporttype="MLA">MLA格式引文</a></li>
+                       <li><a href="javascript:void(0)" exporttype="APA">APA格式引文</a></li>
+                      <li><a href="javascript:void(0)" exporttype="NEW">查新（引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exporttype="newdefine">查新（自定义引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exporttype="Refworks">Refworks</a></li>
+                      <li><a href="javascript:void(0)" exporttype="EndNote">EndNote</a></li>
+                      <li><a href="javascript:void(0)" exporttype="NoteExpress">NoteExpress</a></li>
+                      <li><a href="javascript:void(0)" exporttype="NodeFirst">NoteFirst</a></li>
+                      <li><a href="javascript:void(0)" exporttype="selfDefine">自定义</a></li>
+                    </ul>
+                  </li>
+                  <li id="analysisLi">
+                    <a href="javascript:void(0)">可视化分析</a><i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li id="anisys_select"><a href="javascript:void(0)">已选结果分析(<span>0</span>)</a></li>
+                      <li id="anisys_all"><a href="javascript:void(0)">全部检索结果分析</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+          <ul class="change-list" id="DivDisplayMode"><li title="详情" data-obj="result-piclist" data-mode="custommode"><i class="icon-detail"></i></li><li class="active" title="列表" data-obj="result-table-list" data-mode="listmode"><i class="icon-table"></i></li></ul><div class="statistic"><div id="id_grid_display_num" class="page-show-count">显示<div class="sort" id="perPageDiv"><div class="sort-default"><span>20</span><i class="icon icon-sort"></i></div><ul class="sort-list"><li data-val="10"><a href="javascript:void(0);">10</a></li><li data-val="20" class="cur"><a href="javascript:void(0);">20</a></li> <li data-val="50"><a href="javascript:void(0);">50</a></li></ul></div></div></div><div class="order-group" id="sortList"><span> 排序：</span><ul class="order" id="orderList"><li data-sorttype="(ffd%2c%27rank%27)" data-sort="%e7%9b%b8%e5%85%b3%e5%ba%a6%2f(ffd%2c%27rank%27)" data-onlydesc="true">相关度</li><li class="descend cur" title="只在800万条记录以内有效" data-sorttype="(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27TIME%27)" data-sort="%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2f(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27TIME%27)" data-onlydesc="false">发表时间</li><li data-sorttype="(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27integer%27)" data-sort="%e8%a2%ab%e5%bc%95%2f(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27integer%27)" data-onlydesc="false">被引</li><li data-sorttype="(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27integer%27)" data-sort="%e4%b8%8b%e8%bd%bd%2f(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27integer%27)" data-onlydesc="false">下载</li></ul></div></div></div><table class="result-table-list"> <thead><tr><th></th><th>题名</th><th>作者</th><th>来源</th><th>发表时间</th><th>数据库</th><th>被引</th><th>下载</th><th>操作</th></tr></thead><tbody><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="1" name="CookieName" value="CJFDLAST2020!GWDZ202018004!1!0" onclick="$(this).filenameClick()">1</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=1&amp;recid=&amp;FileName=GWDZ202018004&amp;DbName=CJFDLAST2020&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于特征识别的<font class="Mark">网页篡改检测</font>系统
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e6%9d%8e%e6%9f%af%e8%a8%80&amp;scode=45659336&amp;acode=45659336" target="knet">李柯言</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%88%98%e6%99%93%e4%b8%9c&amp;scode=34537511&amp;acode=34537511" target="knet">刘晓东</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=GWDZ">电子设计工程</a>
+
+      </td>
+      <td class="date">
+        2020-09-18
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">107</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90Vv82ZvIzRFt0VjNHVlJnNpNWQidGM5kXcaVjUBZjdwkFdhpGMSlHU2YDNsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2020" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dGWDZ202018004" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="GWDZ202018004"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="2" name="CookieName" value="CJFDLAST2020!GYKJ202006009!2!0" onclick="$(this).filenameClick()">2</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=2&amp;recid=&amp;FileName=GYKJ202006009&amp;DbName=CJFDLAST2020&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        面向工业应用的<font class="Mark">网页篡改</font>监测软件设计
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e7%8e%8b%e9%9c%b2%e9%9c%b2&amp;scode=35892284&amp;acode=35892284" target="knet">王露露</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%a9%ac%e4%bd%b3%e8%8a%b8&amp;scode=42239168&amp;acode=42239168" target="knet">马佳芸</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e8%8c%83%e9%b9%8f&amp;scode=42239170&amp;acode=42239170" target="knet">范鹏</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=GYKJ">工业控制计算机</a>
+
+      </td>
+      <td class="date">
+        2020-06-25
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">15</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VwYTUZFFVnBnVrFFModEMSBXe5pHVyg1RZVHdohEVxkFdhpGMSlHU2YDNsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2020" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dGYKJ202006009" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="GYKJ202006009"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="3" name="CookieName" value="CJFDLAST2020!JSSG202006041!3!0" onclick="$(this).filenameClick()">3</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=3&amp;recid=&amp;FileName=JSSG202006041&amp;DbName=CJFDLAST2020&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于图像处理的<font class="Mark">网页篡改检测</font>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%a2%9c%e4%ba%8e%e5%87%a4&amp;scode=31830598&amp;acode=31830598" target="knet">颜于凤</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e6%b2%88%e5%8b%87&amp;scode=15615407&amp;acode=15615407" target="knet">沈勇</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=JSSG">计算机与数字工程</a>
+
+      </td>
+      <td class="date">
+        2020-06-20
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">20</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90V01GO3UVOmtSaxVEOjdWct9yaFNmSM10YQdDdohEVxkFdhpGMSlHU2YDNsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2020" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCJFDLAST2020%26filename%3dJSSG202006041%26dbCode%3dCJFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="JSSG202006041"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="4" name="CookieName" value="CJFDLAST2020!NJLG202001008!4!0" onclick="$(this).filenameClick()">4</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=4&amp;recid=&amp;FileName=NJLG202001008&amp;DbName=CJFDLAST2020&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于深度学习的<font class="Mark">网页篡改</font>远程<font class="Mark">检测</font>研究
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%8d%b0%e6%9d%b0&amp;scode=20303458&amp;acode=20303458" target="knet">印杰</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e8%92%8b%e5%ae%87%e7%bf%94&amp;scode=44117355&amp;acode=44117355" target="knet">蒋宇翔</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e7%89%9b%e5%8d%9a%e5%a8%81&amp;scode=40682096&amp;acode=40682096" target="knet">牛博威</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e4%b8%a5%e6%a2%93%e5%ae%b8&amp;scode=40649395&amp;acode=40649395" target="knet">严梓宸</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%83%ad%e5%bb%b6%e6%96%87&amp;scode=11241575&amp;acode=11241575" target="knet">郭延文</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=NJLG">南京理工大学学报</a>
+
+      </td>
+      <td class="date">
+        2020-02-29
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8e%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%9a%84%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e8%bf%9c%e7%a8%8b%e6%a3%80%e6%b5%8b%e7%a0%94%e7%a9%b6&amp;scode=NJLG202001008" target="_blank">1</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">93</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VrV2R5FzdRNFVa1kZXVWaZN2TVdnevMmTKR3K0NGchhEeRJERtVDaDtiesFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2020" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dNJLG202001008" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="NJLG202001008"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="5" name="CookieName" value="CMFD202001!1019693007.nh!5!0" onclick="$(this).filenameClick()">5</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=5&amp;recid=&amp;FileName=1019693007.nh&amp;DbName=CMFD202001&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        <font class="Mark">网页篡改检测</font>系统设计与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e7%8e%8b%e9%97%bb%e7%a5%8e&amp;scode=43961514&amp;acode=43961514" target="knet">王闻祎</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GXNJU">西南交通大学</a>
+
+      </td>
+      <td class="date">
+        2019-05-28
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1019693007.nh" target="_blank">1</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">60</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VvFkaPRVMXd3avolYrcEWYpVZ6dUOnhUc11EMtZkc49GaChHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD202001" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD202001%26filename%3d1019693007.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1019693007.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="6" name="CookieName" value="CMFD202001!1019657949.nh!6!0" onclick="$(this).filenameClick()">6</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=6&amp;recid=&amp;FileName=1019657949.nh&amp;DbName=CMFD202001&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于云平台的<font class="Mark">网页篡改</font>监测系统的设计与研究
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%a2%9c%e4%ba%8e%e5%87%a4&amp;scode=31830598&amp;acode=31830598" target="knet">颜于凤</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GHDCC">江苏科技大学</a>
+
+      </td>
+      <td class="date">
+        2019-04-29
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8e%e4%ba%91%e5%b9%b3%e5%8f%b0%e7%9a%84%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e7%9b%91%e6%b5%8b%e7%b3%bb%e7%bb%9f%e7%9a%84%e8%ae%be%e8%ae%a1%e4%b8%8e%e7%a0%94%e7%a9%b6&amp;scode=1019657949.nh" target="_blank">1</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">31</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90V4JWbYhGcPFkQNZWMPlFOQRWZ6dUOnhUc11EMtZkc49GaChHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD202001" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD202001%26filename%3d1019657949.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1019657949.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="7" name="CookieName" value="CMFD201902!1019827680.nh!7!0" onclick="$(this).filenameClick()">7</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=7&amp;recid=&amp;FileName=1019827680.nh&amp;DbName=CMFD201902&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        高校网站群<font class="Mark">篡改</font>监控系统的设计与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%99%88%e5%9e%9a%e5%86%b0&amp;scode=41999025&amp;acode=41999025" target="knet">陈垚冰</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GZGYU">浙江工业大学</a>
+
+      </td>
+      <td class="date">
+        2018-11-05
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e9%ab%98%e6%a0%a1%e7%bd%91%e7%ab%99%e7%be%a4%e7%af%a1%e6%94%b9%e7%9b%91%e6%8e%a7%e7%b3%bb%e7%bb%9f%e7%9a%84%e8%ae%be%e8%ae%a1%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1019827680.nh" target="_blank">1</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">81</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90Vv1UZPNXd2V1TGF3Lq9WO6dDd4k0SjFkcTFESPh1ZzM0NUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201902" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201902%26filename%3d1019827680.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1019827680.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="8" name="CookieName" value="CMFD201802!1018097277.nh!8!0" onclick="$(this).filenameClick()">8</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=8&amp;recid=&amp;FileName=1018097277.nh&amp;DbName=CMFD201802&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        <font class="Mark">网页篡改</font>监控系统的设计与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%88%98%e6%b1%9f&amp;scode=27667362&amp;acode=27667362" target="knet">刘江</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GBYDU">北京邮电大学</a>
+
+      </td>
+      <td class="date">
+        2018-03-18
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e7%9b%91%e6%8e%a7%e7%b3%bb%e7%bb%9f%e7%9a%84%e8%ae%be%e8%ae%a1%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1018097277.nh" target="_blank">4</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">190</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VydkZv42aIJjdMhHbmJFRWVGcaRzL0s0Vwc2YadnQrhHNUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201802" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201802%26filename%3d1018097277.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1018097277.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="9" name="CookieName" value="CJFDLAST2018!XXJK201805010!9!0" onclick="$(this).filenameClick()">9</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=9&amp;recid=&amp;FileName=XXJK201805010&amp;DbName=CJFDLAST2018&amp;DbCode=CJFD&amp;yx=Y&amp;pr=&amp;URLID=11.2739.N.20180227.1311.006" target="_blank">
+        我国<font class="Mark">网页篡改</font>及挂马<font class="Mark">检测</font>技术专利分析
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%88%98%e6%b4%81&amp;scode=31211078&amp;acode=31211078" target="knet">刘洁</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=XXJK">中国科技信息</a>
+
+      </td>
+      <td class="date">
+        2018-02-27 13:12
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=cite&amp;skey=%e6%88%91%e5%9b%bd%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e5%8f%8a%e6%8c%82%e9%a9%ac%e6%a3%80%e6%b5%8b%e6%8a%80%e6%9c%af%e4%b8%93%e5%88%a9%e5%88%86%e6%9e%90&amp;scode=XXJK201805010" target="_blank">4</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">87</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90Vzk1R1tSVyVEalNWWwgERDZWUHdnZxl3dFtmN3FDN1cTYv5GZtVDaDtiesFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2018" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dXXJK201805010" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="XXJK201805010"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="10" name="CookieName" value="CMFD201801!1017288202.nh!10!0" onclick="$(this).filenameClick()">10</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=10&amp;recid=&amp;FileName=1017288202.nh&amp;DbName=CMFD201801&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        企业网站及服务器综合监控系统的设计与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e6%9d%8e%e5%b3%a5&amp;scode=38630945&amp;acode=38630945" target="knet">李峥</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GBHGU">北京化工大学</a>
+
+      </td>
+      <td class="date">
+        2016-11-25
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e4%bc%81%e4%b8%9a%e7%bd%91%e7%ab%99%e5%8f%8a%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%bb%bc%e5%90%88%e7%9b%91%e6%8e%a7%e7%b3%bb%e7%bb%9f%e7%9a%84%e8%ae%be%e8%ae%a1%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1017288202.nh" target="_blank">1</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">82</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VBl0Y2FHbNdmVJh0SipUWnhDW1METUtCZEFUcKRFSshHNUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201801" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201801%26filename%3d1017288202.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1017288202.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="11" name="CookieName" value="CJFDLAST2016!HZLG201611004!11!0" onclick="$(this).filenameClick()">11</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=11&amp;recid=&amp;FileName=HZLG201611004&amp;DbName=CJFDLAST2016&amp;DbCode=CJFD&amp;yx=Y&amp;pr=&amp;URLID=42.1658.N.20161116.1650.004" target="_blank">
+        基于机器学习的批量<font class="Mark">网页篡改检测</font>方法
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e8%b5%96%e6%b8%85%e6%a5%a0&amp;scode=31575647&amp;acode=31575647" target="knet">赖清楠</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%99%88%e8%af%97%e6%b4%8b&amp;scode=36049553&amp;acode=36049553" target="knet">陈诗洋</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%a9%ac%e7%9a%93&amp;scode=06255171&amp;acode=06255171" target="knet">马皓</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%bc%a0%e8%93%93&amp;scode=06275394&amp;acode=06275394" target="knet">张蓓</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=HZLG">华中科技大学学报(自然科学版)</a>
+
+      </td>
+      <td class="date">
+        2016-11-16 16:50
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8e%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0%e7%9a%84%e6%89%b9%e9%87%8f%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e6%96%b9%e6%b3%95&amp;scode=HZLG201611004" target="_blank">8</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">306</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VqVzbQxWdyNXdzRWTJNVWTl2RsNVSyYWRWZWYMpUc200QlZERtVDaDtiesFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2016" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dHZLG201611004" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="HZLG201611004"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="12" name="CookieName" value="CMFD201701!1016133816.nh!12!0" onclick="$(this).filenameClick()">12</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=12&amp;recid=&amp;FileName=1016133816.nh&amp;DbName=CMFD201701&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于网络爬虫与HASH的网站<font class="Mark">篡改检测</font>系统的设计与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e7%8e%8b%e6%98%a5%e4%ba%95&amp;scode=35734837&amp;acode=35734837" target="knet">王春井</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GNMDU">内蒙古大学</a>
+
+      </td>
+      <td class="date">
+        2016-06-04
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8e%e7%bd%91%e7%bb%9c%e7%88%ac%e8%99%ab%e4%b8%8eHASH%e7%9a%84%e7%bd%91%e7%ab%99%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e7%b3%bb%e7%bb%9f%e7%9a%84%e8%ae%be%e8%ae%a1%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1016133816.nh" target="_blank">5</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">222</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90V54kcwVDd1J1KNpkNqplb1wEaGdkciBnQjh3VLpFbtVFbUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201701" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201701%26filename%3d1016133816.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1016133816.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="13" name="CookieName" value="CMFD201602!1016121504.nh!13!0" onclick="$(this).filenameClick()">13</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=13&amp;recid=&amp;FileName=1016121504.nh&amp;DbName=CMFD201602&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于应用网关的网站防<font class="Mark">篡改</font>系统设计与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%8f%b2%e4%bf%9d%e5%8d%8e&amp;scode=35562173&amp;acode=35562173" target="knet">史保华</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GZKDX">中国科学院大学(工程管理与信息技术学院)</a>
+
+      </td>
+      <td class="date">
+        2016-03-01
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8e%e5%ba%94%e7%94%a8%e7%bd%91%e5%85%b3%e7%9a%84%e7%bd%91%e7%ab%99%e9%98%b2%e7%af%a1%e6%94%b9%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1016121504.nh" target="_blank">3</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">244</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VmRFV3wmRJJUZsdzaSpXNzh0Tj5kcyBVYz9CU2ZVYEhTaUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201602" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201602%26filename%3d1016121504.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1016121504.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="14" name="CookieName" value="CJFDLAST2015!RJGC201505010!14!0" onclick="$(this).filenameClick()">14</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=14&amp;recid=&amp;FileName=RJGC201505010&amp;DbName=CJFDLAST2015&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于云架构的网站防<font class="Mark">篡改</font>在线<font class="Mark">检测</font>平台设计与实现
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%99%86%e6%98%8a&amp;scode=28094370&amp;acode=28094370" target="knet">陆昊</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=RJGC">软件产业与工程</a>
+
+      </td>
+      <td class="date">
+        2015-09-10
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">59</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90V6BzT4JzTodjblFWWuZGaPtEcZF0d1M0Vm1UcEtWQHpXR4oGMSlHU2YDNsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2015" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dRJGC201505010" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="RJGC201505010"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="15" name="CookieName" value="CJFDLAST2015!JSJC201507057!15!0" onclick="$(this).filenameClick()">15</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=15&amp;recid=&amp;FileName=JSJC201507057&amp;DbName=CJFDLAST2015&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于局部变化性的改进编辑距离算法
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e7%8e%8b%e5%8d%ab%e7%ba%a2&amp;scode=09368822&amp;acode=09368822" target="knet">王卫红</a>; <a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e6%9d%8e%e5%90%9b&amp;scode=23475366&amp;acode=23475366" target="knet">李君</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=JSJC">计算机工程</a>
+
+      </td>
+      <td class="date">
+        2015-07-15
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8e%e5%b1%80%e9%83%a8%e5%8f%98%e5%8c%96%e6%80%a7%e7%9a%84%e6%94%b9%e8%bf%9b%e7%bc%96%e8%be%91%e8%b7%9d%e7%a6%bb%e7%ae%97%e6%b3%95&amp;scode=JSJC201507057" target="_blank">8</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">74</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VWZGT0JlS3VzaEBTV5MnSM92bHV3LHBHWUJFNmRzUDpXR4oGMSlHU2YDNsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2015" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dJSJC201507057" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="JSJC201507057"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="16" name="CookieName" value="CMFD201601!1015438700.nh!16!0" onclick="$(this).filenameClick()">16</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=16&amp;recid=&amp;FileName=1015438700.nh&amp;DbName=CMFD201601&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于客户端的<font class="Mark">网页篡改检测</font>研究
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e6%9d%8e%e5%90%9b&amp;scode=23475366&amp;acode=23475366" target="knet">李君</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GZGYU">浙江工业大学</a>
+
+      </td>
+      <td class="date">
+        2015-04-15
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8e%e5%ae%a2%e6%88%b7%e7%ab%af%e7%9a%84%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e7%a0%94%e7%a9%b6&amp;scode=1015438700.nh" target="_blank">2</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">86</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90V1hlZ45kcKdVZWZzLFxWcQ5UM2UFU0UGbnNENJRlWIhTaUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201601" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201601%26filename%3d1015438700.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1015438700.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="17" name="CookieName" value="CMFD201502!1015586334.nh!17!0" onclick="$(this).filenameClick()">17</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=17&amp;recid=&amp;FileName=1015586334.nh&amp;DbName=CMFD201502&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        <font class="Mark">网页篡改检测</font>模型的研究与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%ad%99%e9%b9%8f%e5%bb%ba&amp;scode=33240589&amp;acode=33240589" target="knet">孙鹏建</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GBYDU">北京邮电大学</a>
+
+      </td>
+      <td class="date">
+        2015-03-16
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e6%a8%a1%e5%9e%8b%e7%9a%84%e7%a0%94%e7%a9%b6%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1015586334.nh" target="_blank">7</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">217</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VvxEd0pVUVd0Yu1mQSVWQvxmc4B3MuBzcqRWOEtiaQJmbUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201502" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201502%26filename%3d1015586334.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1015586334.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="18" name="CookieName" value="CJFDLAST2015!HBSF201404005!18!0" onclick="$(this).filenameClick()">18</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=18&amp;recid=&amp;FileName=HBSF201404005&amp;DbName=CJFDLAST2015&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        基于PCA算法的HTML<font class="Mark">网页篡改检测</font>定位系统
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e6%bd%98%e6%95%8f&amp;scode=31870817&amp;acode=31870817" target="knet">潘敏</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=HBSF">湖北师范学院学报(自然科学版)</a>
+
+      </td>
+      <td class="date">
+        2014-12-25
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=cite&amp;skey=%e5%9f%ba%e4%ba%8ePCA%e7%ae%97%e6%b3%95%e7%9a%84HTML%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e5%ae%9a%e4%bd%8d%e7%b3%bb%e7%bb%9f&amp;scode=HBSF201404005" target="_blank">6</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">67</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VB50UE90bFVWdPpWUjVTe200dKNzQndjb5w2ZV9yQsZmRv5GZtVDaDtiesFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFDLAST2015" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dHBSF201404005" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="HBSF201404005"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr class="odd">
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="19" name="CookieName" value="CMFD201502!1015579763.nh!19!0" onclick="$(this).filenameClick()">19</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=19&amp;recid=&amp;FileName=1015579763.nh&amp;DbName=CMFD201502&amp;DbCode=CMFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        <font class="Mark">网页篡改检测</font>系统的设计与实现
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e9%99%88%e6%96%87%e8%8a%b3&amp;scode=28160035&amp;acode=28160035" target="knet">陈文芳</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CMFD&amp;BaseID=GHUDU">湖南大学</a>
+
+      </td>
+      <td class="date">
+        2014-12-12
+      </td>
+      <td class="data">
+        硕士
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CMFD&amp;sfield=cite&amp;skey=%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e7%b3%bb%e7%bb%9f%e7%9a%84%e8%ae%be%e8%ae%a1%e4%b8%8e%e5%ae%9e%e7%8e%b0&amp;scode=1015579763.nh" target="_blank">5</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">255</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90VzgmY1ZzRsRkbww2RB90c4Z0MxRHc1tWc5UXdMZjaQJmbUdHM3gWdJVjMsFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CMFD201502" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-read" target="online_open" href="/KNS8/Detail/Read?domain=tablename%3dCMFD201502%26filename%3d1015579763.nh%26dbCode%3dCMFD" title="在线阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1015579763.nh"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr><tr>
+<td class="seq"><input class="cbItem" type="checkbox" data-cur="20" name="CookieName" value="CJFD2014!SXWZ201403003!20!0" onclick="$(this).filenameClick()">20</td>
+      <td class="name">
+
+        <a class="fz14" href="/KNS8/Detail?sfield=fn&amp;QueryID=0&amp;CurRec=20&amp;recid=&amp;FileName=SXWZ201403003&amp;DbName=CJFD2014&amp;DbCode=CJFD&amp;yx=&amp;pr=&amp;URLID=" target="_blank">
+        一种新型<font class="Mark">网页篡改检测</font>技术
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td class="author"><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=%e4%bd%9c%e8%80%85&amp;skey=%e5%88%98%e9%b9%8f%e7%a8%8b&amp;scode=43064197&amp;acode=43064197" target="knet">刘鹏程</a></td>
+      <td class="source">
+
+          <a target="_blank" href="/KNS8/Navi?DBCode=CJFD&amp;BaseID=SXWZ">绍兴文理学院学报(自然科学)</a>
+
+      </td>
+      <td class="date">
+        2014-09-28
+      </td>
+      <td class="data">
+        期刊
+      </td>
+      <td class="quote">
+
+         <span><a class="KnowledgeNetLink" href="/KNS8/Detail?sdb=CJFD&amp;sfield=cite&amp;skey=%e4%b8%80%e7%a7%8d%e6%96%b0%e5%9e%8b%e7%bd%91%e9%a1%b5%e7%af%a1%e6%94%b9%e6%a3%80%e6%b5%8b%e6%8a%80%e6%9c%af&amp;scode=SXWZ201403003" target="_blank">2</a></span>
+
+      </td>
+      <td class="download">
+
+        <a class="downloadCnt" href="javascript:void(0);">53</a>
+
+      </td>
+       <td class="operat">
+
+     <a href="/KNS8/download?filename=Phnd2RDNyJFaxpHMMllWOh3RXh3V0skTlR1SDVlcFhXUPBlcwQlZX1WQwwGd5V3MulnV5xmWs1ETI90V6FWalBTMyInThFUWS10MkNFaVlmNVZ0Y0FTVnVlSx80Rv5GZtVDaDtiesFVa2EXaspWOvYlbpRGNnRmZ&amp;tablename=CJFD2014" target="_blank" class="downloadlink icon-download" title="下载"><i></i><b>下载</b></a>
+
+
+
+
+         <a class="icon-html" target="online_open" href="/KNS8/Detail/Read?flag=html&amp;domain=dbcode%3dCJFD%26filename%3dSXWZ201403003" title="HTML阅读"><i></i></a>
+
+
+
+
+            <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="SXWZ201403003"><i></i></a>
+
+
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a>
+
+      </td>
+      </tr></tbody></table><div class="pages"> <span class="total">共2页</span><span class="cur">1</span><a href="javascript:void(0);" data-curpage="2" title="键盘的“← →”可以实现快速翻页" id="page2">2</a><a href="javascript:void(0);" data-curpage="2" title="键盘的“← →”可以实现快速翻页" id="PageNext">下一页</a></div></div>
+
+    <input id="errorMsgHid" type="hidden" value="">
+    <input id="HandlerIdHid" type="hidden" value="0">
+    <input id="curPageHid" type="hidden" value="1">
+    <input id="isSortHid" type="hidden" value="false">
+    <input id="sqlVal" type="hidden" value="0645419CC2F0B23BC604FFC82ADF67C692F6944D0202D2DC6656A6C7AC1EDC809A155BF2DE12E2F98C4BD55B8DC0937B674DE0CD2B86BB3266824FC750BED96C00B6FFF8B53C732897B1E623A882A32F0BF5CF51B6EAB5042BB9034B07B74C7567AD9C4111D92A13DEE9BBC8802C0D282F61171EB1794B796728CBF9FEE654FB6C550FE2154E7B199FF2B0A2F14AFB850735D5697534FBB49412A1C883FA82320196F07B2A5D7F999FC296429D6F7B24C3784BBAE276743DDE9D95DA552FAC411306C87D1930FB63D21B2D50AC243B0AADD2EB529E0EE3EF004B2DCA77FF870FBF7D68D0C4D5C811A3EFB55EC1D8688D0ED87363EC8063B8EEDBA52C0E237AE075C702582D034CB2AE61311806AAD7CF9BC7EC82EA0A4C8342F74BE86685ACAFE5A269392AB1E5E69344E332CD405625C48AE8A35641908E8906E565D17ACCFE592ECA5F9CB7E1CB424D392A0621FFB13E0855D716B23501A540D52B6F562228336E22F7573C4638518BE0D0428607FE89F4253B2ADAEFAA5C6DAC6868F3FEB294E816FFF7EA5E27F017A7AA32422EA2753CC9EED75D28D7E50EBDF14CFD9678EF44797FD701F7D91FE1FDCCB1D33ADB372E45FE207087A82A0B5EF23F5F14DD413D81725B34DB42549C3B5EB64D8E8CC30FD0E14E1C8869C0794A4247416BC912C6A01EEBA1F06C17F3BAF140F3E1D2E133F71BD0BA75E25184C0F90FD47203B30F1D6E24F5EF600972AB523F2C5C5E2D64409008436DE007FE1D8680FAF627AC53726BC650E6D342A4F21966B6E13EEEA732166E673E63AA0ABE7E6B0DD5BC2E17531064EE9654AE999913CEF6D9A17F2E5165AAB3DCE1C1758076D415632182CB7D1BED90C53F5B668BAEFCD663016CE835968A4C68FEECC57673FDDE09E69ED6F232B67433E7978BBAA8B5B853F99D400F9C40F22B6D61AE31C38CF913FC82DEB0A9CE52ECD63AB2CDC1BB5DC972E91CE25D809A4E286B6D46411985EFB44FD94C386DD49DFDBFB6665E8C4A6480D0040EC9BB6ED3A86781F2D7C44A266D4EBCB9A0B3FB00F6B0691AB7EDB6A7A890C29B7DFF8236BECEEC568647CB73DD60B5F794378CB6633DDD1ACEA2674992683C979A6A9D9BFD54F51DBC885DA0F455ED2BD2E71E1846B0A046B959C4B2F3DBB75B6A854EAB97CD28CA0DF45D4F56D42671D9D993DCBDCC59BAD5087153891D7B8920F5E2999AEDDEF91AD9BB4A800EE1397FBD463C143FCFF2EEB3A06CF81A0C7326FD8D250A59295513E8AE0865DCABD1EC94773A3D61518858708E55A06376D3EA0951128B8986D9D671B40425E874A2EF46C7C18F64A89FA7913EB6EF0B37512C87987C451088FFC8E4D44700080EE7A45FC76F4A2A5AB8AFF686B92EDCFA0D5DCCD6AA1430E9B89226F5235F83B9DBE9BC677BD6CFBCC0E20138BAE2407B74EA6FF625BC16282A79897CF9D253372137D49E5DB3E17615194F4DFB5D0CA1AF4103746F34D950E0B316D77266F52F38D30B524E5128D962D64F71F09D610CAD669CF2EB2A03778B168746E6741D1FB2A37085DF6CBF86737BF0A89CF6CC28507C8DE2396F7F39F4E1D80BCA630A4CF3D197BDB39D7227B568EFC90B4178E9C7E11F56E1ED64B959C191193F9C3B366AC667226E1C65CCA25C45667304C1D399A460AA66884EA2F5A43F83B11E855217629BAE4E27B8DCCC4AAEA1059371A38A9AA3960AE58614855CE87120DA730D764148978E39BB03FA53D39B650B3FEDA64F8407E2F331E0A60A54B216456CDDE2195A4F60E65478CA7D13760D57B0C9CDF0698E68BE594A2F1DF853AA1D0FDF1D1F2D48B5C599C1A8D2E320B2CCE5EE48992B5C2A1D3EF0C9840A7C4232A851B372C79BD546CB429784109F0BA5F2A5554AF34B9CBA2A9B459CF60F1461978F849260141858D0A99B98CDB4EC829B9643E0CECC54726EE985372B53F8529973B04F5622FD9A9DAC048EF336847AF4824CEC15AED2F2631B4F2CE72AF6695A3F6163380BED5ACCDEA9FC0DAB99C0534D936E9A81465E9DEF16D71C70042AAC7531A2A41FDD27A702FF35BC46BD74D0C92CB4E59EBAF30D3008B2B0F6A3EBE67186B75D8C7F3D4A7F5E22F04A4F5B10E45B510F3CD161753B80DD8433EDD3095679830986C70E48C49C6626BA8D4B2FF01AF529264086274827607F8EA49042945C04F6FF196BA59A2209AB0AFE1658C5DBA2E4DA0810B6F3FD33F784CBC6CC5ACC84DD3C378959B0F471964C43356111C2B859C87301279F37F5DC6F4D2EFC5F24CAD2EFF1FEF4B2BC2A9A9CC4839FF553E953792CE971B05B3328211EFA47AF2A86A883D4F9BCCDEFDD217C7F58EEB68EE2A5598F15FC5A75B92D6458964BA1F1E075214DB0412B873E88294208F0ADA039301A2FEE8677ED7C6DF70A00990DC667C512E7AB45847BB271247172EDD45BFAC0D305D745245D8BBE9B062873B9E1358F63CF48FA88776C042B01FA9E8E3C5AB92D864AB91414ABD7C43446CE905F65BA7DA2A6C1334C0BFC82A674BD2B5334296495D48D358DB223DDFF4DB336F038FBF65D108381E681FB0E9F5F854B830D7003ECFCE917DC7FD73F81F323AAC3AACC625AD52DF2354344540851A5C564E2ED891BD5F5A583A2549C8368C6B276B4B14F944A868C1F8C7401812568FA708D4B421B94A56968EF4BF9A98C4E1AD080C5D822793675DD7189A15C62B4A7ECA333C6F959EC7FE243462F716E7DD44F779B3E483036A1C8718165150CEC1AB442E022967DA4D0C4ED4C79C809FAD8DE10CAF3CC038EB1E4B5C40A7F23B67D3D3AF0771F23FE5D3DD61557E17B22C8BF0EE23790A4CF623A58396CC84A7992E20486D6465D00C9574EFD04739CAE48E49E30106AE2D7AE8C39B794A04CBE206FA001DF6188DD6609E8661C2F6788F04493B8ABE8210EDB56DD1B301218EB082AF0D50D50F69F139B5A103F59C493F2DD9F2F73335D48F8433F45714BE9854BFACCF730EE8A5024416655A488AB410AB2AC6006EE7AC77AFC8EAABB08955A1355A376ED46864EC91CBF2307F0E0E29833DDB920FFDBD8BC9726F2A2CC1466B7839680DE18C7164F38B3C073E927E3A383E116B0F55A5420A21039A1CE5C">
+    <input id="pathAnalysisHid" type="hidden" value="//kns.cnki.net/KVisual/ArticleAnalysis/index?">
+</form>
+
+<script type="text/javascript">
+    $(function () {
+        if ('True'=='False') {
+            $("#batchOpsBox .bulkdownload").css("display","none");
+        }
+    });
+
+</script></div>
+
+            <div class="relevant">
+                <ul class="bottom-commend-list">
+    <li class="rlv-word"><h5>相关搜索：</h5>
+<p>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E7%BD%91%E9%A1%B5%E9%AA%8C%E8%AF%81%E7%A0%81" target="_blank" title="网页验证码">网页验证码</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E5%A4%9A%E7%BA%A7%E7%AD%BE%E5%90%8D" target="_blank" title="多级签名">多级签名</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E7%BD%91%E5%9D%80%E5%B1%9E%E6%80%A7" target="_blank" title="网址属性">网址属性</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E5%9B%BE%E7%89%87%E7%AF%A1%E6%94%B9" target="_blank" title="图片篡改">图片篡改</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E7%88%AC%E8%99%AB%E8%AF%86%E5%88%AB" target="_blank" title="爬虫识别">爬虫识别</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E6%81%B6%E6%84%8F%E5%8A%A0%E5%AF%86%E6%B5%81%E9%87%8F" target="_blank" title="恶意加密流量">恶意加密流量</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E5%9F%9F%E5%90%8D%E5%88%86%E5%89%B2" target="_blank" title="域名分割">域名分割</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E7%BB%93%E6%9E%84%E5%8C%BA%E9%97%B4%E5%88%86%E5%89%B2" target="_blank" title="结构区间分割">结构区间分割</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E5%AE%89%E5%8D%93%E6%81%B6%E6%84%8F" target="_blank" title="安卓恶意">安卓恶意</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E7%BD%91%E9%A1%B5%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81" target="_blank" title="网页恶意代码">网页恶意代码</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E8%A7%86%E9%A2%91%E6%B0%B4%E5%8D%B0%E6%8A%80%E6%9C%AF" target="_blank" title="视频水印技术">视频水印技术</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E5%B8%A7%E9%97%B4%E5%B7%AE%E5%BC%82" target="_blank" title="帧间差异">帧间差异</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=%E6%96%B9%E5%B7%AE%E9%98%88%E5%80%BC" target="_blank" title="方差阈值">方差阈值</a></span>
+<span><a class="tit" href="/KNS8/DefaultResult/Index?dbcode=SCDB&amp;kw=DALVIK%E6%8C%87%E4%BB%A4" target="_blank" title="DALVIK指令">DALVIK指令</a></span>
+</p></li>
+    <li class="rlv-expert">
+
+    </li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="modalBox" style="display:none;">
+	<div class="mask"></div>
+	<div class="visPop">
+		<a href="javascript:void(0);" class="close">X</a>
+		<div class="vpSide">
+			<div class="vpsHd">
+				<label></label>
+			</div>
+			<div class="vpsBd">
+				<div class="reco">
+					<div class="item">
+						<label>数据库：</label><span id="item_database">英文文献</span>
+					</div>
+					<div class="item">
+						<label>检索条件：</label><span id="item_query">标题</span>
+					</div>
+					<div class="item">
+						<label>分布项：</label><span id="item_group">标题</span>
+					</div>
+				</div>
+                <div class="vpSideShow">
+					<a href="javascript:void(0);" class="vpsHideBar">&lt;&lt;</a>
+				</div>
+				<div class="filt">
+					<div class="dispNum">显示数量：<span class="sel_cnt"></span></div>
+					<div class="choose"></div>
+				</div>
+				<div class="cont hidden">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="vpSideHide">
+			<a href="javascript:void(0);" class="vpsHideBar"><label></label><i>&gt;&gt;</i></a>
+		</div>
+        <div class="vpMain">
+            <div id="chartbox" class="vpChart"></div>
+            <p class="disc" style="display:none;"><label>&lt;%=Resources.GlobalResource.说明 %&gt;</label><span class="sp_desc"></span></p>
+            <div class="visual-row">
+                <input id="txtStartYear" type="text" value="" onkeyup="setDateKeyUp(event)"> <label>——</label> <input id="txtEndYear" type="text" value="" onkeyup="setDateKeyUp(event)"> <a id="btnFilterYear" href="javascript:void(0)" onclick="setDateItem(function () {$('#modalBox').find('.close').click();});">筛选</a>
+            </div>
+
+        </div>
+	</div>
+</div>
+
+<script type="text/javascript" src="//piccache.cnki.net/kdn/KNS8/Scripts/min/merge.visual.min.js"></script>
+    <script type="text/javascript" src="https://a.cnki.net/a/quote/ad.js"></script>
+    <script type="text/javascript" src="https://tuijian.cnki.net/a/quote/ad.js"></script>
+
+
+        <div class="footer">
+        <div class="foot-top">
+            <ul class="content">
+                <li>
+                    <b>读者服务</b>
+                    <a target="_blank" href="http://vipcard.cnki.net/ec/skwd/skwd.htm">购买知网卡</a>
+                    <a target="_blank" href="http://zhifu.cnki.net/">充值中心</a>
+                    <a target="_blank" href="http://my.cnki.net/">我的CNKI</a>
+                    <a target="_blank" href="http://service.cnki.net/helpcenter/">帮助中心</a>
+                </li>
+                <li>
+                    <b>CNKI常用软件下载</b>
+                    <a target="_blank" href="http://cajviewer.cnki.net">CAJViewer浏览器</a>
+                    <a target="_blank" href="http://www.cnki.net/software/xzydq.htm#CNKIe-Learning">CNKI数字化学习平台</a>
+                    <a target="_blank" href="http://refbook.cnki.net/download.html">工具书桌面检索软件</a>
+                </li>
+                <li>
+                    <b>特色服务</b>
+                    <a target="_blank" href="http://wap.cnki.net/">手机知网</a>
+                    <a target="_blank" href="http://wuxizazhi.cnki.net/">杂志订阅</a>
+                    <a target="_blank" href="http://mall.cnki.net/">数字出版物订阅</a>
+                    <a target="_blank" href="http://a.cnki.net">广告服务</a>
+                </li>
+                <li>
+                    <b>客服咨询</b>
+                    <span>订卡热线：400-819-9993</span>
+                    <span>服务热线：400-810-9888</span>
+                    <span>在线咨询：<a target="_blank" href="http://help.cnki.net">help.cnki.net</a></span>
+                    <span>邮件咨询：<a target="_blank" href="mailto:help@cnki.net">help@cnki.net</a></span>
+                </li>
+                <li class="weibo">
+                    <a target="_blank" href="http://e.weibo.com/u/3059308095">
+                        <img src="//piccache.cnki.net/kdn/index/nvsm/nimages/logo_xl.png" alt="新浪微博客服">
+                        <span>新浪微博客服</span>
+                    </a>
+                    <a class="qrcode" href="javascript:void(0)">
+                        <img src="//piccache.cnki.net/kdn/index/kns7/nimages/logo_wx.png" alt="官方微信">
+                        <span>官方微信</span>
+                        <span class="wechat-qrcode"><img src="//piccache.cnki.net/kdn/index/kns8/nimages/qrcode.jpg" alt="官方微信"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-bot clearfix">
+            <div class="t">
+                <img src="//piccache.cnki.net/kdn/index/nvsm/nimages/foot-logo.png" alt="中国知网">
+                <p class="mid">
+                    <span>
+                        <a target="_blank" href="http://cnki.net/gycnki/gycnki.htm">关于我们</a>
+                        <a target="_blank" href="http://www.cnki.net/other/gonggao/gongsirongyu.html">CNKI 荣誉</a>
+                        <a target="_blank" href="http://www.cnki.net/other/gonggao/bqsm.htm">版权公告</a>
+                        <a target="_blank" href="http://service.cnki.net/">客服中心</a>
+                        <a target="_blank" href="http://help.cnki.net/">在线咨询</a>
+                        <a target="_blank" href="http://help.cnki.net/Live800_2_2.aspx">用户建议</a>
+                        <a target="_blank" href="http://piccache.cnki.net/index/CNKIRecruit/index.html">知网招聘</a>
+                        <a target="_blank" href="http://a.cnki.net/">知网推广</a>
+                    </span>
+                    <span id="copyright">© 1998-2021 中国知网（CNKI）</span>
+                </p>
+                <p class="right">
+                    <!--可信网站图片LOGO安装开始-->
+                    <a id="___szfw_logo___" href="https://ss.knet.cn/verifyseal.dll?sn=e13111111010043364isll000000&amp;a=1&amp;pa=0.08881110103584755" target="_blank">
+                        <img alt="可信网站" src="//piccache.cnki.net/kdn/index/nvsm/nimages/kxwz.jpg" height="33" width="86">
+                    </a>
+                    <!--可信网站图片LOGO安装结束-->
+                    <!--诚信网站图片LOGO安装开始-->
+
+                    <script type="text/javascript">(function () { document.getElementById('___szfw_logo___').oncontextmenu = function () { return false; } })();</script>
+                    <!--诚信网站图片LOGO安装结束-->
+                </p>
+            </div>
+            <div class="b">
+                <span>京 ICP 证 040431 号<a target="_blank" href="http://piccache.cnki.net/index/images/gb/271.jpg">网络出版服务许可证 (总)网出证(京)字第 271 号</a> 京公网安备 11010802020460 号</span>
+                <span>《中国学术期刊（光盘版）》电子杂志社有限公司</span>
+                <span>KDN 平台基础技术由 KBASE 11.0 提供.</span>
+            </div>
+        </div>
+        <!--foot-bot-->
+    </div>
+
+
+<a class="back-top" href="javascript:void(0);" target="_self" title="返回顶部" style="display: block;"><i class="icon-backtop"></i></a>
+
+
+<script type="text/javascript">
+    //if (typeof FlushLogin == 'function') {
+    //    FlushLogin();
+    //}
+    //ModifyEcpHeader(true);
+    backTop();
+
+    /*功能：返回顶部
+       * 说明：页面较长，滚动到大于1000px时，会显示“返回顶部”按钮
+       * */
+    function backTop() {
+        backBtn = $(".back-top");
+        var y = 100;
+        $(window).on("load scroll", function () {//滚动页面时
+            if ($(window).scrollTop() > y) backBtn.show();
+            else backBtn.hide();
+        });
+        backBtn.click(function () {//当点击跳转链接后，回到页面顶部位置
+            $('body,html').animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+    }
+
+
+</script>
+
+    <script src="https://piccache.cnki.net/kdn/kns8/scripts/common/min/piwikCommon80.min.js?v=2021010801"></script>
+
+
+
+
+<div class="setmodule" id="searchsetdiv">
+    <!-- 检索设置 start -->
+
+    <dl class="setup">
+        <dt>检索范围<span>（设置跨库检索范围及资源显示顺序）</span></dt>
+        <dd class="setdoctype">
+            <ul class="haschecked-list" data-listidx="0">
+                <li data-id="CJFQ"><div class="item" style="cursor: pointer;">学术期刊</div><i class="icon-del"></i></li>
+                <li data-id="CDMD">
+                    <div class="item" style="cursor: pointer;">学位论文</div><i class="icon-del"></i>
+                </li>
+                <li data-id="CIPD">
+                    <div class="item" style="cursor: pointer;">会议</div><i class="icon-del"></i>
+                </li>
+                <li data-id="CCND">
+                    <div class="item" style="cursor: pointer;">报纸</div><i class="icon-del"></i>
+                </li>
+                <li data-id="BDZK">
+                    <div class="item" style="cursor: pointer;">图书</div><i class="icon-del"></i>
+                </li>
+                <li data-id="CISD">
+                    <div class="item" style="cursor: pointer;">标准</div><i class="icon-del"></i>
+                </li>
+                <li data-id="SNAD">
+                    <div class="item" style="cursor: pointer;">成果</div><i class="icon-del"></i>
+                </li>
+                <li data-id="CCJD">
+                    <div class="item" style="cursor: pointer;">学术辑刊</div><i class="icon-del"></i>
+                </li>
+                <li data-id="GXDB_SECTION">
+                    <div class="item" style="cursor: pointer;">古籍</div><i class="icon-del"></i>
+                </li>
+                <li data-id="CJFN">
+                    <div class="item" style="cursor: pointer;">特色期刊</div><i class="icon-del"></i>
+                </li>
+                <li data-id="CCVD">
+                    <div class="item" style="cursor: pointer;">视频</div><i class="icon-del"></i>
+                </li>
+            </ul>
+            <a class="add-doctype" href="javascript:void(0)"><i>+</i></a>
+            <ul class="doctype-list" style="display: none;">
+                <li id="CJFQ" class="selected"><span>学术期刊</span><a href="javascript:void(0)">已选</a></li>
+                <li id="CCND" class="selected"><span>报纸</span><a href="javascript:void(0)">已选</a></li>
+                <li id="CIPD" class="selected"><span>会议</span><a href="javascript:void(0)">已选</a></li>
+                <li id="CDMD" class="selected"><span>学位论文</span><a href="javascript:void(0)">已选</a></li>
+                <li id="CYFD" class=""><span>年鉴</span><a href="javascript:void(0)">添加</a></li>
+                <li id="BDZK" class="selected"><span>图书</span><a href="javascript:void(0)">已选</a></li>
+                <li id="SCOD" class=""><span>专利</span><a href="javascript:void(0)">添加</a></li>
+                <li id="CISD" class="selected"><span>标准</span><a href="javascript:void(0)">已选</a></li>
+                <li id="SNAD" class="selected"><span>成果</span><a href="javascript:void(0)">已选</a></li>
+                <li id="CCJD" class="selected"><span>学术辑刊</span><a href="javascript:void(0)">已选</a></li>
+                <li id="GXDB_SECTION" class="selected"><span>古籍</span><a href="javascript:void(0)">已选</a></li>
+                <li id="CJFN" class="selected"><span>特色期刊</span><a href="javascript:void(0)">已选</a></li>
+                <li id="CCVD" class="selected">
+                    <span>视频</span><a href="javascript:void(0)">已选</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </dd>
+
+
+
+
+
+        <dt>检索结果</dt>
+        <dd class="dperpage">
+            <b class="tit">每页记录数：</b>
+            <label><input type="radio" name="page" value="10">10</label>
+            <label class="on"><input type="radio" checked="" name="page" value="20">20</label>
+            <label><input type="radio" name="page" value="50">50</label>
+        </dd>
+        <dd class="dstyle">
+            <b class="tit">展示方式：</b>
+            <label class="on"><input type="radio" checked="" name="styl" value="listmode">列表</label>
+            <label><input type="radio" name="styl" value="custommode">详情</label>
+        </dd>
+        <dd class="dsorder">
+            <b class="tit">排序方式：</b>
+            <label class="on"><input type="radio" checked="" name="order" value="pubdate">发表时间</label>
+            <label><input type="radio" name="order" value="relevant">相关度</label>
+            <label><input type="radio" name="order" value="cite">被引</label>
+            <label><input type="radio" name="order" value="download">下载</label>
+            <span>（排序设置不作用于主题和全文检索）</span>
+        </dd>
+        <dd class="dsearch">
+            <b class="tit">检索区自动折叠：</b>
+            <label><input type="radio" name="search" checked="" value="1">是</label>
+            <label class="on"><input type="radio" name="search" value="0">否</label>
+        </dd>
+    </dl>
+
+    <script type="text/javascript">
+        $(function () {
+            try {
+                $(".haschecked-list").dragsort({
+                    dragSelector: ".item",
+                    dragBetween: true,
+                    dragEnd: function () {
+                        //console.log('此处可放拖动结束后的方法。')
+                    }
+                });
+            } catch (e) {
+            }
+        });
+    </script>
+
+    <div class="btn-box">
+        <a href="javascript:void(0);" id="ctrl-s">保存设置</a>
+        <a href="javascript:void(0);" id="ctrl-z">恢复设置</a>
+    </div>
+    <!-- 检索设置 end-->
+</div><!-- setmodule -->
+<script type="text/javascript" src="//piccache.cnki.net/kdn/KNS8/Scripts/min/merge.searchSettings.min.js"></script>
+
+
+
+
+
+<script id="callScriptE" src="//ishufang.cnki.net/KRS/KRSWriteHandler.ashx?keyWord=&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=keyWord&amp;userName=&amp;dbcode=SCDB&amp;td=1623218544239" charset="utf-8"></script><script id="callScriptE" src="//function(b){b=b||Function.K;var d=[];var c=Array.prototype.slice.call(arguments,1);for(var f=0;f<this.length;f++){var e=b.apply(this,[this[f],f].concat(c));if(e!=null){d.push(e)}}return d}/KRS/KRSWriteHandler.ashx?keyWord=&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=keyWord&amp;userName=&amp;dbcode=SCDB&amp;td=1623218544239" charset="utf-8"></script><script id="callScriptE" src="//function(c){for(var b=0;b<this.length;b++){if(this[b]==c){return true}}return false}/KRS/KRSWriteHandler.ashx?keyWord=&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=keyWord&amp;userName=&amp;dbcode=SCDB&amp;td=1623218544239" charset="utf-8"></script><script id="callScriptE" src="//function(){var c=new Array();for(var b=0;b<this.length;b++){if(!c.contains(this[b])){c.push(this[b])}}return c}/KRS/KRSWriteHandler.ashx?keyWord=&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=keyWord&amp;userName=&amp;dbcode=SCDB&amp;td=1623218544239" charset="utf-8"></script><script id="callScriptE" src="//ishufang.cnki.net/KRS/KRSWriteHandler.ashx?curUrl=https%3A//kns.cnki.net/kns8/defaultresult/index&amp;referUrl=https%3A//www.cnki.net/&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=file&amp;userName=&amp;td=1623218544242" charset="utf-8"></script><script id="callScriptE" src="//function(b){b=b||Function.K;var d=[];var c=Array.prototype.slice.call(arguments,1);for(var f=0;f<this.length;f++){var e=b.apply(this,[this[f],f].concat(c));if(e!=null){d.push(e)}}return d}/KRS/KRSWriteHandler.ashx?curUrl=https%3A//kns.cnki.net/kns8/defaultresult/index&amp;referUrl=https%3A//www.cnki.net/&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=file&amp;userName=&amp;td=1623218544242" charset="utf-8"></script><script id="callScriptE" src="//function(c){for(var b=0;b<this.length;b++){if(this[b]==c){return true}}return false}/KRS/KRSWriteHandler.ashx?curUrl=https%3A//kns.cnki.net/kns8/defaultresult/index&amp;referUrl=https%3A//www.cnki.net/&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=file&amp;userName=&amp;td=1623218544242" charset="utf-8"></script><script id="callScriptE" src="//function(){var c=new Array();for(var b=0;b<this.length;b++){if(!c.contains(this[b])){c.push(this[b])}}return c}/KRS/KRSWriteHandler.ashx?curUrl=https%3A//kns.cnki.net/kns8/defaultresult/index&amp;referUrl=https%3A//www.cnki.net/&amp;cnkiUserKey=717f5693-4d53-f5d9-aa7d-92e2b5038af6&amp;action=file&amp;userName=&amp;td=1623218544243" charset="utf-8"></script><div id="__droplist" class="dictdiv" style="display: none;"></div><script type="text/javascript" id="TopWords_Request" src="//search.cnki.net/sug/topk.ashx?jsonvar=top_Words_Json&amp;v=1623218544255&amp;td=1623218544255" charset="utf-8"></script></body>
+
+
+</html>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43656abf-6358-45a2-9ab2-b04330b3f08c" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lgNIKjtiC8wxqAsOZCUqQ03JWY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proxyserver" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\学习\screenshot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.imagesegmentation">
+    <configuration name="baidu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="screenshot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baidu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getpartinfo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="screenshot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getpartinfo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="imagesegmentation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="screenshot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imagesegmentation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="screenshot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="screenshot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.imagesegmentation" />
+        <item itemvalue="Python.shot" />
+        <item itemvalue="Python.baidu" />
+        <item itemvalue="Python.getpartinfo" />
+        <item itemvalue="Python.test3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43656abf-6358-45a2-9ab2-b04330b3f08c" name="默认更改列表" comment="" />
+      <created>1608014692458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608014692458</updated>
+      <workItem from="1608014700204" duration="3170000" />
+      <workItem from="1608092752920" duration="6914000" />
+      <workItem from="1608179778801" duration="599000" />
+      <workItem from="1608188382579" duration="604000" />
+      <workItem from="1608522828395" duration="977000" />
+      <workItem from="1614566244258" duration="1817000" />
+      <workItem from="1614652392990" duration="2589000" />
+      <workItem from="1614746936734" duration="42000" />
+      <workItem from="1614836241703" duration="7026000" />
+      <workItem from="1614909665877" duration="239000" />
+      <workItem from="1615789227082" duration="52000" />
+      <workItem from="1615792266102" duration="8614000" />
+      <workItem from="1615859904457" duration="13785000" />
+      <workItem from="1615947351505" duration="15424000" />
+      <workItem from="1616030797665" duration="16371000" />
+      <workItem from="1616053549954" duration="1031000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2740" y="185" key="FileChooserDialogImpl" timestamp="1616055069517">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state x="522" y="198" key="FileChooserDialogImpl/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1614838287754" />
+    <state x="2740" y="185" key="FileChooserDialogImpl/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616055069517" />
+    <state width="1572" height="205" key="GridCell.Tab.0.bottom" timestamp="1616055070885">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="165" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1615793696389" />
+    <state width="1572" height="205" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616055070885" />
+    <state width="1557" height="301" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state width="1572" height="205" key="GridCell.Tab.0.center" timestamp="1616055070885">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="165" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1615793696389" />
+    <state width="1572" height="205" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616055070885" />
+    <state width="1557" height="301" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state width="1572" height="205" key="GridCell.Tab.0.left" timestamp="1616055070885">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="165" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1615793696389" />
+    <state width="1572" height="205" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616055070885" />
+    <state width="1557" height="301" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state width="1572" height="205" key="GridCell.Tab.0.right" timestamp="1616055070885">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="165" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1615793696389" />
+    <state width="1572" height="205" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616055070885" />
+    <state width="1557" height="301" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state width="1557" height="209" key="GridCell.Tab.1.bottom" timestamp="1616053361185">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="328" key="GridCell.Tab.1.bottom/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1614839889661" />
+    <state width="1557" height="209" key="GridCell.Tab.1.bottom/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616053361185" />
+    <state width="1557" height="301" key="GridCell.Tab.1.bottom/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state width="1557" height="209" key="GridCell.Tab.1.center" timestamp="1616053361185">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="328" key="GridCell.Tab.1.center/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1614839889661" />
+    <state width="1557" height="209" key="GridCell.Tab.1.center/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616053361185" />
+    <state width="1557" height="301" key="GridCell.Tab.1.center/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state width="1557" height="209" key="GridCell.Tab.1.left" timestamp="1616053361185">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="328" key="GridCell.Tab.1.left/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1614839889661" />
+    <state width="1557" height="209" key="GridCell.Tab.1.left/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616053361185" />
+    <state width="1557" height="301" key="GridCell.Tab.1.left/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state width="1557" height="209" key="GridCell.Tab.1.right" timestamp="1616053361185">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="1397" height="328" key="GridCell.Tab.1.right/0.0.1440.920/2160.0.1600.860@0.0.1440.920" timestamp="1614839889661" />
+    <state width="1557" height="209" key="GridCell.Tab.1.right/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616053361185" />
+    <state width="1557" height="301" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1615804387462" />
+    <state x="2461" y="72" key="SettingsEditor" timestamp="1616053615447">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state x="2461" y="72" key="SettingsEditor/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616053615447" />
+    <state width="808" height="438" key="XDebugger.FullValuePopup" timestamp="1616032689035">
+      <screen x="2160" y="0" width="1600" height="860" />
+    </state>
+    <state width="808" height="438" key="XDebugger.FullValuePopup/0.0.1440.920/2160.0.1600.860@2160.0.1600.860" timestamp="1616032689035" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getpartinfo.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/screenshot$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1614909808594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/screenshot$shot.coverage" NAME="shot Coverage Results" MODIFIED="1616047883867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/screenshot$baidu.coverage" NAME="baidu Coverage Results" MODIFIED="1616044803541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/screenshot$imagesegmentation.coverage" NAME="imagesegmentation Coverage Results" MODIFIED="1616053879324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/screenshot$baidu2.coverage" NAME="baidu2 Coverage Results" MODIFIED="1608104862131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/screenshot$getpartinfo.coverage" NAME="getpartinfo Coverage Results" MODIFIED="1616044486017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

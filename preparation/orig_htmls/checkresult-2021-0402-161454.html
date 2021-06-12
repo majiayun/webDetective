@@ -1,0 +1,618 @@
+<html lang="en"><head>
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<title>上海燃气表测试平台</title>
+	<meta name="description" content="上海燃气表测试平台">
+	<meta name="author" content="">
+	<meta name="keyword" content="燃气表 测试 数据 平台">
+	<!-- end: Meta -->
+
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+
+    <link rel="shortcut" href="mygas/static/images/favicon.ico">
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/static/fontawesome-free-5.6.3-web/css/all.css" rel="stylesheet">
+
+    <script src="/static/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <link href="/static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <link href="/static/bootstrap-datetimpicker/bootstrap-datetimepicker.min.css">
+    <script src="/static/bootstrap-datetimpicker/moment.js"></script>
+    <script src="/static/bootstrap-datetimpicker/bootstrap-datetimepicker.min.js"></script>
+
+    <script type="text/javascript" src="/static/js/layer.js"></script><link rel="stylesheet" href="http://127.0.0.1:8000/static/js/theme/default/layer.css?v=3.1.1" id="layuicss-layer">
+
+    <link href="/static/css/base_style.css" rel="stylesheet">
+    <link href="/static/css/common_style.css" rel="stylesheet">
+
+    <script src="/static/js/common_style.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <style type="text/css">
+    .mainbody{
+        width: auto;
+        background-color: #FFF;
+        margin-top: 0px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        overflow:hidden;
+    }
+    .col-1 {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    #add{
+        margin-bottom: 10px;
+    }
+    .tijiao{
+        border: 1px solid #dddddd;
+    }
+    </style>
+
+
+</head>
+
+<body>
+      <div class="pg-header">
+          <div class="left" style="font-size: 25px;color:white">
+              上海燃气（集团）有限公司服务分公司
+          </div>
+          <div class="right user" style="position: relative">
+              欢迎：
+              &nbsp;&nbsp;
+              <img src="/static/images/user.png" height="25px">
+              <ul class="userinfo nav nav-pills nav-stacked">
+                  <li><a href="/user/">个人资料</a></li>
+                  <li><a href="/logout/">退出登录</a></li>
+              </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="pg-body">
+          <div class="menus">
+              <div class="side-header">
+                <img class="img-circle" src="/static/images/logo_a3.gif" height="67">
+                <span>欢迎使用</span>
+              </div>
+
+
+              
+              <div class="nav nav-pills nav-stacked">
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-cog"></span>
+          &nbsp;订单管理
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/contract_info/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-cog"></span>订单审核</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-search"></span>
+          &nbsp;数据审核
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/datacheck/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-search"></span>审核数据</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/checkresult/" class="btn btn-primary active"><span class=" margin-right-10 glyphicon glyphicon-list"></span>审核结果</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-retweet"></span>
+          &nbsp;测试分配
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/allocation/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-retweet"></span>分配测试</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/allo_result/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-list"></span>分配结果</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-folder-open"></span>
+          &nbsp;结果查询
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/middle_result/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-tasks"></span>测试进度</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/result/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-list"></span>测试结果</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/export_excel/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-save-file"></span>报表生成</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-user"></span>
+          &nbsp;用户管理
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/group/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-cog"></span>分组管理</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-eye-open"></span>
+          &nbsp;平台监测
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/warning_info/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-eye-open"></span>平台监测</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+</div>
+
+          </div>
+          
+
+<div class="content">
+    <ol class="breadcrumb" style="margin-bottom: 0px">
+       <li><a href="#"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+       <li><a href="#">数据审核</a></li>
+       <li class="active">Data</li>
+
+    <div class="timePlace right">
+        <span id="timePlace">4/2/2021 星期五 4:14:54 PM</span>
+    </div>
+
+    </ol>
+
+<div style="margin-left: 20px;margin-right: 20px;">
+    <div class="page-header" style="margin:3px 0px 3px 0px">
+        <h2 style="margin-left: 8px"><strong>审核结果</strong>&nbsp;<small>Meter Check Result  &gt;&gt;</small></h2>
+    </div>
+    <br>
+
+<div class="text-left">
+    <form class="form-horizontal" style="font-size: 16px" action="/checkresult/" method="POST" id="checkresult">
+         <input type="hidden" name="csrfmiddlewaretoken" value="RgPWdZih5KlFJj43dhKlKGLfmI8Hy7hg">
+          <div class="col-md-12">
+          <div class="col-md-3">
+              <div class="form-group">
+                  <label class="control-label col-md-3">表号：</label>
+                  <div class="col-md-8">
+                  <input class="form-control" id="id_MeterId" name="MeterId" placeholder="请输入表号" type="text">
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="form-group">
+                  <label class="control-label col-md-4">表类型：</label>
+                  <div class="col-md-6">
+                  <select class="form-control" id="id_MeterType" name="MeterType">
+<option value="" selected="selected"></option>
+<option value="膜式表">膜式表</option>
+<option value="修正仪">修正仪</option>
+<option value="超声波">超声波</option>
+<option value="IC卡-膜式表">IC卡-膜式表</option>
+<option value="IC卡-修正仪">IC卡-修正仪</option>
+<option value="IC卡-超声波">IC卡-超声波</option>
+</select>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="form-group">
+                  <label class="control-label col-md-4">生产厂商：</label>
+                  <div class="col-md-6">
+                  <select class="form-control" id="id_ManufactureName_id" name="ManufactureName_id">
+<option value="39"></option>
+<option value="40">大众科技</option>
+<option value="1">上海蓝宝石</option>
+<option value="2">宁海蓝宝石</option>
+<option value="3">上海克罗姆</option>
+<option value="4">埃创</option>
+<option value="5">丹东热工</option>
+<option value="6">浙江荣鑫</option>
+<option value="7">天津五机</option>
+<option value="8">上海埃科</option>
+<option value="9">浙江苍南</option>
+<option value="10">浙江天信</option>
+<option value="11">天信德莱塞</option>
+<option value="12">埃尔斯特</option>
+<option value="13">日本</option>
+<option value="14">丹尼尔</option>
+<option value="15">丹东思凯</option>
+<option value="16">杭州先锋</option>
+<option value="17">郑州安然</option>
+<option value="18">成都千嘉</option>
+<option value="19">杭州金卡</option>
+<option value="20">航天动力</option>
+<option value="21">上海佳盛</option>
+<option value="22">上海飞奥</option>
+<option value="23">上海众德</option>
+<option value="24">上海金速</option>
+<option value="25">四川海力</option>
+<option value="26">浙江松川</option>
+<option value="27">上海安居利</option>
+<option value="28">宁波佳德</option>
+<option value="29">杭州鸿鹄</option>
+<option value="30">上海真兰</option>
+<option value="31">山东思达特</option>
+<option value="32">RMG</option>
+<option value="33">FISHER</option>
+<option value="34">其他</option>
+<option value="35">浙江威星</option>
+<option value="36">上海玮轩</option>
+<option value="37">兆富电子</option>
+<option value="38">无锡云感</option>
+<option value="43">德闻</option>
+<option value="41">自检厂商</option>
+<option value="42">测试公司</option>
+</select>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="form-group">
+                  <label class="control-label col-md-3">表状态：</label>
+                  <div class="col-md-8">
+                  <select class="form-control" id="id_DataCheckedResult" name="DataCheckedResult">
+<option value="" selected="selected"></option>
+<option value="1">通过</option>
+<option value="0">不通过</option>
+</select>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="col-md-2">
+              <div class="form-group">
+                  <label class="control-label col-md-5">提交日期：</label>
+                  <div id="datetimepicker_q40" class="col-md-7 input-group">
+                      <div class="input-group-addon date"><span class="add-on glyphicon glyphicon-calendar"></span></div>
+                      <input class="form-control" id="id_Subtime" name="Subtime" type="text">
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="form-group">
+                  <div class="col-md-1">~</div>
+                  <div id="datetimepicker_q63" class="col-md-7 input-group">
+                      <div class="input-group-addon date"><span class="add-on glyphicon glyphicon-calendar"></span></div>
+                      <input class="form-control" id="id_Subtime_z" name="Subtime_z" type="text">
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="form-group">
+                  <label class="control-label col-md-5">审核日期：</label>
+                  <div id="datetimepicker_q41" class="col-md-7 input-group">
+                      <div class="input-group-addon date"><span class="add-on glyphicon glyphicon-calendar"></span></div>
+                      <input class="form-control" id="id_CheckTime" name="CheckTime" type="text">
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="form-group">
+                  <div class="col-md-1">~</div>
+                  <div id="datetimepicker_q64" class="col-md-7 input-group">
+                      <div class="input-group-addon date"><span class="add-on glyphicon glyphicon-calendar"></span></div>
+                      <input class="form-control" id="id_CheckTime_z" name="CheckTime_z" type="text">
+                  </div>
+              </div>
+          </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="submit" class="btn btn-default" value="查询">
+          </div>
+    </form>
+</div>
+
+
+<table id="test" class="table table-bordered table-hover">
+   <thead>
+        <tr style="font-size: 16px">
+            <th class="text-center">序号</th>
+            <th class="text-center">表号</th>
+            <th class="text-center">表类型</th>
+            <th class="text-center">生产厂商</th>
+            <th class="text-center">上次审核时间</th>
+            <th class="text-center">审核人员</th>
+            <th class="text-center">状态</th>
+            <th class="text-center">操作</th>
+        </tr>
+  </thead>
+  <tbody>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>1</td>
+            <td>002021031501</td>
+            <td>膜式表</td>
+            <td>上海蓝宝石</td>
+            <td>2021年3月15日 15:18</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=002021031501&amp;MeterType=膜式表&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'002021031501')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>2</td>
+            <td>002021031502</td>
+            <td>膜式表</td>
+            <td>上海蓝宝石</td>
+            <td>2021年3月15日 15:18</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=002021031502&amp;MeterType=膜式表&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'002021031502')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>3</td>
+            <td>002021031503</td>
+            <td>膜式表</td>
+            <td>上海蓝宝石</td>
+            <td>2021年3月15日 15:18</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=002021031503&amp;MeterType=膜式表&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'002021031503')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>4</td>
+            <td>002021031504</td>
+            <td>膜式表</td>
+            <td>上海蓝宝石</td>
+            <td>2021年3月15日 15:18</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=002021031504&amp;MeterType=膜式表&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'002021031504')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>5</td>
+            <td>002021031505</td>
+            <td>膜式表</td>
+            <td>上海蓝宝石</td>
+            <td>2021年3月17日 11:58</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=002021031505&amp;MeterType=膜式表&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'002021031505')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>6</td>
+            <td>030621022245</td>
+            <td>超声波</td>
+            <td>浙江荣鑫</td>
+            <td>2021年3月8日 11:41</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=030621022245&amp;MeterType=超声波&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'030621022245')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>7</td>
+            <td>030621022246</td>
+            <td>超声波</td>
+            <td>浙江荣鑫</td>
+            <td>2021年3月8日 11:41</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=030621022246&amp;MeterType=超声波&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'030621022246')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>8</td>
+            <td>014221030817</td>
+            <td>修正仪</td>
+            <td>上海埃科</td>
+            <td>2021年3月8日 11:21</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=014221030817&amp;MeterType=修正仪&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'014221030817')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>9</td>
+            <td>014221030818</td>
+            <td>修正仪</td>
+            <td>上海埃科</td>
+            <td>2021年3月8日 11:21</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=014221030818&amp;MeterType=修正仪&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'014221030818')">重审</a>
+                
+            </td>
+        </tr>
+  
+        <tr class="text-center" style="font-size: 16px">
+            <td>10</td>
+            <td>014221030819</td>
+            <td>修正仪</td>
+            <td>上海埃科</td>
+            <td>2021年3月8日 11:21</td>
+            <td>操作管理员</td>
+            <td style="font-weight: bolder">
+                
+                审核通过
+                
+            </td>
+            <td>
+                <a href="/check_data/?MeterId=014221030819&amp;MeterType=修正仪&amp;p2=look">查看</a>
+                
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="javascript:" onclick="back(this,'014221030819')">重审</a>
+                
+            </td>
+        </tr>
+  
+  </tbody>
+</table>
+
+
+<div class="col-md-12 text-right">
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+      <li><a href="#">上一页</a></li><li class="active"><a href="/checkresult/?page=1">1</a></li><li><a href="/checkresult/?page=2">2</a></li><li><a href="/checkresult/?page=3">3</a></li><li><a href="/checkresult/?page=4">4</a></li><li><a href="/checkresult/?page=5">5</a></li><li><a href="/checkresult/?page=6">6</a></li><li><a href="/checkresult/?page=7">7</a></li><li><a href="/checkresult/?page=8">8</a></li><li><a href="/checkresult/?page=9">9</a></li><li><a href="/checkresult/?page=10">10</a></li><li><a href="/checkresult/?page=11">11</a></li><li><a href="/checkresult/?page=2">下一页</a></li>
+  </ul>
+</nav>
+</div>
+
+</div>
+
+</div>
+
+      </div>
+
+</body></html>

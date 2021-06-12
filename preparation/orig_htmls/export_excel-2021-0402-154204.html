@@ -1,0 +1,289 @@
+<html lang="en"><head>
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<title>上海燃气表测试平台</title>
+	<meta name="description" content="上海燃气表测试平台">
+	<meta name="author" content="">
+	<meta name="keyword" content="燃气表 测试 数据 平台">
+	<!-- end: Meta -->
+
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+
+    <link rel="shortcut" href="mygas/static/images/favicon.ico">
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/static/fontawesome-free-5.6.3-web/css/all.css" rel="stylesheet">
+
+    <script src="/static/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <link href="/static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <link href="/static/bootstrap-datetimpicker/bootstrap-datetimepicker.min.css">
+    <script src="/static/bootstrap-datetimpicker/moment.js"></script>
+    <script src="/static/bootstrap-datetimpicker/bootstrap-datetimepicker.min.js"></script>
+
+    <script type="text/javascript" src="/static/js/layer.js"></script><link rel="stylesheet" href="http://127.0.0.1:8000/static/js/theme/default/layer.css?v=3.1.1" id="layuicss-layer">
+
+    <link href="/static/css/base_style.css" rel="stylesheet">
+    <link href="/static/css/common_style.css" rel="stylesheet">
+
+    <script src="/static/js/common_style.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <style type="text/css">
+    #allocation label{
+        font-size: 16px;
+    }
+    </style>
+
+
+</head>
+
+<body>
+      <div class="pg-header">
+          <div class="left" style="font-size: 25px;color:white">
+              上海燃气（集团）有限公司服务分公司
+          </div>
+          <div class="right user" style="position: relative">
+              欢迎：
+              &nbsp;&nbsp;
+              <img src="/static/images/user.png" height="25px">
+              <ul class="userinfo nav nav-pills nav-stacked">
+                  <li><a href="/user/">个人资料</a></li>
+                  <li><a href="/logout/">退出登录</a></li>
+              </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="pg-body">
+          <div class="menus">
+              <div class="side-header">
+                <img class="img-circle" src="/static/images/logo_a3.gif" height="67">
+                <span>欢迎使用</span>
+              </div>
+
+
+              
+              <div class="nav nav-pills nav-stacked">
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-cog"></span>
+          &nbsp;订单管理
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/contract_info/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-cog"></span>订单审核</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-search"></span>
+          &nbsp;数据审核
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/datacheck/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-search"></span>审核数据</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/checkresult/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-list"></span>审核结果</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-retweet"></span>
+          &nbsp;测试分配
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/allocation/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-retweet"></span>分配测试</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/allo_result/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-list"></span>分配结果</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-folder-open"></span>
+          &nbsp;结果查询
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/middle_result/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-tasks"></span>测试进度</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/result/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-list"></span>测试结果</a></li>
+             </ul>
+             
+             <ul>
+                 <li><a href="/export_excel/" class="btn btn-primary active"><span class=" margin-right-10 glyphicon glyphicon-save-file"></span>报表生成</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-user"></span>
+          &nbsp;用户管理
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/group/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-cog"></span>分组管理</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+      <div class="title-menu"><a class="btn" style="color: white">
+          <span class="margin-right-10 glyphicon glyphicon-eye-open"></span>
+          &nbsp;平台监测
+          <b class="caret"></b></a>
+
+          <div class="body-menu ">
+             
+             <ul>
+                 <li><a href="/warning_info/" class="btn btn-primary "><span class=" margin-right-10 glyphicon glyphicon-eye-open"></span>平台监测</a></li>
+             </ul>
+             
+          </div>
+      </div>
+
+</div>
+
+          </div>
+          
+
+<div class="content">
+    <ol class="breadcrumb" style="margin-bottom: 0px">
+       <li><a href="#"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+       <li><a href="#">报表生成</a></li>
+       <li class="active">Data</li>
+
+    <div class="timePlace right">
+        <span id="timePlace">4/2/2021 星期五 3:42:03 PM</span>
+    </div>
+
+    </ol>
+
+<div style="margin-left: 20px;margin-right: 20px">
+    <div class="page-header" style="margin:3px 0px 3px 0px">
+        <h2 style="margin-left: 8px"><strong>报表生成</strong>&nbsp;<small>Report Generate  &gt;&gt;</small></h2>
+    </div>
+    <br>
+
+<div class="text-left">
+    <form class="form-horizontal" style="font-size: 16px" action="/export_excel/" method="POST" id="export_excel">
+         <input type="hidden" name="csrfmiddlewaretoken" value="wv9SO3Tt3N7O6nxOEI3xjJQDx0Lxd7wf">
+          <div class="col-md-10">
+          <div class="col-md-3">
+              <div class="form-group">
+                  <label class="control-label col-md-4">年-月：</label>
+                  <div id="datetimepicker_r" class="col-md-8 input-group">
+                      <div class="input-group-addon date"><span class="add-on glyphicon glyphicon-calendar"></span></div>
+                      <input class="form-control" id="id_Y_M_Select" name="Y_M_Select" type="text">
+                  </div>
+                  <div style="margin-left: 60px;color: red">
+                          
+                  </div>
+              </div>
+          </div>
+          <input type="submit" style="margin-left: 20px" class="btn btn-default" value="导出月报表">
+          </div>
+    </form>
+    <form class="form-horizontal" style="font-size: 16px" action="/export_excel_y/" method="POST" id="export_excel_y">
+         <input type="hidden" name="csrfmiddlewaretoken" value="wv9SO3Tt3N7O6nxOEI3xjJQDx0Lxd7wf">
+          <div class="col-md-10">
+          <div class="col-md-3">
+              <div class="form-group">
+                  <label class="control-label col-md-4">年：</label>
+                  <div id="datetimepicker_y" class="col-md-8 input-group">
+                      <div class="input-group-addon date"><span class="add-on glyphicon glyphicon-calendar"></span></div>
+                      <input class="form-control" id="id_Y_Select" name="Y_Select" type="text">
+                  </div>
+                  <div style="margin-left: 60px;color: red">
+                          
+                  </div>
+              </div>
+          </div>
+          <input type="submit" style="margin-left: 20px" class="btn btn-default" value="导出年报表">
+          </div>
+    </form>
+    <form class="form-horizontal" style="font-size: 16px" action="/export_word/" method="POST" id="export_word">
+         <input type="hidden" name="csrfmiddlewaretoken" value="wv9SO3Tt3N7O6nxOEI3xjJQDx0Lxd7wf">
+          <div class="col-md-10">
+          <div class="col-md-3">
+              <div class="form-group">
+                  <label class="control-label col-md-4">表号：</label>
+                  <div id="meteridpicker" class="col-md-8">
+                      <div class="input-group"></div>
+                      <input class="form-control" id="id_Meter_Select" name="Meter_Select" type="text">
+                  </div>
+
+              </div>
+          </div>
+
+          <input type="submit" style="margin-left: 20px" class="btn btn-default" value="导出单表证书">
+          </div>
+        <div class="col-md-4">
+                 <div>
+                   
+                  </div>
+            </div>
+    </form>
+
+</div>
+
+</div>
+
+</div>
+
+      </div>
+
+</body></html>
