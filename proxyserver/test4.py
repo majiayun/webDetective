@@ -21,6 +21,10 @@ DRIVER_PATH = "D:\\common software\\Google\\Chrome\\Application\\chromedriver.ex
 # print(html)
 
 
+
+
+
+
 def get_nodes_xpath(filename):
     nodes_xpath_list = []
     parser = etree.HTMLParser(encoding="utf-8")
@@ -66,7 +70,7 @@ def get_leaf_nodes_xpath(nodes_xpath_list):
     return leaf_nodes_xpath_list
 
 
-lis=[]
+
 
 
 def get_pruning_leaf_nodes_xpath(xpath_list):
