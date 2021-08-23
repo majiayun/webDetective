@@ -11,7 +11,7 @@ from WebDetective import mysql
 from PIL import Image
 
 # 配置浏览器驱动路径  
-DRIVER_PATH = "D:\common software\Google\Chrome\Application\chromedriver.exe"
+DRIVER_PATH = "C:\Program Files\Google\Chrome\Application\chromedriver.exe"
 USERNAME = '操作管理员'
 PASSWORD = 'JDZX@08_08_2019&Pd'
 LOGIN_URL = "http://127.0.0.1:8000/login/"
@@ -51,6 +51,12 @@ def save_resp_html(url, html):
     ff = "%s.html" % os.path.join(html_path, html_name)
     with open(ff, 'w', encoding='utf-8') as f:
         f.write(html)
+
+def save_resp_img(url):
+    img_path = os.getcwd()+'\\resp_pictures'
+    img_name = url + time.strftime('-%Y-%m%d-%H%M%S', time.localtime(time.time()))
+    img = "%s.png" % os.path.join(img_path, img_name)
+    driver.get_screenshot_as_file(img)
 
 def main():
     s = socket.socket()
@@ -137,10 +143,11 @@ def main():
             img_name = url + time.strftime('-%Y-%m%d-%H%M%S', time.localtime(time.time()))
 
         driver.get(URL)
+        # 保存当前页面截图
         img_path = os.getcwd() + '\\resp_pictures'
-
         img = "%s.png" % os.path.join(img_path, img_name)
         driver.get_screenshot_as_file(img)
+
         #不是登录页面，登陆页面之后另做处理
         if url_nopara and url_nopara != 'login':
             image = Image.open(img)

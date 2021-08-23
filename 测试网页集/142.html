@@ -1,0 +1,2014 @@
+<html><head>
+	<title>历年分数</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=1440">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+<link rel="shortcut icon" href="../images/change_doc/fun/logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/hb.css">
+<script type="text/javascript" src="../js/j3.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="../js/html5shiv.js"></script>
+	<script type="text/javascript" src="../js/j1.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/pc_mobile_skip.js"></script>
+<script type="text/javascript" src="../js/init.js"></script>
+<script type="text/javascript" src="../js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../js/artTemplate.js"></script>
+<script type="text/javascript" src="../js/util.js"></script>
+<script type="text/javascript" src="../js/tplt.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/plugs/swiper.css">
+	<link rel="stylesheet" type="text/css" href="../css/lnfs.min.css">
+	<script src="../js/pinyin.js"></script>
+	<script src="../js/plugs_select.js"></script>
+	<script type="text/javascript" src="../js/filterCache_copy.js"></script>
+	<script type="text/javascript">
+		var initActiveParam = null;
+		var paramList = unescape($.getAddrUrl('param')||'');
+		if( paramList === '' ){
+			paramList = $.out(_config,'pageParam.lnfs');
+		}
+		if( paramList && paramList!='' ){
+			paramList = paramList.replace('{{nowYear}}',new Date().getFullYear());
+			initActiveParam = paramList.split('_');
+		}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+	<div class="banner">
+		<div class="bg"></div>
+		<div class="cover">
+			<div class="l_con">
+				<a href="/" id="header_logoPlace">
+						<img class="logo" src="../images/hb/logo.png">
+					</a>
+				<script type="text/html" id="header_logo">
+					<a href="{{_config.home.url}}">
+						<img class="logo" src="../images/hb/logo.png"/>
+					</a>
+				</script>
+				<script type="text/javascript">
+					tplt.draw('header_logo',{});
+				</script>
+				<div class="right">
+					<form class="search" action="http://zszx.cuc.edu.cn/f/newsCenter/searchAll" method="post" id="searchPlace">
+							<input type="hidden" name="Csrf-Token" value="0304f449250a42a2b7977fc3f6585bcd">
+							<input id="askText" type="text" placeholder="请输入搜索关键词" name="askText">
+							<button class="btn_search" type="button"></button>
+						</form>
+					<script id="search" type="text/html">
+						<form class="search" action="{{_config.domain}}f/newsCenter/searchAll" method="post">
+							<input type="hidden" name="Csrf-Token"/>
+							<input id="askText" type="text" placeholder="请输入搜索关键词" name="askText"/>
+							<button class="btn_search" type="button"></button>
+						</form>
+					</script>
+					<script>
+						tplt.draw('search',{});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav_bar">
+		<div class="l_con">
+			<ul class="navs" id="navsPlace">
+			
+				<li style="width: auto; padding-left: 56px; padding-right: 56px;">
+					<a href="http://zhaosheng.cuc.edu.cn/"><span class="dot"></span>首页</a>
+					
+				</li>
+			
+				<li style="width: auto; padding-left: 56px; padding-right: 56px;">
+					<a href="http://zhaosheng.cuc.edu.cn/xyjs/list.htm"><span class="dot"></span>学校简介</a>
+					
+				</li>
+			
+				<li style="width: auto; padding-left: 56px; padding-right: 56px;">
+					<a href="http://zhaosheng.cuc.edu.cn/zsjz/list.htm"><span class="dot"></span>招生简章</a>
+					
+				</li>
+			
+				<li style="width: auto; padding-left: 56px; padding-right: 56px;">
+					<a href="http://zhaosheng.cuc.edu.cn/xxcx/list.htm"><span class="dot"></span>信息查询</a>
+					
+				</li>
+			
+				<li style="width: auto; padding-left: 56px; padding-right: 56px;">
+					<a href="http://zhaosheng.cuc.edu.cn/gkgs/list.htm"><span class="dot"></span>公示公开</a>
+					
+				</li>
+			
+				<li style="width: auto; padding-left: 56px; padding-right: 56px;">
+					<a href="http://zhaosheng.cuc.edu.cn/lxwm/list.htm"><span class="dot"></span>联系我们</a>
+					
+				</li>
+			
+				<li style="width: auto; padding-left: 56px; padding-right: 56px;">
+					<a href="http://zsbm.cuc.edu.cn/arpnew/?AspxAutoDetectCookieSupport=1"><span class="dot"></span>网上报名</a>
+					
+				</li>
+			
+		</ul>
+		</div>
+	</div>
+	<script type="text/html" id="navs">
+		<ul class="navs">
+			{{each categories as $nav}}
+				<li>
+					<a href="{{$nav.url}}"><span class="dot"></span>{{$nav.name}}</a>
+					{{if !isEmpty($nav.childList)}}
+						<ul class="sub_navs">
+							{{each $nav.childList as $subNav $ind}}
+								<li>
+									<a href="{{$subNav.url}}">
+										{{$subNav.name}}
+									</a>
+								</li>
+							{{/each}}
+						</ul>
+					{{/if}}
+				</li>
+			{{/each}}
+		</ul>
+	</script>
+	<script type="text/javascript">
+		window.fLinks = [];
+		window.university = {};
+		window.cdhlinks = [];
+		$.ajax({
+			url: $.url('f/newsCenter/ajax_get_category_and_link_list'),
+			async: false,
+			type: 'POST',
+			success: function(res){
+				if( res.state == 1 ){
+					tplt.draw('navs',{categories: $.out(res,'data.categories')||[]});
+					window.fLinks = $.out(res,'data.links')||[];
+					window.university = $.out(res,'data.university')||{};
+					window.cdhlinks = $.out(res,'data.cdhlinks')||[];
+					afterDraw();
+				}
+			}
+		});
+		function afterDraw(){
+			// 控制请输入搜索关键词显隐
+			var v=$.IE.getVersion();
+			if($.IE.isIE()){
+				if(Number(v)>=9){
+					$('.header .search input').on('focus',function(){
+						$(this).attr('placeholder','');
+					});
+					$('.header .search input').on('blur',function(){
+						$(this).attr('placeholder','请输入搜索关键词');
+					});
+				}
+			}
+
+			// 控制搜索输入
+			$("#askText").keydown(function(e) {
+				if (e.keyCode == 13) {
+					searchAll();
+					return false;
+				}
+			});
+			$('.header .btn_search').on('click',searchAll);
+
+			// 控制导航项平分间距
+			$('.header .nav_bar .navs>li').css('width','auto');
+			var container_width = $('.header .nav_bar .l_con').width();
+			var count_width = 0;
+			var count_num = 0;
+			$('.header .nav_bar .navs>li').each(function(){
+				count_width += $(this).width();
+				count_num ++ ;
+			});
+			var h_padd = parseInt((container_width - count_width)/count_num/2);
+			h_padd = h_padd > 85? 85:h_padd
+			$('.header .nav_bar .navs li').css({
+				'padding-left' : h_padd,
+				'padding-right' : h_padd
+			});
+		}
+		function searchAll() {
+			var askText = $("#askText").val();
+			if ($("#askText").val() == ""
+					|| $("#askText").val().replace(/(^\s*)|(\s*$)/g, "") == "") {
+				alert("请输入搜索内容");
+			} else {
+				var pattern = /^[\w\u4e00-\u9fa5]+$/gi;
+				if (!pattern.test(askText)) {
+					alert("发送内容只能包含中文、数字、字母和下划线");
+					return;
+				}
+				$('.header .search').submit();
+			}
+		}
+	</script>
+</div>
+		<div class="body" style="height: auto;">
+			<div class="banner"><img src="../images/change_doc/fun/banner_fun.jpg"></div>
+			<div class="sec_bg">
+				<!-- <img src="../images/com/newbg.png" alt="" /> -->
+				<div class="sec_1">
+					<div class="l_con">
+						<div class="site_addr" id="siteAddrPlace">
+								<div class="tit">招生信息</div>
+								<div class="addr">
+									<div>
+										<a href="/"><i class="icon_home"></i>首页</a>
+										<span class="icon_line">-</span>
+										<a class="active" href="lnfs.html">历年分数</a>
+									</div>
+								</div>
+							</div>
+						<script type="text/html" id="siteAddr">
+							<div class="site_addr">
+								<div class="tit">招生信息</div>
+								<div class="addr">
+									<div>
+										<a href="{{go_home()}}"><i class="icon_home"></i>{{_config.home.name}}</a>
+										<span class="icon_line">-</span>
+										<a class="active" href="lnfs.html">历年分数</a>
+									</div>
+								</div>
+							</div>
+						</script>
+						<script type="text/javascript">
+							tplt.draw('siteAddr',{});
+						</script>
+					</div>
+				</div>
+				<div class="sec_2">
+					<div class="l_con">
+						<div class="left">
+							<div class="b_subNav">
+	<ul id="subNavPlace" class="nav_a">
+				
+					<li class="active">
+						<div class="nav_tit">
+							<div>
+								<a href="/static/front/cuc/basic/html_web/lnfs.html">录取分数</a>
+							</div>
+						</div>
+					</li>
+				
+					<li>
+						<div class="nav_tit">
+							<div>
+								<a href="/static/front/cuc/basic/html_web/zsjh.html">招生计划</a>
+							</div>
+						</div>
+					</li>
+				
+					<li>
+						<div class="nav_tit">
+							<div>
+								<a href="/static/front/cuc/basic/html_web/zyjs_list.html">专业介绍</a>
+							</div>
+						</div>
+					</li>
+				
+					<li>
+						<div class="nav_tit">
+							<div>
+								<a href="/static/front/cuc/basic/html_web/lqcx.html">录取查询</a>
+							</div>
+						</div>
+					</li>
+				
+					<li>
+						<div class="nav_tit">
+							<div>
+								<a href="/static/front/cuc/basic/html_web/zytb.html">志愿帮选</a>
+							</div>
+						</div>
+					</li>
+				
+					<li>
+						<div class="nav_tit">
+							<div>
+								<a href="http://zsbm.cuc.edu.cn/arpnew/?AspxAutoDetectCookieSupport=1">网上报名</a>
+							</div>
+						</div>
+					</li>
+				
+					<li>
+						<div class="nav_tit">
+							<div>
+								<a href="/f/qa/question">智能咨询</a>
+							</div>
+						</div>
+					</li>
+				
+			</ul>
+	<script id="subNav" type="text/html">
+		{{if !isEmpty(list)}}
+			<ul id="subNav" class="nav_a">
+				{{each list}}
+					<li>
+						<div class="nav_tit">
+							<div>
+								<a href="{{$value.url}}">{{$value.title}}</a>
+							</div>
+						</div>
+					</li>
+				{{/each}}
+			</ul>
+		{{/if}}
+	</script>
+	<script type="text/javascript">
+		tplt.draw('subNav',{list: window.cdhlinks});
+		$(function(){
+			var href = window.location.href;
+			var mrslt = href.match(/\/[\s\S][^\/]+\.html/);
+			if( mrslt != null ){
+				$(this).find('.b_subNav a').each(function(){
+					var subNavHref = $(this).attr('href');
+					if( subNavHref.indexOf(mrslt) >= 0 ){
+						$(this).parents('li').addClass('active');
+						return false;
+					}
+				});
+			}
+		});
+	</script>
+</div>
+						</div>
+						<div class="right">
+							<!-- <div class="rslt"></div> -->
+							<ul class="lnfs_tab">
+								<li class="active">分年显示</li>
+								<li>三年统计对比</li>
+								<script type="text/javascript">
+									$(function(){
+										$('.lnfs_tab >li').on('click',function(){
+											if($(this).hasClass('active')){
+												return false;
+											}
+											var oInd = $(this).parent().find('.active').removeClass('active').index();
+											var nInd = $(this).addClass('active').index();
+											$('.lnfs_con>li').eq(oInd).hide();
+											$('.lnfs_con>li').eq(nInd).fadeIn();
+										});
+									})
+								</script>
+							</ul>
+							<ul class="lnfs_con">
+								<li>
+									<div class="filter">
+	<dl>
+		<dt>省份：</dt>
+		<dd data-param="ssmc">
+			<a data-value="北京" class="active">北京</a>
+			<a data-value="天津">天津</a>
+			<a data-value="河北">河北</a>
+			<a data-value="山西">山西</a>
+			<a data-value="内蒙古">内蒙古</a>
+			<a data-value="辽宁">辽宁</a>
+			<a data-value="吉林">吉林</a>
+			<a data-value="黑龙江">黑龙江</a>
+			<a data-value="上海">上海</a>
+			<a data-value="江苏">江苏</a>
+			<a data-value="浙江">浙江</a>
+			<a data-value="安徽">安徽</a>
+			<a data-value="福建">福建</a>
+			<a data-value="江西">江西</a>
+			<a data-value="山东">山东</a>
+			<a data-value="河南">河南</a>
+			<a data-value="湖北">湖北</a>
+			<a data-value="湖南">湖南</a>
+			<a data-value="广东">广东</a>
+			<a data-value="广西">广西</a>
+			<a data-value="海南">海南</a>
+			<a data-value="重庆">重庆</a>
+			<a data-value="四川">四川</a>
+			<a data-value="贵州">贵州</a>
+			<a data-value="云南">云南</a>
+			<a data-value="西藏">西藏</a>
+			<a data-value="陕西">陕西</a>
+			<a data-value="甘肃">甘肃</a>
+			<a data-value="青海">青海</a>
+			<a data-value="宁夏">宁夏</a>
+			<a data-value="新疆">新疆</a>
+			<a data-value="台湾">台湾</a>
+			<a data-value="香港">香港</a>
+			<a data-value="澳门">澳门</a>
+		</dd>
+	</dl>
+	<div id="filterPlace">
+			
+				
+			
+				
+					
+						
+							<dl>
+								<dt>年份：</dt>
+								<dd data-param="zsnf">
+									
+									
+										<a href="javascript:void(0);" class=" active   padd " data-value="2020">2020</a>
+									
+										<a href="javascript:void(0);" class="  padd " data-value="2019">2019</a>
+									
+										<a href="javascript:void(0);" class="  padd " data-value="2018">2018</a>
+									
+										<a href="javascript:void(0);" class="  padd " data-value="2017">2017</a>
+									
+										<a href="javascript:void(0);" class="  padd " data-value="2016">2016</a>
+									
+										<a href="javascript:void(0);" class="  padd " data-value="2015">2015</a>
+									
+								</dd>
+							</dl>
+						
+					
+				
+			
+				
+					
+						
+							<dl>
+								<dt>科类：</dt>
+								<dd data-param="klmc">
+									
+									
+										<a href="javascript:void(0);" class=" active   padd " data-value="综合改革">综合改革</a>
+									
+								</dd>
+							</dl>
+						
+					
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+						
+							<dl>
+								<dt>类型：</dt>
+								<dd data-param="zslx">
+									
+									
+										<a href="javascript:void(0);" class=" active  " data-value="普通类">普通类</a>
+									
+										<a href="javascript:void(0);" class="  padd " data-value="提前批小语种">提前批小语种</a>
+									
+										<a href="javascript:void(0);" class="  padd " data-value="中外合作办学">中外合作办学</a>
+									
+								</dd>
+							</dl>
+						
+					
+				
+			
+		</div>
+	<script type="text/html" id="filter">
+		<div>
+			{{each defaultConfig as $item $key}}
+				{{if $item.name!='ssmc'}}
+					{{if $item.isNeed}}
+						{{if !isEmpty(filter.list[$key])}}
+							<dl>
+								<dt>{{$item.nameCa}}：</dt>
+								<dd data-param="{{$item.name}}">
+									{{if $item.isNeedAll}}
+										<a href="javascript:void(0);" class="{{if filter.params[$key]=='_filter_all'}} active {{/if}}" data-value="_filter_all">全部</a>
+									{{/if}}
+									{{each filter.list[$key]}}
+										<a href="javascript:void(0);" class="{{if filter.params[$key]==$value}} active {{/if}} {{if $value.length >= 4}} padd {{/if}}" data-value="{{$value}}">{{$value}}</a>
+									{{/each}}
+								</dd>
+							</dl>
+						{{/if}}
+					{{/if}}
+				{{/if}}
+			{{/each}}
+		</div>
+	</script>
+	<script type="text/javascript">
+		function filter(){
+			this.fc = null;
+			this.calArr = [];
+			var _filter = this;
+			$('body').on('click','.filter dd a',function(){
+				if($(this).hasClass('active')||isAjaxIng){
+					return false;
+				}
+				$(this).parents('dd').find('.active').removeClass('active');
+				$(this).addClass('active');
+				if($(this).parent('dd').data('param')=='zslx'){
+					_filter.calArr.forEach(function(item){
+						item({params:_filter.getActiveParam()});
+					});
+					return false;
+				}
+				var params = [];
+				for(var key = 0 ; key < config.length ; key++){
+					var $param = $('.filter [data-param="'+config[key]['name']+'"]');
+					if( $param.length != 0 ){
+						var value = $param.find('.active').data('value')||'';
+						params.push(value);
+					}else{
+						params.push('');
+					}
+				}
+				console.log(params);
+				tplt.draw('filter',{
+					filter: _filter.fc.get(params),
+					defaultConfig: config
+				});
+				_filter.calArr.forEach(function(item){
+					item({params:_filter.getActiveParam()});
+				});
+			});
+		};
+		filter.prototype.init = function(config,data,initActiveParam){
+			if(this.fc==null){
+				var _filter = this;
+				this.fc = new filterCache();
+				this.fc.changeConfig(config);
+				this.fc.add(data);
+				var drawData;
+				console.log(initActiveParam);
+				if( $.isEmpty(initActiveParam) ){
+					drawData = _filter.fc.get();
+				}else{
+					drawData = _filter.fc.get( initActiveParam );
+				}
+				$('.filter [data-value="'+drawData.params[0]+'"]').addClass('active');
+				tplt.draw('filter',{
+					filter: drawData,
+					defaultConfig: config
+				});
+			}
+		}
+		filter.prototype.isInit = function(){
+			return this.fc!=null;
+		}
+		filter.prototype.change = function(cal){
+			this.calArr.push(cal);
+		}
+		filter.prototype.getActiveParam = function(){
+			var data = {};
+			if(this.isInit()){
+				$('.filter .active').each(function(){
+					var type = $(this).parent().data('param');
+					var value = $(this).data('value');
+					if( value != '_filter_all' ){
+						data[type] = value;
+					}else{
+						data[type] = '';
+					}
+				});
+			}
+			return data;
+		}
+	</script>
+</div>
+									<div class="header_tit">
+										<span class="box"></span>
+										录取概况
+										<span class="line"></span>
+									</div>
+									<table class="table_1 table_con" id="zsSsgradeListPlace">
+			<colgroup>
+				<col width="55">
+				<col width="75">
+				<col width="75">
+				
+				
+				<col width="277">
+				<col width="75">
+				<col width="95">
+				<col width="75">
+				<col width="75">
+				<col width="75">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>年份</th>
+					<th>省市</th>
+					<th>科类</th>
+					
+					
+					<th>类型</th>
+					<th>最低分</th>
+					<th>最低分排名</th>
+					<th>平均分</th>
+					<th>最高分</th>
+					<th>控制线</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>624</td>
+							<td>5586</td>
+							<td>634.2</td>
+							<td>658</td>
+							<td>526</td>
+						</tr>
+					
+					
+				
+			</tbody>
+		</table>
+									<div class="header_tit">
+										<span class="box"></span>
+										分专业录取情况
+										<span class="line"></span>
+									</div>
+									<table class="table_1 sort-table" id="sszygradeListPlace">
+			<colgroup>
+				<col width="55">
+				<col width="75">
+				<col width="75">
+				
+				
+				<col width="95">
+				<col width="182">
+				<col width="75">
+				<col width="95">
+				<col width="75">
+				<col width="75">
+				<col width="75">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>年份</th>
+					<th>省市</th>
+					<th>科类</th>
+					
+					
+					<th>类型</th>
+					<th>专业</th>
+					<th class="header">最低分</th>
+					<th class="header">最低分排名</th>
+					<th class="header">平均分</th>
+					<th class="header">最高分</th>
+					<th>控制线</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								电子信息工程
+							</td>
+							<td>624</td>
+							<td>5586</td>
+							<td>627</td>
+							<td>631</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								人工智能
+							</td>
+							<td>624</td>
+							<td>5586</td>
+							<td>625.7</td>
+							<td>627</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								数据科学与大数据技术(传媒大数据方向)
+							</td>
+							<td>625</td>
+							<td>5455</td>
+							<td>627.7</td>
+							<td>632</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								计算机科学与技术
+							</td>
+							<td>625</td>
+							<td>5455</td>
+							<td>625.5</td>
+							<td>626</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								智能科学与技术(智能影像工程方向)
+							</td>
+							<td>625</td>
+							<td>5455</td>
+							<td>625.3</td>
+							<td>626</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								数据科学与大数据技术
+							</td>
+							<td>626</td>
+							<td>5321</td>
+							<td>629.2</td>
+							<td>635</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								网络空间安全
+							</td>
+							<td>626</td>
+							<td>5321</td>
+							<td>628</td>
+							<td>631</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								物联网工程
+							</td>
+							<td>626</td>
+							<td>5321</td>
+							<td>627.8</td>
+							<td>631</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								自动化(演艺工程与智能技术方向)
+							</td>
+							<td>626</td>
+							<td>5321</td>
+							<td>627.7</td>
+							<td>629</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								通信工程(无线多媒体广播技术方向)
+							</td>
+							<td>627</td>
+							<td>5201</td>
+							<td>627.5</td>
+							<td>628</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								智能科学与技术(智能媒体技术方向)
+							</td>
+							<td>628</td>
+							<td>5087</td>
+							<td>628.4</td>
+							<td>630</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								管理科学与工程类
+							</td>
+							<td>629</td>
+							<td>4950</td>
+							<td>631.3</td>
+							<td>633</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								通信工程
+							</td>
+							<td>629</td>
+							<td>4950</td>
+							<td>630.5</td>
+							<td>632</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								广播电视工程
+							</td>
+							<td>630</td>
+							<td>4830</td>
+							<td>630.3</td>
+							<td>631</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								广告学(数字营销方向)
+							</td>
+							<td>631</td>
+							<td>4705</td>
+							<td>635.6</td>
+							<td>643</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								工商管理类
+							</td>
+							<td>631</td>
+							<td>4705</td>
+							<td>634</td>
+							<td>638</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								新闻学(数据新闻报道方向)
+							</td>
+							<td>631</td>
+							<td>4705</td>
+							<td>633.8</td>
+							<td>638</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								汉语国际教育
+							</td>
+							<td>631</td>
+							<td>4705</td>
+							<td>633.3</td>
+							<td>635</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								翻译
+							</td>
+							<td>631</td>
+							<td>4705</td>
+							<td>632.5</td>
+							<td>634</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								汉语言
+							</td>
+							<td>631</td>
+							<td>4705</td>
+							<td>631.7</td>
+							<td>632</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								行政管理(公共事务与传播治理方向)
+							</td>
+							<td>631</td>
+							<td>4705</td>
+							<td>631.5</td>
+							<td>632</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								传播学(媒体市场调查与分析方向)
+							</td>
+							<td>632</td>
+							<td>4589</td>
+							<td>634.5</td>
+							<td>637</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								英语
+							</td>
+							<td>632</td>
+							<td>4589</td>
+							<td>633.2</td>
+							<td>636</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								行政管理(国家治理与政治传播方向)
+							</td>
+							<td>632</td>
+							<td>4589</td>
+							<td>633.5</td>
+							<td>636</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								经济学类
+							</td>
+							<td>632</td>
+							<td>4589</td>
+							<td>632.8</td>
+							<td>633</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								公共关系学
+							</td>
+							<td>632</td>
+							<td>4589</td>
+							<td>632.3</td>
+							<td>633</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								编辑出版学（新媒体方向）
+							</td>
+							<td>634</td>
+							<td>4353</td>
+							<td>638.7</td>
+							<td>645</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								网络与新媒体
+							</td>
+							<td>634</td>
+							<td>4353</td>
+							<td>635.8</td>
+							<td>637</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								文化产业管理
+							</td>
+							<td>634</td>
+							<td>4353</td>
+							<td>634</td>
+							<td>634</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								广告学
+							</td>
+							<td>635</td>
+							<td>4223</td>
+							<td>644.5</td>
+							<td>658</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								广播电视学
+							</td>
+							<td>635</td>
+							<td>4223</td>
+							<td>642</td>
+							<td>648</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								网络与新媒体(智能融媒体运营方向)
+							</td>
+							<td>635</td>
+							<td>4223</td>
+							<td>638.4</td>
+							<td>643</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								数字媒体技术
+							</td>
+							<td>636</td>
+							<td>4103</td>
+							<td>641</td>
+							<td>646</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								网络与新媒体(媒体创意方向)
+							</td>
+							<td>637</td>
+							<td>3964</td>
+							<td>637</td>
+							<td>637</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								汉语言文学
+							</td>
+							<td>637</td>
+							<td>3964</td>
+							<td>637</td>
+							<td>637</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								传播学
+							</td>
+							<td>638</td>
+							<td>3852</td>
+							<td>642.7</td>
+							<td>650</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								国际新闻与传播
+							</td>
+							<td>640</td>
+							<td>3621</td>
+							<td>644</td>
+							<td>651</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								数字媒体技术(游戏设计技术方向)
+							</td>
+							<td>642</td>
+							<td>3378</td>
+							<td>647</td>
+							<td>655</td>
+							<td>526</td>
+						</tr>
+					
+						<tr>
+							<td>2020</td>
+							<td>北京</td>
+							<td>综合改革</td>
+							
+							
+							<td>普通类</td>
+							<td>
+								新闻学
+							</td>
+							<td>652</td>
+							<td>2423</td>
+							<td>654</td>
+							<td>655</td>
+							<td>526</td>
+						</tr>
+					
+					
+				
+			</tbody>
+		</table>
+									<div id="tabTipPlace"></div>
+								</li>
+								<li style="display: none;">
+									<ul class="thc_list" id="thcPlace">
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/北京" target="_blank">北京</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/天津" target="_blank">天津</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/河北" target="_blank">河北</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/山西" target="_blank">山西</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/内蒙古" target="_blank">内蒙古</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/辽宁" target="_blank">辽宁</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/吉林" target="_blank">吉林</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/黑龙江" target="_blank">黑龙江</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/上海" target="_blank">上海</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/江苏" target="_blank">江苏</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/浙江" target="_blank">浙江</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/安徽" target="_blank">安徽</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/福建" target="_blank">福建</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/江西" target="_blank">江西</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/山东" target="_blank">山东</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/河南" target="_blank">河南</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/湖北" target="_blank">湖北</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/湖南" target="_blank">湖南</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/广东" target="_blank">广东</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/广西" target="_blank">广西</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/海南" target="_blank">海南</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/重庆" target="_blank">重庆</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/四川" target="_blank">四川</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/贵州" target="_blank">贵州</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/云南" target="_blank">云南</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/西藏" target="_blank">西藏</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/陕西" target="_blank">陕西</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/甘肃" target="_blank">甘肃</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/青海" target="_blank">青海</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/宁夏" target="_blank">宁夏</a>
+												</li>
+											
+												<li>
+													<a href="http://zszx.cuc.edu.cn/f/zsjhAndLqfs/新疆" target="_blank">新疆</a>
+												</li>
+											
+										</ul>
+									<script id="thc" type="text/html">
+										<ul class="thc_list">
+											{{each ssmcList}}
+												<li>
+													<a {{if canNotVistor($value)}} href="javascript:void(0);" style="color: #999" {{else}} href="{{_config.domain}}f/zsjhAndLqfs/{{$value}}" target="_blank" {{/if}}>{{$value}}</a>
+												</li>
+											{{/each}}
+										</ul>
+									</script>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="padding: 20px 0px;" id="footerPlace">
+		<div class="footer-mid" style="width: 1200px;">
+			<div class="left-img" style="margin-left: 0px; margin-right: 20px;">
+				<div class="code_img"></div>
+				<p style="font-size: 12px; margin-top: 6px;">微信公众号</p>
+			</div>
+			<div class="ver-box" style="font-size: 14px;width: auto;text-align: left;line-height: 17px;">
+				<p class="bq">
+					
+						邮编：
+						
+							100024
+							
+						
+						&nbsp; &nbsp;
+					
+					
+						电话：
+						
+							010-65779370
+							,
+						
+							010-65779256
+							
+						&nbsp; &nbsp;
+					
+				</p>
+				<p class="bq">
+					
+						传真：
+						
+							010-65779141
+							
+						&nbsp; &nbsp;
+					
+					
+						邮箱：
+						
+							cuczsb@cuc.edu.cn
+							
+						&nbsp; &nbsp;
+					
+					
+						地址：北京市朝阳区定福庄东街一号中国传媒大学招生办&nbsp; &nbsp;
+					
+				</p>
+				<p class="bq">版权所有 © 中国传媒大学 / 京 ICP 备 10039564 号 京公网安备 110402430031 号&nbsp; &nbsp;技术支持：北京云智小橙科技有限公司</p>
+			</div>
+		</div>
+	</div>
+<script id="footer" type="text/html">
+	<div class="footer" style="padding: 20px 0px;">
+		<div class="footer-mid" style="width: 1200px;">
+			<div class="left-img" style="margin-left: 0px; margin-right: 20px;">
+				<div class="code_img"></div>
+				<p style="font-size: 12px; margin-top: 6px;">微信公众号</p>
+			</div>
+			<div class="ver-box" style="font-size: 14px;width: auto;text-align: left;line-height: 17px;">
+				<p class="bq">
+					{{if !isEmpty(university.postcode)}}
+						邮编：
+						{{each university.postcode}}
+							{{$value}}
+							{{if $index != university.postcode.length-1}},{{/if}}
+						{{/each}}
+						&nbsp; &nbsp;
+					{{/if}}
+					{{if !isEmpty(university.phone)}}
+						电话：
+						{{each university.phone}}
+							{{$value}}
+							{{if $index != university.phone.length-1}},{{/if}}
+						{{/each}}&nbsp; &nbsp;
+					{{/if}}
+				</p>
+				<p class="bq">
+					{{if !isEmpty(university.fax)}}
+						传真：
+						{{each university.fax}}
+							{{$value}}
+							{{if $index != university.fax.length-1}},{{/if}}
+						{{/each}}&nbsp; &nbsp;
+					{{/if}}
+					{{if !isEmpty(university.email)}}
+						邮箱：
+						{{each university.email}}
+							{{$value}}
+							{{if $index != university.email.length-1}},{{/if}}
+						{{/each}}&nbsp; &nbsp;
+					{{/if}}
+					{{if !isEmpty(university.address)}}
+						地址：{{university.address[0]}}&nbsp; &nbsp;
+					{{/if}}
+				</p>
+				<p class="bq">{{university.copyright}}&nbsp; &nbsp;技术支持：北京云智小橙科技有限公司</p>
+			</div>
+		</div>
+	</div>
+</script>
+<script type="text/javascript">
+	tplt.draw('footer',{
+		fLinks: window.fLinks,
+		university: window.university
+	});
+</script>
+	</div>
+	<script type="text/html" id="tabTip">
+		{{if !isEmpty(remark)}}
+			<div class="tabTip">{{#remark}}</div>
+		{{/if}}
+	</script>
+	<script type="text/html" id="zsSsgradeList">
+		<table class="table_1 table_con">
+			<colgroup>
+				<col width="55">
+				<col width="75">
+				<col width="75">
+				{{if isNeedSex}}
+					<col width="75">
+				{{/if}}
+				{{if isNeedCampus}}
+					<col width="75">
+				{{/if}}
+				<col width="277">
+				<col width="75">
+				<col width="95">
+				<col width="75">
+				<col width="75">
+				<col width="75">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>年份</th>
+					<th>省市</th>
+					<th>科类</th>
+					{{if isNeedSex}}
+						<th>性别</th>
+					{{/if}}
+					{{if isNeedCampus}}
+						<th>校区</th>
+					{{/if}}
+					<th>类型</th>
+					<th>最低分</th>
+					<th>最低分排名</th>
+					<th>平均分</th>
+					<th>最高分</th>
+					<th>控制线</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{if !isLoading}}
+					{{each list}}
+						<tr>
+							<td>{{ out($value,'nf','2018') }}</td>
+							<td>{{ out($value,'ssmc','--') }}</td>
+							<td>{{ out($value,'klmc','--') }}</td>
+							{{if isNeedSex}}
+								<td>{{ out($value,'sex','--') }}</td>
+							{{/if}}
+							{{if isNeedCampus}}
+								<td>{{ out($value,'campus','--') }}</td>
+							{{/if}}
+							<td>{{ out($value,'zylx','--') }}</td>
+							<td>{{ out($value,'minScore','--') }}</td>
+							<td>{{ out($value,'minOrder','--') }}</td>
+							<td>{{ out($value,'avgScore','--') }}</td>
+							<td>{{ out($value,'maxScore','--') }}</td>
+							<td>{{ out($value,'zdx','--') }}</td>
+						</tr>
+					{{/each}}
+					{{if list.length==0}}
+						<tr class="no_data">
+							<td colspan="15">
+								{{if isEmpty(errorTxt)}}
+									没有找到符合条件的数据
+								{{else}}
+									{{errorTxt}}
+								{{/if}}
+							</td>
+						</tr>
+					{{/if}}
+				{{else}}
+					<tr class="loading">
+						<td colspan="15"></td>
+					</tr>
+				{{/if}}
+			</tbody>
+		</table>
+	</script>
+	<script type="text/html" id="sszygradeList">
+		<table class="table_1 sort-table">
+			<colgroup>
+				<col width="55">
+				<col width="75">
+				<col width="75">
+				{{if isNeedSex}}
+					<col width="75">
+				{{/if}}
+				{{if isNeedCampus}}
+					<col width="75">
+				{{/if}}
+				<col width="95">
+				<col width="182">
+				<col width="75">
+				<col width="95">
+				<col width="75">
+				<col width="75">
+				<col width="75">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>年份</th>
+					<th>省市</th>
+					<th>科类</th>
+					{{if isNeedSex}}
+						<th>性别</th>
+					{{/if}}
+					{{if isNeedCampus}}
+						<th>校区</th>
+					{{/if}}
+					<th>类型</th>
+					<th>专业</th>
+					<th>最低分</th>
+					<th>最低分排名</th>
+					<th>平均分</th>
+					<th>最高分</th>
+					<th>控制线</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{if !isLoading}}
+					{{each list}}
+						<tr>
+							<td>{{ out($value,'nf','2018') }}</td>
+							<td>{{ out($value,'ssmc','--') }}</td>
+							<td>{{ out($value,'klmc','--') }}</td>
+							{{if isNeedSex}}
+								<td>{{ out($value,'sex','--') }}</td>
+							{{/if}}
+							{{if isNeedCampus}}
+								<td>{{ out($value,'campus','--') }}</td>
+							{{/if}}
+							<td>{{ out($value,'zylx','--') }}</td>
+							<td>
+								{{ out($value,'zymc','--') }}
+							</td>
+							<td>{{ out($value,'minScore','--') }}</td>
+							<td>{{ out($value,'minOrder','--') }}</td>
+							<td>{{ out($value,'avgScore','--') }}</td>
+							<td>{{ out($value,'maxScore','--') }}</td>
+							<td>{{ out($value,'zdx','--') }}</td>
+						</tr>
+					{{/each}}
+					{{if list.length==0}}
+						<tr class="no_data">
+							<td colspan="15">
+								{{if isEmpty(errorTxt)}}
+									没有找到符合条件的数据
+								{{else}}
+									{{errorTxt}}
+								{{/if}}
+							</td>
+						</tr>
+					{{/if}}
+				{{else}}
+					<tr class="loading">
+						<td colspan="15"></td>
+					</tr>
+				{{/if}}
+			</tbody>
+		</table>
+	</script>
+	<!-- <script src="../js/echarts-all.js"></script> -->
+	<script type="text/javascript">
+		template.helper('canNotVistor',function($value){
+			var pth = /台湾|香港|澳门/;
+			return pth.test($value);
+		});
+		var config = [{
+					name: 'ssmc',
+					nameCa: '省份',
+					isNeed: true,
+					isNeedAll: false
+				},{
+					name: 'zsnf',
+					nameCa: '年份',
+					isNeed: true,
+					isNeedAll: false
+				},{
+					name: 'klmc',
+					nameCa: '科类',
+					isNeed: true,
+					isNeedAll: false
+				},{
+					name: 'sex',
+					nameCa: '性别',
+					isNeed: false,
+					isNeedAll: false
+				},{
+					name: 'campus',
+					nameCa: '校区',
+					isNeed: false,
+					isNeedAll: false
+				},{
+					name: 'zslx',
+					nameCa: '类型',
+					isNeed: true,
+					isNeedAll: false
+				}];
+		var isAjaxIng = false;
+		var isNeedSex = false;
+		var isNeedCampus = false;
+		var flt = null;
+		$.ajax({
+			async: false, // 同步请求
+			type: "POST",
+			url: $.url('f/ajax_lnfs_param'),
+			success: function(res){
+				if( res.state == 1 ){
+					var data = {};
+					data.list = $.out(res,'data.ssmc_nf_klmc_sex_campus_zslx_list');
+					flt = new filter();
+					config[3]['isNeed'] = res.data.withSex || false;
+					config[4]['isNeed'] = res.data.withCampus || false;
+					isNeedSex = res.data.withSex;
+					isNeedCampus = res.data.withCampus;
+					flt.init(config,data,initActiveParam);
+					var param = flt.getActiveParam();
+					console.log(param);
+					getFormData(param);
+					flt.change(function(e){
+						var data = e.params;
+						getFormData(data);
+					});
+					tplt.draw('tabTip',{remark: $.out(res,'data.remarks.remark1')||''});
+					var ssmcArr = [];
+					var ssmcList = ["北京", "天津", "河北", "山西", "内蒙古", "辽宁", "吉林", "黑龙江", "上海", "江苏", "浙江", "安徽", "福建", "江西", "山东", "河南", "湖北", "湖南", "广东", "广西", "海南", "重庆", "四川", "贵州", "云南", "西藏", "陕西", "甘肃", "青海", "宁夏", "新疆"];
+					ssmcList.forEach(function(item){
+						var obj = {};
+						obj.name = item;
+						obj.value = Math.round(Math.random()*2000);
+						obj.url =window._config.domain + 'f/zsjhAndLqfs/' + item;
+						ssmcArr.push(obj);
+					});
+					/*console.log(ssmcArr);
+					initPDchart(ssmcArr);*/
+					tplt.draw('thc',{ssmcList:ssmcList});
+				}
+			}
+		});
+		function initPDchart(ssmcArr){
+			var myChart = echarts.init(document.getElementById('map'));
+			var option = {
+				dataRange: {
+					min: 0,
+					max: 2500,
+					x: '-500',
+					y: '-500'
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: function (params) {
+						var tip = '<a href="'+params.data.url+'" style="display:block;"><div style="font-size: 15px;line-height: 22px;color:#fff;">'+params.name+'近三年录取情况</div><div style="font-size: 13px;line-height: 22px;color:#fff;">点击查看</div></a>';
+						return tip;
+					},
+					position: function (point) {
+						return point;
+					}
+				},
+				series: [{
+					name: '中国',
+					type: 'map',
+					mapType: 'china',
+					roam: false,
+					itemStyle: {
+						normal: {
+							label: {
+								show: true, //默认是否显示省份名称
+								textStyle: {
+									color: "#333"
+								}
+							},
+							borderWidth: 1,
+							borderColor: '#e1e2e3'
+						},
+						emphasis: {
+							label: {
+								show: true,//选中状态是否显示省份名称
+								textStyle: {
+									color: "#fff"
+								}
+							},
+							areaStyle: {
+								color: '#004098'
+							}
+						}
+					},
+					data: ssmcArr
+				}]
+			};
+			myChart.on('click', function(params) {
+				var city = params.name;
+				window.location.href = params.data.url;
+			});
+			myChart.setOption(option);
+		}
+		var isFirst = true;
+		function getFormData(data){
+			isAjaxIng = true;
+			$('.body').height($('.body').height());
+			tplt.draw('zsSsgradeList',{
+				isLoading: true,
+				isNeedSex: isNeedSex,
+				isNeedCampus: isNeedCampus
+			});
+			tplt.draw('sszygradeList',{
+				isLoading: true,
+				isNeedSex: isNeedSex,
+				isNeedCampus: isNeedCampus
+			});
+			$.ajax({
+				type: "POST",
+				url: $.url('f/ajax_lnfs'),
+				data: data,
+				success: function(res){
+					if( res.state == 1 ){
+						$(".sort-table").trigger("update");
+						tplt.draw('zsSsgradeList',{
+							list: $.out(res,'data.zsSsgradeList')||[],
+							isNeedSex: isNeedSex,
+							isNeedCampus: isNeedCampus
+						});
+						tplt.draw('sszygradeList',{
+							list: $.out(res,'data.sszygradeList')||[],
+							isNeedSex: isNeedSex,
+							isNeedCampus: isNeedCampus
+						});
+					}else{
+						tplt.draw('zsSsgradeList',{
+							list: [],
+							isNeedSex: isNeedSex,
+							isNeedCampus: isNeedCampus
+						});
+						tplt.draw('sszygradeList',{
+							list: [],
+							isNeedSex: isNeedSex,
+							isNeedCampus: isNeedCampus
+						});
+					}
+					isAjaxIng = false;
+					$('.body').css('height','auto');
+					if(isFirst){
+						isFirst = false;
+						initTable();
+					}
+				},
+				error: function(){
+					isAjaxIng = false;
+					tplt.draw('zsSsgradeList',{
+						list:[],
+						errorTxt: '网络服务错误，请刷新页面',
+						isNeedSex: isNeedSex,
+						isNeedCampus: isNeedCampus
+					});
+					tplt.draw('sszygradeList',{
+						list:[],
+						errorTxt: '网络服务错误，请刷新页面',
+						isNeedSex: isNeedSex,
+						isNeedCampus: isNeedCampus
+					});
+					$('.body').css('height','auto');
+				}
+			});
+		};
+		function initTable(){
+			$(".sort-table").tablesorter({
+				headers : {
+					0:{
+						sorter : false
+					},
+					1:{
+						sorter : false
+					},
+					2:{
+						sorter : false
+					},
+					3:{
+						sorter : false
+					},
+					4:{
+						sorter : false
+					},
+					9:{
+						sorter : false
+					}
+				}
+			});
+		}
+		function go_to_zyjs_zy(t){
+			var zyName = $(t).data('zyname');
+			var zsnf = $(t).data('zsnf');
+			if($(t).hasClass('active')){
+				return false;
+			}
+			var load = $.loading();
+			$.ajax({
+				async: false, // 同步请求
+				type: "POST",
+				url: $.url('f/ajax_zyjs_zy'),
+				data: {
+					zyName: zyName,
+					zsnf: zsnf
+				},
+				success: function(res){
+					load.remove();
+					if( res.state != 0 ){
+						window.open('zyjs_zy.html?zyName='+escape(zyName)+'&zsnf='+escape(zsnf));
+					}else{
+						$.noticeTip(1000,res.msg);
+						$(t).addClass('active');
+					}
+				}
+			});
+		}
+	</script>
+
+</body></html>

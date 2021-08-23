@@ -1,0 +1,336 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>宁波大学本科招生网</title>
+    <link href="/Content/Page/statics/css/core/reset.css" rel="stylesheet" type="text/css">
+    <link href="/Content/Page/statics/css/core/fix.css" rel="stylesheet" type="text/css">
+    <link href="/Content/Page/statics/css/core/default.css" rel="stylesheet" type="text/css">
+    <link href="/Content/Page/statics/css/ui/ui.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="/Content/Page/statics/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="/Content/Page/statics/js/jQuery.Functions.js"></script>
+    <script>
+        var basePath = '/';
+        var contentPath = '/Content/Page/';
+        var controller = '/Article';
+    </script>
+</head>
+<body>
+
+    
+<script language="javascript" type="text/javascript">
+    function getUrl(newP) {
+        var url = '/Page/Search?keyword=' + $("#SearchValue").val() + "&rnd=" + Math.random();
+                if (newP)
+                    url = url + "&page=1";
+                return url;
+            };
+
+            function Search() {
+                //window.location.replace(getUrl);
+                window.location = getUrl();
+            }
+</script>
+
+<div class="LogoBar">
+    <div class="containerWide fixbg1">
+        <div class="Logo left"></div>
+
+        
+
+        <div class="NavBar">
+            <div class="containerWide fixbg2">
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/News?classID=1">招生快讯</a></li>
+                    <li><a href="/Monographic?classID=13">招生政策</a></li>
+                    <li><a href="/Page/College">学院导航</a></li>
+                    
+                    <li><a href="/Page/ContactUs">联系我们</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="SearchBarCon">
+            <div class="SearchBarLeft"></div>
+            <div class="SearchBarCenter">
+                <input id="SearchValue" type="text" class="SearchBarInput">
+            </div>
+            <div class="SearchBarRight">
+                <img src="/Content/Page/statics/images/defaultUI/search_btn.png" alt="" onclick="Search()">
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+
+
+
+    
+<style>
+    .article table {
+        margin: 0 auto;
+    }
+
+        .article table td {
+            border: 1px solid #808080;
+            text-align: center;
+        }
+</style>
+<script>
+    $(function () {
+        $(".article table td").each(function () {
+            var s = setContent($(this).html());
+            $(this).html(s);
+        });
+    });
+    function setContent(str) {
+        var bt = "";
+        var bt2 = "";
+        if (str.indexOf("<strong>") > 0) {
+            bt = "<strong>";
+            bt2 = "</strong>"
+        }
+        str = str.replace(/<\/?[^>]*>/g, ''); //去除HTML tag
+        str.value = str.replace(/[ | ]*\n/g, '\n'); //去除行尾空白
+        //str = str.replace(/\n[\s| | ]*\r/g,'\n'); //去除多余空行
+        return bt + str + bt2;
+    }
+</script>
+
+<div class="containerWide">
+
+    <!--左侧导航-->
+    
+<script src="/Content/Page/statics/js/jquery-1.9.1.js"></script>
+<script src="/Content/Page/statics/js/jquery-ui.js"></script>
+<script src="/Content/Page/statics/js/jquery.json-2.4.min.js"></script>
+<script src="/Content/Page/statics/js/jquery.jqGrid.js"></script>
+<script src="/Content/Page/statics/js/jquery.form.js"></script>
+<script src="/Content/Page/statics/js/jquery.blockUI.js"></script>
+<script src="/Content/Page/statics/js/jquery.validate.js"></script>
+<script src="/Content/Page/statics/js/common.js"></script>
+<script src="/Content/Manage/mycommon.js"></script>
+<script src="/Content/Manage/common.js"></script>
+<script src="/Content/Manage/myform.js"></script>
+<script type="text/javascript">
+    $(function () {
+        ShowBirthday($("#nflnjh"), 0);
+        ShowBirthday($("#nflnqk"), 1);
+    });
+
+    function ShowBirthday(yearid, type) {
+        var myDate = new Date();
+        var year = myDate.getFullYear();
+        if (type == 1) {
+            year = year - 1;
+        }
+        for (var i = year ; i >= 2006 ; i--) {
+            yearid.append('<option value="' + i + '">' + i + '</option>')
+        }
+    }
+</script>
+<div class="mainleft mgt20">
+    <div style="height: 70px;"></div>
+    <div class="box2">
+        <div class="title">报考类别</div>
+        <ul>
+            <li><a href="/Monographic?classID=3">普通文理</a></li>
+            <li><a href="/Monographic?classID=4">三位一体</a></li>
+            <li><a href="/Monographic?classID=6">港澳台招生</a></li>
+            <li><a href="/Monographic?classID=8">艺术类</a></li>
+            <li><a href="/Monographic?classID=9">运动训练</a></li>
+            <li><a href="/Monographic?classID=10">高水平运动队</a></li>
+            <li style="width:280px;"><a href="/Monographic?classID=18">2021年招生专业介绍</a></li>
+        </ul>
+    </div>
+
+    <div class="box3">
+        <div class="title">信息查询</div>
+        <div class="AdmitSearchBox">
+            <div class="line"></div>
+
+            <div class="list">
+                <form action="/lnjh" method="post" target="_blank">
+                    <img src="/Content/Page/statics/images/defaultUI/zhaoshengjihua.png" alt="">
+                    <div class="nianfen">
+                        <div class="box">
+                            <div class="box2">
+                                <!--webbot bot="Validation" s-display-name="请选择年份" b-disallow-first-item="TRUE" -->
+                                <select id="nflnjh" name="nflnjh" size="1" style="width: 100px; margin: 0 0 0 30px">
+                                    <option value="- - 年 份 - -" selected="selected">- - 年 份 - -</option>
+                                <option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shengfen">
+                        <div class="box">
+                            <div class="box2">
+                                <!--webbot bot="Validation" s-display-name="请选择省份" b-disallow-first-item="TRUE" -->
+                                <select id="sflnjh" name="sflnjh" size="1" style="width: 100px; margin: 0 0 0 30px"><option value="0" selected="selected">请选择省份</option><option value="浙江">浙江</option><option value="江西">江西</option><option value="江苏">江苏</option><option value="山东">山东</option><option value="福建">福建</option><option value="广东">广东</option><option value="广西">广西</option><option value="云南">云南</option><option value="四川">四川</option><option value="贵州">贵州</option><option value="重庆">重庆</option><option value="上海">上海</option><option value="天津">天津</option><option value="陕西">陕西</option><option value="山西">山西</option><option value="宁夏">宁夏</option><option value="新疆">新疆</option><option value="西藏">西藏</option><option value="内蒙古">内蒙古</option><option value="黑龙江">黑龙江</option><option value="辽宁">辽宁</option><option value="河南">河南</option><option value="河北">河北</option><option value="湖南">湖南</option><option value="湖北">湖北</option><option value="甘肃">甘肃</option><option value="青海">青海</option><option value="吉林">吉林</option><option value="海南">海南</option><option value="香港">香港</option><option value="台湾">台湾</option><option value="安徽">安徽</option><option value="澳门">澳门</option><option value="北京">北京</option><option value="港澳台(联招)">港澳台(联招)</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chaxun">
+                        <input type="image" src="/Content/Page/statics/images/defaultUI/chaxun.png" alt="">
+                    </div>
+                </form>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="list">
+                <form action="/lnqk" method="post" target="_blank">
+                    <img src="/Content/Page/statics/images/defaultUI/linianqingkuang.png" alt="">
+                    <div class="nianfen">
+                        <div class="box">
+                            <div class="box2">
+                                <select id="nflnqk" name="nflnqk" style="width: 100px; margin: 0 0 0 30px">
+                                    <option value="- - 年 份 - -" selected="selected">- - 年 份 - -</option>
+                                <option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shengfen">
+                        <div class="box">
+                            <div class="box2">
+                                <select id="sflnqk" name="sflnqk" style="width: 100px; margin: 0 0 0 30px"><option value="0" selected="selected">请选择省份</option><option value="浙江">浙江</option><option value="江西">江西</option><option value="江苏">江苏</option><option value="山东">山东</option><option value="福建">福建</option><option value="广东">广东</option><option value="广西">广西</option><option value="云南">云南</option><option value="四川">四川</option><option value="贵州">贵州</option><option value="重庆">重庆</option><option value="上海">上海</option><option value="天津">天津</option><option value="陕西">陕西</option><option value="山西">山西</option><option value="宁夏">宁夏</option><option value="新疆">新疆</option><option value="西藏">西藏</option><option value="内蒙古">内蒙古</option><option value="黑龙江">黑龙江</option><option value="辽宁">辽宁</option><option value="河南">河南</option><option value="河北">河北</option><option value="湖南">湖南</option><option value="湖北">湖北</option><option value="甘肃">甘肃</option><option value="青海">青海</option><option value="吉林">吉林</option><option value="海南">海南</option><option value="香港">香港</option><option value="台湾">台湾</option><option value="安徽">安徽</option><option value="澳门">澳门</option><option value="北京">北京</option><option value="港澳台(联招)">港澳台(联招)</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chaxun">
+                        <input type="image" src="/Content/Page/statics/images/defaultUI/chaxun.png" alt="">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        $("lnjh").ready(function () {
+            loadItems($("#sflnjh"), '/zixun/ProvinceList', function (obj) {
+                    $(obj).prepend($("<option value='0'>请选择省份</option>"));
+                    updateOption($("#sflnjh"), 0);
+                }, "ProvinceName", "ProvinceName");
+            });
+            $("lnqk").ready(function () {
+                loadItems($("#sflnqk"), '/zixun/ProvinceList', function (obj) {
+                    $(obj).prepend($("<option value='0'>请选择省份</option>"));
+                    updateOption($("#sflnqk"), 0);
+                }, "ProvinceName", "ProvinceName");
+            });
+        </script>
+    <div class="box4">
+        <div class="title">招生系统</div>
+        <ul>
+            <li>
+                <div class="icon">
+                    <img src="/Content/Page/statics/images/defaultUI/icons/1.png" alt="">
+                </div>
+                <div class="text">
+                    <a href="https://bmxt.nbu.edu.cn/trinity/login/index">“三位一体”报名系统</a>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="/Content/Page/statics/images/defaultUI/icons/3.png" alt="">
+                </div>
+                <div class="text"><a href="/Athlete/Login">"高水平运动员" 报名系统</a></div>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="/Content/Page/statics/images/defaultUI/icons/10.png" alt="">
+                </div>
+                <div class="text"><a href="/luqu">录取查询</a></div>
+            </li>
+                <li>
+                    <div class="icon">
+                        <img src="/Content/Page/statics/images/defaultUI/icons/4.png" alt="">
+                    </div>
+                    <div class="text"><a href="https://bmxt.nbu.edu.cn/degree/login/index" target="_blank">"第二学士学位" 报名系统</a></div>
+                </li>
+        </ul>
+    </div>
+
+    <div class="box4">
+        <div class="title">二维码扫描</div>
+        <div class="ewm">
+            <img src="/Content/Page/statics/images/defaultUI/erweima.jpg" width="100%"></div>
+    </div>
+</div>
+
+    <!--左侧导航结束-->
+    <!--右侧导航-->
+    <div class="subright">
+        <div class="nowposition"><a href="/">首页</a> / 招生快讯 / 正文</div>
+        <div class="articletitle">关于2021年宁波大学“三位一体”录取结果查询的公告</div>
+        <div class="authorinfo">发表时间： 2021/7/14  &nbsp;浏览(10068)</div>
+        <div class="article">
+            <p style="text-align:left;text-indent:40px;line-height:250%"><span style="font-size:20px;line-height:250%;font-family:仿宋">根据浙江省2021年招生录取相关规定，结合《2021年宁波大学“三位一体”综合评价招生章程》的要求，我校2021年“三位一体”综合评价招生录取工作已经结束，现将录取结果进行公布。</span></p><p style="text-align:left;text-indent:40px;line-height:250%"><strong><span style="font-size:20px;line-height:250%;font-family:仿宋">一.查询方法&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong></p><p style="text-align:left;text-indent:40px;line-height:250%"><span style="font-size:20px;line-height:250%;font-family:仿宋">考生可进入宁波大学本科招生网https://zsb.nbu.edu.cn/——招生系统——录取查询系统查询录取情况。</span></p><p style="text-align:left;text-indent:40px;line-height:250%"><strong><span style="font-size:20px;line-height:250%;font-family:仿宋">二.成绩折算方法</span></strong></p><p style="text-align:left;text-indent:40px;line-height:250%"><strong><span style="font-size:20px;line-height:250%;font-family:仿宋">成绩合成：</span></strong><span style="font-size:20px;line-height:250%;font-family:仿宋">对进档考生，按综合成绩从高分到低分排序。</span></p><p style="text-align:left;text-indent:40px;line-height:250%"><strong><span style="font-size:20px;line-height:250%;font-family:仿宋">综合成绩换算公式：</span></strong><span style="font-size: 20px;line-height:250%;font-family:仿宋">综合成绩=学业水平测试成绩（折算成满分100分）×15%+综合测试成绩（折算成满分100分）×25%+高考总分（折算成满分100分）×60%。若考生综合成绩相同时，则按单项成绩高低排序，单项成绩优先排列次序为：综合测试成绩、高考总分、学业水平测试成绩、高考语文成绩、高考数学成绩、高考外语成绩以及高考选考科目总分。</span></p><p style="text-align:left;text-indent:40px;line-height:250%"><strong><span style="font-size:20px;line-height:250%;font-family:仿宋">学业水平测试成绩折算方法：</span></strong><span style="font-size:20px;line-height:250%;font-family:仿宋">采取折计分制，将考生所有的高中学业水平考试科目（10门）成绩等第折算成分数，A等折计10分，B等折计8分，C等折计4分，D等及以下不计分。学考折算分满分为100分（省内新高考改革前的往届生的通用技术、信息技术两门学考，取较高的一门作为技术科目的学考成绩）。</span></p><p style="text-align:left;text-indent:40px;line-height:250%"><strong><span style="font-size:20px;line-height:250%;font-family:仿宋">三.录取规则</span></strong></p><p style=";margin-bottom:0;text-indent:40px;line-height:250%"><span style="font-size:20px;line-height:250%;font-family:仿宋">专业投档办法：按照非师范类、师范类、中外合作类各类计划数1:1分别划定校内投档基准线，按“分数优先，平行志愿”的原则择优录取，专业间不设级差分。当考生综合成绩无法满足其所填报的专业志愿时，如果考生服从专业调剂，学校根据综合成绩从高分到低分调剂到招生计划未满专业（必须符合专业的选考科目要求）；如仍不足，则从投档基准线下考生中从高分到低分逐一择优录取到未满专业（必须符合专业的选考科目要求），直至满额。</span></p><p style=";margin-bottom:0;text-indent:40px;line-height:250%"><span style="font-size:20px;line-height:250%;font-family:仿宋">若考生志愿填报人数分别未达到非师范类、师范类、中外合作类各类计划数的110%（按小数点进位），则录取人数分别控制在非师范类、师范类、中外合作类各类相应的志愿填报人数的85%（按小数点舍去）以内。</span></p><p style="text-align:left;text-indent:13px;line-height:250%"><strong><span style="font-size:20px;line-height:250%;font-family: 宋体">&nbsp;</span></strong><strong> </strong><strong><span style="font-size:20px;line-height:250%;font-family:宋体">&nbsp;</span></strong><strong><span style="font-size:20px;line-height:250%;font-family:仿宋">四.2021</span></strong><strong><span style="font-size:20px;line-height: 250%;font-family:仿宋">年宁波大学“三位一体”录取情况一览表</span></strong></p><table width="662"><tbody><tr style=";height:20px" class="firstRow"><td width="104" style="border: 1px solid windowtext; padding: 0px 7px;"><strong>类别</strong></td><td width="284" style="border-top: 1px solid windowtext; border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-image: initial; border-left: none; padding: 0px 7px;"><strong>招生专业(类)</strong></td><td width="142" style="border-top: 1px solid windowtext; border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-image: initial; border-left: none; padding: 0px 7px;"><strong>最高综合分</strong></td><td width="132" style="border-top: 1px solid windowtext; border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-image: initial; border-left: none; padding: 0px 7px;"><strong>最低综合分</strong></td></tr><tr style=";height:20px"><td width="104" rowspan="12" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;">非师范类</td><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">工程力学（拔尖人才创新班）</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.26</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">83.76</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">通信工程（拔尖人才创新班）</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.51</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">85.6</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">水产养殖学（拔尖人才创新班）</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">84.3</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">81.01</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">机械类</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">83.09</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">82.42</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">物理学类</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">85.81</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">82.92</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">材料类</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">86.02</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">81.03</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">土木工程</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">84.22</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">82.59</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">生物技术</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">83.03</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">79.42</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">环境工程</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">88</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">80.55</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">历史学</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.61</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">81.51</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">汉语言文学</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.31</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">84.79</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">经济学</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.09</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">84.16</td></tr><tr style=";height:20px"><td width="104" rowspan="9" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;">师范类</td><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">小学教育(师范)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">88.92</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">85.5</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">学前教育(师范)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">85.74</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">84.58</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">思想政治教育(师范)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">89.38</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">86.78</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">汉语言文学（师范）</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">89.25</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.66</td></tr><tr style=";height:22px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">英语(小学师资)（师范）</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.17</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">86.05</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">英语(师范)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">88.61</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.22</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">数学与应用数学（师范）</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.08</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">85.42</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">科学教育(师范)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">89.08</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">85.68</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">地理科学(师范)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">87.53</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">85.31</td></tr><tr style=";height:20px"><td width="104" rowspan="2" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;">中外合作类</td><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">人文地理与城乡规划(中外合作办学)(中法合作)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">84.54</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">82.68</td></tr><tr style=";height:20px"><td width="284" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">旅游管理(中外合作办学)(中法合作)</td><td width="142" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">82.56</td><td width="132" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;">80.42</td></tr></tbody></table><p><span style="font-size:16px;font-family:仿宋">&nbsp;</span></p>
+        </div>
+    </div>
+    <!--右侧导航结束-->
+    <!--清除浮动-->
+    <div class="clear"></div>
+</div>
+
+
+        
+
+
+<div class="foot">
+    <div class="containerWide fixbg3">
+        <div class="footlogo"></div>
+        <div style="float:right;margin-right: 40px">
+            <img src="/Upload/xcx.jpg" width="120" style="margin-top:20px;">
+        </div>
+        <div class="contact" style="margin-right:30px;">
+            <ul>
+                <li><span class="left">
+                    <img src="/Content/Page/statics/images/defaultUI/icons/6.png" alt=""></span><span class="left">地址：浙江省宁波市江北区风华路818号</span></li>
+                <li><span class="left">
+                    <img src="/Content/Page/statics/images/defaultUI/icons/7.png" alt=""></span><span class="left">本科招生咨询电话：0574-87600233</span></li>
+                <li><span class="left">
+                    <img src="/Content/Page/statics/images/defaultUI/icons/8.png" alt=""></span><span class="left">&nbsp;传真：0574-87609301 </span></li>
+            </ul>
+
+        </div>
+        <div class="friendlinks">
+            <div class="title">友情链接</div>
+            <div class="youqing">
+                <table width="400" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                        <td width="180"><a href="http://www.zjzs.net" target="_blank">浙江省教育考试院网</a></td>
+                        <td><a href="http://www.nbu.edu.cn/" target="_blank">宁波大学主页</a></td>
+                    </tr>
+                    <tr>
+                        <td width="180"><a href="http://gaokao.chsi.com.cn/" target="_blank">教育部阳光高考平台</a></td>
+                        <td></td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+
+
+
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="containerWide fixbg4">
+        
+        宁波大学招生办公室 版权所有　　Copyright ©2002-2020.　<a href="http://www.beian.miit.gov.cn" style="color:#ebebeb;font-size:14px;"> 浙ICP备05018778号-1  </a>　宁波大学本科招生网 All Rights Reserved 
+    </div>
+</div>
+
+        <script type="text/javascript" src="/Content/Page/statics/js/js.js" charset="utf-8"></script>
+
+
+
+</body></html>

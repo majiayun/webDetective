@@ -1,0 +1,2134 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="kiben" content="no-cache">
+<title>复旦大学2021年招生专业（类）目录</title>
+<script>
+	function dochange(value){
+		var url=value;
+		if(url!=""){
+			window.open(url);
+		}
+	}
+	
+	function changeCaptcha(obj) {
+		//获取当前的时间作为参数，无具体意义
+		var timenow = new Date().getTime();
+		//每次请求需要一个不同的参数，否则可能会返回同样的验证码
+		//这和浏览器的缓存机制有关系，也可以把页面设置为不缓存，这样就不用这个参数了。
+		obj.src="/security/captcha.action?d="+timenow;
+	}
+	
+	function checkBT(value,view,param,form){
+         if(value == ""){
+            alert(view);
+            form[param].focus();
+            return false;
+     	 }
+         return true;
+   }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+<link rel="bookmark" href="/static/images/favicon.ico" type="image/x-icon">
+
+<script type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script><script> 
+	$(function(){		
+		$('.title-list li').mouseover(function(){
+			var liindex = $('.title-list li').index(this);
+			$(this).addClass('on').siblings().removeClass('on');		
+			var liWidth = $('.title-list li').width();
+			$('.title-list p').stop(false,true).animate({'left' : liindex * liWidth + 'px'},300);
+		});
+		$("a").each(function(){
+			var href = $(this).attr("href");
+			if(href != undefined){
+				href+= href.indexOf("?")<0 ? "?" : "&";
+				$(this).attr("href",href+"t="+new Date().getTime());	
+			}
+		});	
+	});
+	
+</script></head>
+
+
+<body>
+	<div class="contain">
+    	<!--头部-->
+        <div class="bannercontain">
+        		<img src="/common/file.action?method=downFile&amp;folder=temp/Transit/20170610/7065ac4e-4d1c-4426-8d7b-4c8c0a939e30.jpg" style="min-width:1024px;height:436px;">
+        </div>
+         
+        <div class="headercontain">
+        	<div class="headertop">
+            	<a href="/index.action?t=1627192012346" class="headertop_logo">
+                	<img src="/static/images/logo_02.png">
+                </a>
+                <div class="headertop_right">
+                	<!--搜索-->
+                    <div class="headertop_search">
+                        <div class="headertop_search_s">
+                            <form onsubmit="return search(this);">
+                            <input value="0BOE-Y96Z-VY7V-OER3-TKCW-2U6L-KQXP-PTKE" type="hidden" name="OWASP_CSRFTOKEN">
+                                <script type="text/javascript">
+                                    $(function(){
+                                    	$("body").click(function(event){
+										//console.log(!$(event.target).is("#span"));
+											if(!$(event.target).is("#span")){
+												$(".new").hide();	
+											}
+										});
+                                    
+                                        $(".set").click(function(){
+                                            var ul=$(".new");
+                                            if(ul.css("display")=="none"){
+                                                ul.slideDown();
+                                            }else{
+                                                ul.slideUp();
+                                            }
+                                        });
+        
+                                        $(".new li").click(function(){
+                                            var li=$(this).text();
+                                            $(".set").html(li);
+                                            $(".new").hide();
+                                        });
+                                    })
+                                     function search(form){
+							            var title = form.title.value;
+							            if(title == ""){
+							                alert("请输入要搜索的内容！");
+							            }else{
+							            	var span = $("#span").html();
+							            	if('标题搜索'==span){
+								            	form.action="/index!search.action";
+								            	form.target="_blank";
+								                form.submit();
+							            	}else{ 
+							            		window.open('http://cn.bing.com/search?q='+title+'+site%3Awww.ao.fudan.edu.cn&qs=n&form=QBRE&pq='+title+'site%3Awww.ao.fudan.edu.cn');
+							            	}
+							            }
+							            return false;
+							        }
+                                </script>
+                                <div class="searchchose">
+                                    <span id="span" class="set">标题搜索</span>
+                                    <ul class="new" style="z-index:9999">
+                                        <li>标题搜索</li>
+                                        <li>全文搜索</li>       
+                                    </ul>
+                               </div>
+                               <div class="headertop_search_input">
+                                    <input type="text" class="searchinput" value="" name="title" id="title">
+                                    <button class="searchbtn" type="submit">
+                                        <img src="/static/images/search_img_06.png">
+                                    </button>
+                               </div>
+                           </form>
+                       </div>
+                    </div>
+                    <!--搜索结束-->
+                    <!--导航-->
+                    <div class="nav">
+                      <div class="title cf">    
+                        <ul class="title-list fr cf ">
+					    		<li class="on">
+						    		<a href="/index!index.html?sideNav=281&amp;t=1627192012347">
+						    		首页
+						    		</a>
+					    		</li>
+					    		<li>
+						    		<a href="/index!list.html?sideNav=282&amp;t=1627192012347">
+						    		报考指南
+						    		</a>
+					    		</li>
+					    		<li>
+						    		<a href="https://www.fudan.edu.cn/489/list.htm?t=1627192012347" target="_blank">
+						    		院系介绍
+						    		</a>
+					    		</li>
+					    		<li>
+						    		<a href="http://www.jwc.fudan.edu.cn?t=1627192012347" target="_blank">
+						    		人才培养
+						    		</a>
+					    		</li>
+					    		<li>
+						    		<a href="http://www.stuaff.fudan.edu.cn/xszzgl/list.htm?t=1627192012347" target="_blank">
+						    		奖助学金
+						    		</a>
+					    		</li>
+					    		<li>
+						    		<a href="http://www.fao.fudan.edu.cn?t=1627192012347" target="_blank">
+						    		国际交流
+						    		</a>
+					    		</li>
+					    		<li>
+						    		<a href="http://www.gkzy.fudan.edu.cn?t=1627192012347" target="_blank">
+						    		生源登记
+						    		</a>
+					    		</li>
+                          <p><b></b></p>
+                        </ul>
+                      </div>  
+					</div>
+                    <!--导航结束-->
+                </div>
+            </div>
+        </div>
+        <!--头部结束-->
+<style>
+.movieVoid{height:370px;width:760px;}
+#jiathis_style_32x32 .jtico_tsina{
+background:url(static/images/tans_03.png) no-repeat left;
+background-position:0px 0px;
+margin-right:5px;
+}
+#jiathis_style_32x32 .jtico_tqq{
+background:url(static/images/tans_07.png) no-repeat left;
+margin-right:5px;
+}
+#jiathis_style_32x32 .jtico_weixin{
+background:url(static/images/tans_05.png) no-repeat left;
+
+}
+#weixin{
+width:35px; height:35px; display:block; position:absolute; left:0; top:0;
+}
+</style>
+<!--首页信息-->
+<div class="midcontian"><a name="anchor"></a>
+    <div class="midcontian01">
+        <div class="inform" style="min-height:100px;">
+<div class="inform_leftnav">
+	<div class="inform_leftnav_top">
+	   <a href="/index!list.html?sideNav=282&amp;t=1627192012348"> <h3> 报考指南<img src="/static/images/infor_arrow_03.png"></h3></a>
+	</div>
+	<div class="inform_leftnav_mid">
+	    <ul>
+	          		 	<li>
+	          		 		<a href="/index!list.html?sideNav=302&amp;topNav=282&amp;t=1627192012348" class="informtitle informtitleon" style="font-size:15px">
+	           				   招生政策
+	           			 	</a>
+	           			 </li>
+	          		 	<li>
+	          		 		<a href="/index!list.html?sideNav=301&amp;topNav=282&amp;t=1627192012348" class="informtitle informtitleon" style="font-size:15px">
+	           				   招生动态
+	           			 	</a>
+	           			 </li>
+	          		 	<li>
+	          		 		<a href="/index!list.html?sideNav=581&amp;topNav=282&amp;t=1627192012348" class="informtitle informtitleon" style="font-size:15px">
+	           				   招生计划
+	           			 	</a>
+	           			 </li>
+	          		 	<li>
+	          		 		<a href="/index!list.html?sideNav=582&amp;topNav=282&amp;t=1627192012348" class="informtitle informtitleon" style="font-size:15px">
+	           				   录取分数
+	           			 	</a>
+	           			 </li>
+	    </ul>
+	</div>
+		<img class="inform_pic" src="/common/file.action?method=downFile&amp;folder=temp/Transit/20160607/a597a8e3-d06f-48e2-9f11-b92f01b342a8.png" style="width:208px;height:140px;">
+</div>
+            <div class="inform_rightcon">
+                <div class="inform_rightcon_location">
+                    <p><span class="location_t">当前位置：</span>
+		<a href="/index!list.html?sideNav=282&amp;t=1627192012348" class="location_i">报考指南</a>
+		<span> ＞ </span>
+		<a href="/index!list.html?sideNav=302&amp;topNav=282&amp;t=1627192012348" class="location_i location_on">招生政策</a>
+                    </p>
+                </div>
+                            <h3 class="inform_rightcon_article"> 复旦大学2021年招生专业（类）目录 </h3>
+                            <span class="inform_rightcon_article_span">发布时间：2021-06-11      阅读次数：46655</span>
+                            <p class="inform_rightcon_article_p"></p><table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+	<tbody>
+		<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.1pt">
+			<td nowrap="nowrap" rowspan="2" style="width: 34.95pt; border-width: 1pt; border-style: solid; border-color: windowtext; padding: 0cm 5.4pt; height: 20.1pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">序号<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+			<td nowrap="nowrap" rowspan="2" style="width: 42.8pt; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; padding: 0cm 5.4pt; height: 20.1pt;" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">院校代码<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+			<td rowspan="2" style="width: 177.15pt; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; padding: 0cm 5.4pt; height: 20.1pt;" width="236">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">招生专业（类）<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+			<td rowspan="2" style="width: 233.9pt; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; padding: 0cm 5.4pt; height: 20.1pt;" width="312">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">包含专业<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+			<td rowspan="2" style="width:297.7pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.1pt" width="397">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">专业（类）备注<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+			<td rowspan="2" style="width:4.0cm;border-top:solid 1.0pt;border-left:
+  double 2.25pt;border-bottom:solid 1.0pt;border-right:double 2.25pt;
+  border-color:windowtext;mso-border-top-alt:solid .5pt;mso-border-left-alt:
+  double 2.25pt;mso-border-bottom-alt:solid .5pt;mso-border-right-alt:double 2.25pt;
+  mso-border-color-alt:windowtext;padding:0cm 5.4pt 0cm 5.4pt;height:20.1pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">“<span lang="EN-US">3+3</span>模式”省份选考科目<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+			<td colspan="2" nowrap="nowrap" style="width: 146.15pt; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; padding: 0cm 5.4pt; height: 20.1pt;" width="195">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">“<span lang="EN-US">3+1+2</span>模式”省份<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:1;height:20.1pt">
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.1pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">首选科目<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.1pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<b><span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">再选科目<span lang="EN-US"><o:p></o:p></span></span></b></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:2;height:57.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 57.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">1<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">中国语言文学类（拔尖学生培养基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含汉语言文学、汉语言<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 57.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含赴美国韦尔斯利学院、德国科隆大学、日本早稻田大学，香港浸会大学、台湾大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:57.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:3;height:57.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 57.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">2<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">英语<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含英语、翻译<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 57.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与英国曼彻斯特大学“<span lang="EN-US">2+2</span>”双学位项目；含英国华威大学、澳大利亚科汀大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:57.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:4;height:43.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 43.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">3<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">俄语<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 43.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含俄罗斯圣彼得堡大学、莫斯科市立师范大学、俄罗斯国立社会大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:5;height:57.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 57.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">4<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">德语<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 57.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含德国柏林自由大学、柏林洪堡大学、哥廷根大学、瑞士苏黎世大学、奥地利萨尔茨堡大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:57.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:6;height:43.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 43.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">5<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">法语<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 43.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含法国里昂高等师范学院、里昂第二大学、比利时布鲁塞尔自由大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:7;height:28.8pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 28.8pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">6<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">西班牙语<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 28.8pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含赴西班牙马德里自治大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:28.8pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:8;height:21.4pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 21.4pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">7<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">日语<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 21.4pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:21.4pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:9;height:21.0pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 21pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">8<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">朝鲜语<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 21pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:21.0pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:10;height:43.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 43.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">9<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">历史学类（拔尖学生培养基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含历史学、旅游管理、文物与博物馆学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 43.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含赴加拿大女王大学、丹麦哥本哈根大学、日本御茶水大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:11;height:28.8pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 28.8pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">哲学类（拔尖学生培养基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含哲学、宗教学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 28.8pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与英国伯明翰大学“<span lang="EN-US">2+2</span>”双学位项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:28.8pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:12;height:86.4pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 86.4pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">11<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:86.4pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:86.4pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">新闻传播学类（卓越新闻人才计划）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:86.4pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含新闻学、广播电视学、传播学、广告学等专业<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 86.4pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与日本早稻田大学“<span lang="EN-US">3+1+1</span>”、与美国密苏里大学“<span lang="EN-US">2+2</span>”双学位项目；含美国北卡罗莱纳大学、纽约城市大学、德国慕尼黑大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:86.4pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:86.4pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:86.4pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:13;height:43.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 43.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">12<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">社会科学试验班<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含政治学与行政学、行政管理、国际政治、社会学、社会工作等专业<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 43.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含美国加州大学伯克利分校、华盛顿大学、三一学院等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:14;height:72.0pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 72pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">13<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:72.0pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:72.0pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">法学（卓越法律人才基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:72.0pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 72pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与美国杜兰大学“<span lang="EN-US">3+1</span>”双学位项目；含美国哥伦比亚大学、康奈尔大学、加拿大麦吉尔大学、德国汉堡大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:72.0pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:72.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:72.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:15;height:28.8pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 28.8pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">14<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">马克思主义理论（望道班）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 28.8pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:28.8pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">政治<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">历史<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">政治<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:16;height:144.0pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 144pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">15<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">经济学类（拔尖学生培养基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含经济学、经济学（数理经济方向拔尖项目）、经济学（国际项目<span lang="EN-US">UIPE</span>）、国际经济与贸易（国际经济学）、金融学、财政学、保险学等专业<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 144pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与荷兰格罗宁根大学“<span lang="EN-US">2+2</span>”双学位项目；含美国芝加哥大学、加州大学、新加坡国立大学、瑞士苏黎世大学、法国巴黎高等商学院、德国慕尼黑大学、日本庆应大学等校免学费交流项目，以及美国麻省理工学院、宾夕法尼亚大学、加州大学伯克利分校、英国伦敦政治经济学院等校访学项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:144.0pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理或化学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:17;height:129.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 129.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">16<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:129.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:129.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">经济管理试验班<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:129.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含工商管理（战略、国际商务、人力资源方向）、财务管理（金融工程方向）、管理科学（供应链方向）、信息管理与信息系统（电子商务方向）、会计学、市场营销、统计学等专业<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 129.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含美国南加州大学、英国华威大学、法国巴黎高等商学院等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:129.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理或化学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:129.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:129.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:18;height:43.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 43.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">17<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">数学类（拔尖学生培养基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含数学与应用数学、信息与计算科学、数据科学与大数据技术<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 43.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:19;height:144.0pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 144pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">18<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">自然科学试验班（拔尖学生培养基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含物理学、数据科学与大数据技术、大气科学、材料物理、材料化学、电子科学与技术、化学、能源化学、高分子材料与工程、生物科学、生物技术、生态学、环境科学、心理学、光电信息科学与工程等专业<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 144pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含英国伯明翰大学、曼彻斯特大学等“<span lang="EN-US">2+2</span>”双学位项目；含美国耶鲁大学、加州大学伯克利分校、日本东京大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:144.0pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<br>
+					（其中生物环境方向相关专业选考科目为物理或化学）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:144.0pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">化学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:20;height:201.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 201.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">19<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:201.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:201.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">技术科学试验班<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:201.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含微电子科学与工程、智能科学与技术（卓越班，智能系统方向）、光电信息类（卓越班）、电子信息科学与技术、通信工程、电气工程及其自动化、生物医学工程、光电信息科学与工程、信息安全、电子科学与技术、材料化学、材料物理、计算机科学与技术、数据科学与大数据技术、航空航天类、保密技术等专业<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 201.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与澳大利亚国立大学、莫纳什大学等“<span lang="EN-US">2+2</span>”双学位项目，与美国佛罗里达大学、加拿大多伦多大学、瑞典皇家理工学院、比利时鲁汶大学等“<span lang="EN-US">3+1+1</span>”本硕连读项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:201.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:201.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:201.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:21;height:57.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 57.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">20<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">工科试验班（新工科本研贯通）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含智能科学与技术专业（卓越班）、微电子科学与工程（卓越班）、人工智能等专业 <span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 57.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与澳大利亚莫纳什大学等“<span lang="EN-US">2+2</span>”双学位项目，与加拿大多伦多大学、美国佛罗里达大学等“<span lang="EN-US">3+1+1</span>”本硕连读项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:57.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:22;height:28.8pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 28.8pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">21<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">核工程与核技术<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 28.8pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含瑞典隆德大学、日本群马大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:28.8pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:23;height:43.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 43.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">22<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">10246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">软件工程（国家示范性软件学院）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含软件工程、软件工程（卓越班）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 43.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含美国斯蒂文斯理工学院、新加坡管理大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:24;height:57.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 57.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">23<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">19246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">临床医学（<span lang="EN-US">8</span>年制本博连读，卓越医生计划）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 57.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含美国加州大学戴维斯分校、乔治敦大学、澳大利亚悉尼大学医学院、德国杜伊斯堡<span lang="EN-US">-</span>埃森大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:57.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理和化学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">化学或生物<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:25;height:57.6pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 57.6pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">24<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">19246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">临床医学（<span lang="EN-US">5</span>年制，卓越医生计划）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 57.6pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含美国加州大学戴维斯分校、乔治敦大学、澳大利亚悉尼大学医学院、德国杜伊斯堡<span lang="EN-US">-</span>埃森大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:57.6pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理和化学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">化学或生物<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:26;height:43.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 43.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">25<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">19246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">口腔医学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 43.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含美国哈佛大学、纽约大学、澳大利亚墨尔本大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理或化学或生物<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">化学或生物<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:27;height:115.2pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 115.2pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">26<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:115.2pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">19246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:115.2pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">医学试验班（拔尖学生培养基地）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:115.2pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含基础医学、药学、预防医学、公共事业管理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 115.2pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含与美国夏威夷大学“<span lang="EN-US">4+1+1</span>”本硕连读项目；含美国哈佛大学、斯坦福大学、加州大学洛杉矶分校、加州大学圣迭戈分校、杜兰大学、德国洪堡大学、瑞典哥德堡大学、丹麦哥本哈根大学、新加坡国立大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:115.2pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理或化学或生物<br>
+					（其中基础医学选考科目为物理和化学）<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:115.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:115.2pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">化学或生物<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:28;height:14.4pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 14.4pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">27<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.4pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">19246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.4pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">法医学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.4pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 14.4pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">　<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:14.4pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理或化学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.4pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.4pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">化学或生物<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow:29;mso-yfti-lastrow:yes;height:28.8pt">
+			<td nowrap="nowrap" style="width: 34.95pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; padding: 0cm 5.4pt; height: 28.8pt;" width="47">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">28<o:p></o:p></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:42.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="57">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;
+  color:black;mso-font-kerning:0pt">19246<o:p></o:p></span></p>
+			</td>
+			<td style="width:177.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="236">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">护理学<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:233.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="312">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含助产士方向<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width: 297.7pt; border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid windowtext; padding: 0cm 5.4pt; height: 28.8pt;" width="397">
+				<p align="left" class="MsoNormal">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">含香港中文大学等校免学费交流项目<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td style="width:4.0cm;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-left-alt:double windowtext 2.25pt;mso-border-bottom-alt:solid windowtext .5pt;
+  mso-border-right-alt:double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:28.8pt" width="151">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">物理或化学或生物<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+			<td nowrap="nowrap" style="width:73.1pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt" width="97">
+				<p align="center" class="MsoNormal" style="text-align:center;mso-pagination:widow-orphan">
+					<span style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt">不限<span lang="EN-US"><o:p></o:p></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p><p></p>
+                        <div class="inform_rightcon_trans">
+                            <ul>
+                                <li>
+                                    <span class="trans_title" style="font-size:15px">分享至：</span>
+                                </li>
+                                <li>
+                                <div id="jiathis_style_32x32" style="width:118px;height:35px;">
+									<a class="jiathis_button_tsina" style="height:35px;"></a>
+									<!--20161008去除qq
+									<a class="jiathis_button_tqq"></a>
+									<a href="http://www.jiathis.com/share/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+									-->
+									<a href="javascript:;?t=1627192012348" onclick="jiathis_sendto('weixin');return false;" class="jiatitle" title="分享到微信">
+									<span class="jtico jtico_weixin"></span><input type="hidden" value="weixin,微信,wx">
+									</a>
+								</div>
+								<script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+								<!--
+								<script type="text/javascript" src="/static/js/jia.js" charset="utf-8"></script>
+								-->
+								</li>
+                                <!--
+                                <li>
+                                    <a href="#" class="trans_pic">
+                                    <img  src="/static/images/tans_03.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="weixin" onmouseover="this.className = 'weixin on';" onmouseout="this.className = 'weixin';">
+                                        <a href="javascript:;" class="effect"></a>
+                                        <div class="weixin_nr">
+                                            <img src="/static/images/code_55.png" width="110" height="110" />
+                                        </div>
+                                     </div>
+                                </li>
+                                  -->
+                            </ul>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--首页信息结束-->
+<script type="text/javascript">
+	$().ready(function(){	
+		if(0>1){
+	    	location.hash="anchor";
+		}
+	});
+</script>
+    <!--页脚-->
+	<div class="footer">
+	    <div class="footercontian">
+	        <ul class="footerlinks">
+	          					 <li>
+					 <a href="http://www.fudan.edu.cn?t=1627192012348" target="_blank" class="footerlinks_title ">
+						复旦大学
+					 </a>
+					 </li>
+					 <li>
+					 <a href="http://www.fdcollege.fudan.edu.cn?t=1627192012348" target="_blank" class="footerlinks_title ">
+						复旦学院
+					 </a>
+					 </li>
+					 <li>
+					 <a href="http://shmc.fudan.edu.cn?t=1627192012348" target="_blank" class="footerlinks_title ">
+						复旦大学上海医学院
+					 </a>
+					 </li>
+					 <li>
+					 <a href="http://www.stuaff.fudan.edu.cn?t=1627192012348" target="_blank" class="footerlinks_title ">
+						复旦大学学工部
+					 </a>
+					 </li>
+					 <li>
+					 <a href="http://www.fao.fudan.edu.cn?t=1627192012349" target="_blank" class="footerlinks_title ">
+						复旦大学港澳台办
+					 </a>
+					 </li>
+					 <li>
+					 <a href="http://www.career.fudan.edu.cn?t=1627192012349" target="_blank" class="footerlinks_title ">
+						复旦大学学生就业信息网
+					 </a>
+					 </li>
+					 <li>
+					 <a href="http://news.fudan.edu.cn?t=1627192012349" target="_blank" class="footerlinks_title ">
+						复旦新闻文化网
+					 </a>
+					 </li>
+					 <li>
+					 <a href="http://www.fudan.org.cn?t=1627192012349" target="_blank" class="footerlinks_title footerlinks_title_last">
+						复旦大学校友网
+					 </a>
+					 </li>
+	        </ul>
+	        <div class="footerline"></div>
+	        <div class="footerwords">
+	            <p>
+	            <!--
+	            © 2010 - 2015  复旦大学本科生招生办公室  上海市邯郸路220号  邮政编码200433 
+	            -->
+	            ©2005 - 2021 复旦大学招生办公室<br>
+                   	 上海市邯郸路220号  邮政编码200433
+	            </p>
+	        </div>
+		</div>
+	</div>
+    <!--页脚结束-->
+    </div>
+
+</body></html>

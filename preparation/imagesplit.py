@@ -27,7 +27,7 @@ def get_pgheader_size():
         print(e)
         # 发生错误时回滚
         db.rollback()
-    return x, y,h,w
+    return x, y, h, w
     db.close()
 
 def get_menus_size():

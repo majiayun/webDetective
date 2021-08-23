@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import time
-# from skimage.measure import structural_similarity as ssim
+
 
 
 def ssim(img1, img2):
@@ -56,6 +56,6 @@ start=time.time()
 img1 = cv_imread("E:\学习\webDetection\preparation\orig_splitimage\menus.png")
 img2 = cv_imread("E:\学习\webDetection\proxyserver/resp_splitimage\menus.png")
 ss = calculate_ssim(img1, img2)
-end=time.time()
+end = time.time()
 print(end-start)
 
