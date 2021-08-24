@@ -381,7 +381,7 @@ def save_table_info():
 #                     menus.size["width"])
 
 
-def save_orig_img():
+def save_orig_picture():
     img_path = os.getcwd()+'\\orig_pictures'
     img_name = re.split(r'/', driver.current_url)[3] + time.strftime('-%Y-%m%d-%H%M%S', time.localtime(time.time()))
     img = "%s.png" % os.path.join(img_path, img_name)
@@ -419,7 +419,7 @@ if __name__ == '__main__':
     driver.maximize_window()
     # 设置截屏整个网页的宽度以及高度
     driver.set_window_size(get_screen_size()[0], get_screen_size()[1])
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
 
     # 首页
@@ -429,7 +429,7 @@ if __name__ == '__main__':
     # 模拟点击登录按钮登录
     driver.find_element_by_xpath(LOGIN_BUTTON_LOCATION).click()
     # 首页 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     insert_pgheader_info()
     insert_menus_info()
@@ -443,7 +443,7 @@ if __name__ == '__main__':
     driver.find_elements_by_class_name('btn-primary')[0].click()
     # 保存图片
     # getpartinfo()
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -454,7 +454,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[1].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -464,7 +464,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[2].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -475,7 +475,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[3].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -485,7 +485,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[4].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -495,7 +495,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[5].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -506,7 +506,7 @@ if __name__ == '__main__':
     driver.find_elements_by_class_name('btn-primary')[6].click()
     url = driver.current_url
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -516,7 +516,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[7].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -527,7 +527,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[8].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
@@ -538,7 +538,7 @@ if __name__ == '__main__':
     ActionChains(driver).move_to_element(element).perform()
     driver.find_elements_by_class_name('btn-primary')[9].click()
     # 保存图片
-    save_orig_img()
+    save_orig_picture()
     save_orig_html()
     save_table_info()
     save_th_info()
